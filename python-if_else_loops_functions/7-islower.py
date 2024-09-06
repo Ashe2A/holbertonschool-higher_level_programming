@@ -4,11 +4,11 @@ def islower(c):
 	Check if a character is a lowercase letter.
 
 	Parameters:
-	    c (int): Character to check.
+	    c (str): Character to check.
  
  	Returns:
 	    bool: True if lowercase, False otherwise.
 	"""
-    if ord('a') <= c <= ord('z'):
+    if (ord('a') <= ord(c) <= ord('z'):
         return True
     return False
