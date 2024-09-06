@@ -9,6 +9,4 @@ def islower(c):
     Returns:
         bool: True if lowercase, False otherwise.
     """
-    if (len(c) == 1) and (ord('a') <= ord(c[0]) <= ord('z')):
-        return True
-    return False
+    return ord('a') <= ord(c) <= ord('z')
