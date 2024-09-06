@@ -11,4 +11,4 @@ def uppercase(str):
             print(chr(ord(str[i]) + ord('A') - ord('a')), end="")
         else:
             print(str[i], end="")
-    print("")
+    print()
