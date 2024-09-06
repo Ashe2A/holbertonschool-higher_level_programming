@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for i in range('a', 'z'):
+for i in range(ord('a'), ord('z')):
     print(i, end="")
