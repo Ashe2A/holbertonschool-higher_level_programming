@@ -8,7 +8,6 @@ def uppercase(str):
     """
     for i in range(len(str)):
         if ord('a') <= ord(str[i]) <= ord('z'):
-            print(chr(ord(str[i]) + ord('A') - ord('a')), end="")
-        else:
-            print(str[i], end="")
+            print(chr(ord(str[i]) + ord('A') - ord('a')) if ord('a') <= ord(str[i]) <= ord('z')
+                  else str[i], end="")
     print()
