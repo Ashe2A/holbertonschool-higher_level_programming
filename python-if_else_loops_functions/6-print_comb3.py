@@ -4,6 +4,4 @@ for i in range(0, 100):
         if i == 89:
             print(i)
         else:
-            if i < 10:
-                print("0", end="")
-            print(i, end=", ")
+            print("{:02}".format(i), end=", ")
