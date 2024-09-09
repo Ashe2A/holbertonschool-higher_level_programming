@@ -7,6 +7,6 @@ def uppercase(str):
         str (str): String to upper.
     """
     for i in range(len(str)):
-        print(chr(ord(str[i]) + ord('A') - ord('a'))
-              if ord('a') <= ord(str[i]) <= ord('z') else str[i], end="")
+        print("{}".format(chr(ord(str[i]) + ord('A') - ord('a')))
+              if ord('a') <= ord(str[i]) <= ord('z') else "{}".format(str[i]), end="")
     print()
