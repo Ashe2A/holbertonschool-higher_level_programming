@@ -7,7 +7,7 @@ def print_last_digit(number):
         number (int): number to print the last digit of.
 
     Returns:
-        The last digit of number
+        The last digit of number.
     """
     last_digit = abs(number) % 10
     print("{}".format(last_digit), end="")
