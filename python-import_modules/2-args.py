@@ -4,9 +4,9 @@ import sys
 if __name__ == "__main__":
     argv = sys.argv
     print("{} argument".format(len(argv)), end="")
-    if len(argv) == 0:
+    if len(argv) == 1:
         print("s.")
-    elif len(argv) == 1:
+    elif len(argv) == 2:
         print(":")
     else:
         print("s:")
