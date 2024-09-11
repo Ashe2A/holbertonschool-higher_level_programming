@@ -11,4 +11,4 @@ if __name__ == "__main__":
     else:
         print("s:")
     for i in range(1, len(argv)):
-        print("{}: {}".format(len(argv), argv[i - 1]))
+        print("{}: {}".format(i, argv[i]))
