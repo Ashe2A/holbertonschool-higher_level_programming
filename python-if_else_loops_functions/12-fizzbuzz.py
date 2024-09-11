@@ -3,7 +3,7 @@ def fizzbuzz():
     """
     Prints fizzbuzz.
     """
-    for i in range(0, 100):
+    for i in range(100):
         if ((i + 1) % 3) == 0:
             print("Fizz", end="")
         if ((i + 1) % 5) == 0:
