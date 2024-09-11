@@ -5,9 +5,6 @@ def uppercase(str):
 
     Parameters:
         str (str): String to upper.
-
-    Returns:
-        Nothing
     """
     for i in range(len(str)):
         print("{}".format(chr(ord(str[i]) + ord('A') - ord('a')))
