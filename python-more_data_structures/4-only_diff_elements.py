@@ -10,4 +10,4 @@ def only_diff_elements(set_1, set_2):
     Returns :
         Distinct elements between the sets.
     """
-    return set_1 | set_2
+    return set_1 ^ set_2
