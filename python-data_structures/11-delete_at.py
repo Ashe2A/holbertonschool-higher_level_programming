@@ -12,5 +12,5 @@ def delete_at(my_list=[], idx=0):
         modified (or not) list
     """
     if (my_list != []) or (idx < 0) or (idx > len(my_list)):
-        del(my_list[idx])
+        del (my_list[idx])
     return my_list
