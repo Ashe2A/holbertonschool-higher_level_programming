@@ -11,7 +11,7 @@ def best_score(a_dictionary):
     """
     if a_dictionary == {}:
         return "None"
-    best_scorer = list(a_dictionary)[0]
+    best_scorer = a_dictionary[0][0]
     for i in list(a_dictionary):
         if a_dictionary[i] > a_dictionary[best_scorer]:
             best_scorer = i
