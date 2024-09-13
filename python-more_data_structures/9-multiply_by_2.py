@@ -12,3 +12,4 @@ def multiply_by_2(a_dictionary):
     new_dictionary = a_dictionary[:]
     for i in list(new_dictionary):
         new_dictionary[i] *= 2
+    return new_dictionary
