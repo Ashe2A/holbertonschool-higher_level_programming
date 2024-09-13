@@ -8,4 +8,4 @@ def common_elements(set_1, set_2):
 
     Returns : the sum of unique integers from the list.
     """
-    return set_1 && set_2
+    return set_1 & set_2
