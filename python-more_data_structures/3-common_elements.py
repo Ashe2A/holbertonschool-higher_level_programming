@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 def common_elements(set_1, set_2):
     """
-    Adds all distinct integers from a list (meaning dupes are ignored).
+    Crosses elements from two sets.
 
     Parameters:
-        my_list : list of integers (with possible dupes).
+        set_1 : first set.
+        set_2 : second set.
 
-    Returns : the sum of unique integers from the list.
+    Returns :
+        Common elements between the sets.
     """
     return set_1 & set_2
