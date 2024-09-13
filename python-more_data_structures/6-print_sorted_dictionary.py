@@ -6,5 +6,5 @@ def print_sorted_dictionary(a_dictionary):
     Parameters:
         a_dictionary : the dictionary.
     """
-    for i in a_dictionary:
-        print("{}: {}".format(i[0], i[1]))
+    for i in sorted(a_dictionary):
+        print("{}: {}".format(i, a_dictionary[i]))
