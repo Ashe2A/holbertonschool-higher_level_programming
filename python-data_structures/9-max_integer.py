@@ -11,7 +11,7 @@ def max_integer(my_list=[]):
         The max of an integer list
     """
     if my_list == []:
-        return "None"
+        return None
     super_max = my_list[0]
     for i in my_list:
         if i > super_max:
