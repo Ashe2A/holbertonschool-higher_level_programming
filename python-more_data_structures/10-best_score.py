@@ -9,8 +9,10 @@ def best_score(a_dictionary):
     Returns:
         Highest value key in dictionary
     """
-    best_score = (list(a_dictionary))[0]
+    if list(a_dictionary) == []:
+        return "None"
+    best_scorer = list(a_dictionary)[0]
     for i in list(a_dictionary):
-        if a_dictionary[i] > a_dictionary[best_score]:
-            best_score = i
-    return best_score
+        if a_dictionary[i] > a_dictionary[best_scorer]:
+            best_scorer = i
+    return best_scorer
