@@ -8,8 +8,8 @@ def multiple_returns(sentence):
         sentence (string) : the string.
 
     Returns:
-        Tuple (int, string) : the length and the first character
+        Tuple (int, int/string) : the length and the first character
     """
     if (len(sentence) == 0):
         return(0, "None")
-    return (len(sentence), "{}".format(sentence[0]))
+    return (len(sentence), sentence[0])
