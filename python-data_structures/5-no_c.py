@@ -11,6 +11,6 @@ def no_c(my_string):
         The modified (or not) string.
     """
     for i in my_string:
-        if (my_string[i - 1] == 'C') or (my_string[i - 1] == 'c'):
+        if (my_string[i - 1] == "C") or (my_string[i - 1] == "c"):
             del(my_string[i - 1])
     return my_string
