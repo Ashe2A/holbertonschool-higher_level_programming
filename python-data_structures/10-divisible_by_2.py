@@ -8,7 +8,7 @@ def divisible_by_2(my_list=[]):
         my_list (list) : integer list.
 
     Returns:
-        Boolean list of whetever the corresponding index in the list is divisible by 2.
+        Bool list of whetever list-corresponding indexes are divisible by 2.
     """
     boolist = []
     for i in my_list:
