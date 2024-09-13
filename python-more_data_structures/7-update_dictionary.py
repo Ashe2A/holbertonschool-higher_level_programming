@@ -9,7 +9,7 @@ def update_dictionary(a_dictionary, key, value):
         value : value to add
 
     Returns:
-        Updated dictionnary
+        Updated dictionary
     """
     a_dictionary[key] = value
     return a_dictionary
