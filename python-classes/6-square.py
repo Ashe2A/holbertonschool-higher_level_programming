@@ -18,19 +18,19 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
         if (not isinstance(position[0], int))\
-            or (not isinstance(position[0], int))\
-            or (position[0] < 0) or (position[1] < 0):
-                raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        or (not isinstance(position[0], int))\
+        or (position[0] < 0) or (position[1] < 0):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        self.position = position
 
     def area(self):
-        return self.__size * self.__size
+        return self.size * self.size
 
     @property
     def size(self):
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, size):
@@ -38,26 +38,26 @@ class Square:
             raise TypeError("size must be an integer")
         if size < 0:
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.size = size
 
     def my_print(self):
-        for i in range(self.__position[1]):
+        for i in range(self.position[1]):
             print()
-        for i in range(self.__size):
-            for k in range(self.__position[0]):
+        for i in range(self.size):
+            for k in range(self.position[0]):
                     print(" ", end="")
-            for j in range(self.__size):
+            for j in range(self.size):
                 print("#", end="")
             print()
 
     @property
     def position(self):
-        return self.__position
+        return self.position
 
     @size.setter
     def position(self, position):
-        if (not isinstance(self.__position[0], int))\
-            or (not isinstance(self.__position[0], int))\
-            or (self.__position[0] < 0) or (self.__position[1] < 0):
+        if (not isinstance(self.position[0], int))\
+            or (not isinstance(self.position[0], int))\
+            or (self.position[0] < 0) or (self.position[1] < 0):
                 raise TypeError("position must be a tuple of 2 positive integers")
-        self.__position = position
+        self.position = position
