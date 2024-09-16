@@ -6,7 +6,9 @@ A class that defines any square
 
 
 class Square:
+
     """
     Empty square class
     """
-pass
+
+    pass
