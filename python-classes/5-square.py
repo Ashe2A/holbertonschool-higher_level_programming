@@ -21,7 +21,7 @@ class Square:
         self.__size = size
 
     def area(self):
-        return self.size() * self.size()
+        return self.__size * self.__size
 
     @property
     def size(self):
@@ -36,7 +36,7 @@ class Square:
         self.__size = size
 
     def my_print(self):
-        for i in range(self.size()):
-            for j in range(self.size()):
+        for i in range(self.__size):
+            for j in range(self.__size):
                 print("#", end="")
             print()
