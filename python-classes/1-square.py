@@ -11,9 +11,9 @@ class Square:
     Square class with a size
     """
 
-    size = 0
+    _size = 0
 
-    def __init__(self, __new_size):
+    def __init__(self, new_size):
         self.is_new = True
-        if __new_size is not None:
-            self.size = __new_size
+        if new_size is not None:
+            self._size = new_size
