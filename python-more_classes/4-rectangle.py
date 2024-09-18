@@ -11,7 +11,7 @@ class Rectangle:
     Rectangle class with a positive integer width and height
     and area/perimeter available.
     Width/height getter and setter included.
-    The rectangle can be printed.
+    The rectangle can be printed with a string representation.
     """
 
     def __init__(self, width=0, height=0):
@@ -62,3 +62,6 @@ class Rectangle:
 
     def print(self):
         print(Rectangle.__str__(self))
+
+    def __repr__(self):
+        Rectangle.print(self)
