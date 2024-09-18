@@ -60,4 +60,4 @@ class Rectangle:
         return string
 
     def print(self):
-        str(self)
+        print(str(self))
