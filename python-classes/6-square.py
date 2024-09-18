@@ -30,7 +30,7 @@ class Square:
 
     @property
     def size(self):
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, size):
@@ -52,12 +52,12 @@ class Square:
 
     @property
     def position(self):
-        return self.__position
+        return self.position
 
     @position.setter
     def position(self, position):
-        if (not isinstance(self.position[0], int))\
-            or (not isinstance(self.position[1], int))\
-                or (self.position[0] < 0) or (self.position[1] < 0):
+        if (not isinstance(position[0], int))\
+            or (not isinstance(position[1], int))\
+                or (position[0] < 0) or (position[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
