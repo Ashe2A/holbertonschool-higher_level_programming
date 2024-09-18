@@ -59,4 +59,4 @@ class Rectangle:
         return string
 
     def print(self):
-        print(Rectangle.str(self))
+        print(self.str(self))
