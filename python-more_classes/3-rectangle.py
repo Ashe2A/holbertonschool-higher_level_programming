@@ -47,17 +47,17 @@ class Rectangle:
     def perimeter(self):
         if (self.__width == 0) or (self.__height == 0):
             return 0
-        return (self.__width + self.__height) * 2        
+        return (self.__width + self.__height) * 2
 
     def str(self):
         string = ""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                string += "#"
-            string += "\n"
-        print(string)
+        if (self.__width != 0) and (self.__height != 0):
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    string += "#"
+                string += "\n"
+            print(string)
         return string
-
 
     def print(self):
         str(self)
