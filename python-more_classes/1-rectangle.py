@@ -8,9 +8,8 @@ A class that defines any rectangle
 class Rectangle:
 
     """
-    Rectangle class with a positive integer width and height.
-    and area available. Width/height getter and setter included.
-    The rectangle can be printed with a specified spacing position.
+    Rectangle class with a positive integer width and height
+    Width/height getter and setter included.
     """
 
     def __init__(self, width=0, height=0):
@@ -40,9 +39,3 @@ class Rectangle:
         elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-
-    def my_print(self):
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
-            print()
