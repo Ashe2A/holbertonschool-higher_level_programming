@@ -64,4 +64,4 @@ class Rectangle:
         print(Rectangle.__str__(self))
 
     def __repr__(self):
-        Rectangle.print(self)
+        return Rectangle.print(self)
