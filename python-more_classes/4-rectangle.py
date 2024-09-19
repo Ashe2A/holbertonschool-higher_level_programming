@@ -12,7 +12,6 @@ class Rectangle:
     and area/perimeter available.
     Width/height getter and setter included.
     The rectangle can be printed with a string representation.
-    Deleting the rectangle leaves a message.
     """
 
     def __init__(self, width=0, height=0):
