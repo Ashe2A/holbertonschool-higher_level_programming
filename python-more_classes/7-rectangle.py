@@ -58,13 +58,12 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
-        if (Rectangle.print_symbol != self.print_symbol):
-            Rectangle.print_symbol = self.print_symbol
+        self.print_symbol = Rectangle.print_symbol
         string = ""
         if (self.__width != 0) and (self.__height != 0):
             for i in range(self.__height):
                 for j in range(self.__width):
-                    string += "{}".format(Rectangle.print_symbol)
+                    string += "{}".format(self.print_symbol)
                 if i != self.__height - 1:
                     string += "\n"
         return string
