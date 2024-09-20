@@ -24,7 +24,7 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-        self.symbol = getattr(self, "print_symbol", Rectangle.print_symbol)
+        self.symbol = getattr(self, "self.print_symbol", Rectangle.print_symbol)
 
     @property
     def width(self):
