@@ -14,7 +14,7 @@ class Rectangle:
     The rectangle can be printed with a string representation.
     Deleting the rectangle leaves a message.
     The number of instances are counted.
-    Printed symbol can vary.
+    Printed symbol can be changed.
     """
 
     number_of_instances = 0
@@ -65,11 +65,10 @@ class Rectangle:
                     string += "{}".format(Rectangle.print_symbol)
                 if i != self.__height - 1:
                     string += "\n"
-        print(string)
         return string
 
-    def __print__(self):
-        Rectangle.__str__(self)
+    def print(self):
+        print(Rectangle.__str__(self))
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)

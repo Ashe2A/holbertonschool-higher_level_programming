@@ -63,11 +63,10 @@ class Rectangle:
                     string += "#"
                 if i != self.__height - 1:
                     string += "\n"
-        print(string)
         return string
 
-    def __print__(self):
-        Rectangle.__str__(self)
+    def print(self):
+        print(Rectangle.__str__(self))
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
