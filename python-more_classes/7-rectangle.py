@@ -64,7 +64,7 @@ class Rectangle:
             symbol = getattr(self, 'print_symbol', Rectangle.print_symbol)
             for i in range(self.__height):
                 for j in range(self.__width):
-                    string += "{}".format(self.symbol)
+                    string += "{}".format(symbol)
                 if i != self.__height - 1:
                     string += "\n"
         return string
