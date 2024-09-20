@@ -58,7 +58,6 @@ class Rectangle:
         return (self.__width + self.__height) * 2
 
     def __str__(self):
-        self.print_symbol = Rectangle.print_symbol
         string = ""
         if (self.__width != 0) and (self.__height != 0):
             symbol = getattr(self, 'print_symbol', Rectangle.print_symbol)
