@@ -24,7 +24,6 @@ class Rectangle:
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
-        self.symbol = getattr(self, "self.print_symbol", Rectangle.print_symbol)
 
     @property
     def width(self):
@@ -62,6 +61,7 @@ class Rectangle:
         self.print_symbol = Rectangle.print_symbol
         string = ""
         if (self.__width != 0) and (self.__height != 0):
+            symbol = getattr(self, 'print_symbol', Rectangle.print_symbol)
             for i in range(self.__height):
                 for j in range(self.__width):
                     string += "{}".format(self.symbol)
