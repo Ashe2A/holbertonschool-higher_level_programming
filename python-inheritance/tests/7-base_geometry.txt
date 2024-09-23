@@ -1,0 +1,12 @@
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+test_geo = BaseGeometry()
+
+test_geo.integer_validator("my_int", 12)
+test_geo.integer_validator("width", 89)
+
+test_geo.integer_validator("name", "John")
+
+test_geo.integer_validator("age", 0)
+
+test_geo.integer_validator("age", 0)
