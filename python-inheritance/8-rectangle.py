@@ -12,10 +12,11 @@ class Rectangle(BaseGeometry):
     Rectangle inherits BaseGeometry
     """
 
-    def __init__(self, width=0, height=0):
-
-        self.__width = super().integer_validator("width", width)
-        self.__height = super().integer_validator("height", height)
+    def __init__(self, width, height):
+        super().integer_validator("width", width)
+        self.__width = width
+        super().integer_validator("height", height)
+        self.__height = height
 
     def area(self):
         return self.__width * self.__height
