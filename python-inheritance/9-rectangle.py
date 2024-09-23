@@ -9,7 +9,8 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """
-    Rectangle inherits BaseGeometry.
+    Rectangle inherits BaseGeometry
+    with an area method
     Printable.
     """
 
@@ -30,4 +31,4 @@ class Rectangle(BaseGeometry):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
 
     def print(self):
-        print(Rectangle.__str__(self))
+        print(str(self))
