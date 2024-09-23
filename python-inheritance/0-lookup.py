@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+Lookup.   
+"""
+
+
 def lookup(obj):
     """
     Available attributes and methods of an object.
