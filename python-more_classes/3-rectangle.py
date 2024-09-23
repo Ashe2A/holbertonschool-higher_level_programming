@@ -59,6 +59,3 @@ class Rectangle:
                 if i != self.__height - 1:
                     string += "\n"
         return string
-
-    def print(self):
-        print(Rectangle.__str__(self))
