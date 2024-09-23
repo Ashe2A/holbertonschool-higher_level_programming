@@ -4,6 +4,7 @@
 A class that defines any rectangle
 """
 
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -25,10 +26,20 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
+        """
+        Area of the rectangle.
+        """
+
         return self.__width * self.__height
 
     def __str__(self):
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
+        """
+        Rectangle data.
+        """
+        return "[{}] {}/{}".format(str(self.__class__.__name__), self.__width, self.__height)
 
     def print(self):
+        """
+        Print the rectangle data.
+        """
         print(str(self))
