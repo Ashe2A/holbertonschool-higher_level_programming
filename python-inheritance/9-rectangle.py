@@ -38,4 +38,3 @@ class Rectangle(BaseGeometry):
         """
         return "[{}] {}/{}".format(str(self.__class__.__name__),
                                    self.__width, self.__height)
-
