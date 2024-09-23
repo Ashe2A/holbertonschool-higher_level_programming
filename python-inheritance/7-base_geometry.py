@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A class that defines any geometric object with an abstract area
+A class that defines any geometric object
 """
 
 
@@ -9,6 +9,8 @@ class BaseGeometry:
 
     """
     Improved geometry class
+    with an abstract area
+    and an integer value validator
     """
 
     def area(self):
@@ -17,5 +19,5 @@ class BaseGeometry:
     def integer_validator(self, name, value):
         if not isinstance(int, value):
             raise TypeError("{} must be an integer".format(name))
-        if not isinstance(int, value):
+        if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))

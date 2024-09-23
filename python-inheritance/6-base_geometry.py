@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-A class that defines any geometric object with an abstract area
+A class that defines any geometric object
 """
 
 
@@ -9,6 +9,7 @@ class BaseGeometry:
 
     """
     Improved geometry class
+    with an abstract area
     """
 
     def area(self):
