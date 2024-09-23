@@ -12,4 +12,7 @@ class MyList(list):
     """
 
     def print_sorted(self):
+        """
+        Sort my string and print.
+        """
         print(sorted(self))
