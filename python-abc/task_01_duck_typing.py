@@ -28,13 +28,6 @@ class Shape(ABC):
         """
 
         raise Exception("perimeter() is not implemented")
-    
-    def shape_info(self):
-        """
-        Displays infos on the Shape
-        """
-        print(f"Area: {self.area()}")
-        print(f"Perimeter: {self.perimeter()}")
 
 
 class Circle(Shape):
@@ -50,13 +43,25 @@ class Circle(Shape):
     def area(self):
         """
         Circle's area
+
+        Parameters:
+            self: the Circle
+
+        Returns:
+            Area of the Circle
         """
 
         return Circle.pi * (self.__radius ** 2)
 
     def perimeter(self):
         """
-        Circle's perimeter
+        Circle's circumference
+
+        Parameters:
+            self: the Circle
+
+        Returns:
+            Circumference of the Circle
         """
 
         return 2 * Circle.pi * self.__radius
@@ -74,6 +79,12 @@ class Rectangle(Shape):
     def area(self):
         """
         Rectangle's area
+
+        Parameters:
+            self: the Rectangle
+
+        Returns:
+            Area of the Rectangle
         """
 
         return self.__width * self.__height
@@ -81,7 +92,22 @@ class Rectangle(Shape):
     def perimeter(self):
         """
         Rectangle's perimeter
+
+        Parameters:
+            self: the Rectangle
+
+        Returns:
+            Perimeter of the Rectangle
         """
 
         return 2 * (self.__width + self.__height)
 
+def shape_info(shape):
+    """
+    Displays infos on the Shape
+
+    Parameters:
+        shape: the shape
+    """
+    print(f"Area: {shape.area()}")
+    print(f"Perimeter: {shape.perimeter()}")
