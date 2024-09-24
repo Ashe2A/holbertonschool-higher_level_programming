@@ -28,6 +28,10 @@ class Shape(ABC):
         """
 
         raise Exception("perimeter() is not implemented")
+    
+    def shape_info(self):
+        print(f"Area: {self.area()}")
+        print(f"Perimeter: {self.perimeter()}")
 
 
 class Circle(Shape):
@@ -78,7 +82,3 @@ class Rectangle(Shape):
 
         return 2 * (self.__width + self.__height)
 
-
-def shape_info(self):
-    print(f"Area: {self.area()}")
-    print(f"Perimeter: {self.perimeter()}")
