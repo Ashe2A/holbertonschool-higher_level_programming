@@ -37,7 +37,7 @@ class Circle(Shape):
 
     pi = math.pi
 
-    def __init__(self, radius=0):
+    def __init__(self, radius):
         self.__radius = radius
 
     def area(self):
@@ -72,7 +72,7 @@ class Rectangle(Shape):
     Rectangle class
     """
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         self.__width = width
         self.__height = height
 
