@@ -7,6 +7,7 @@ Animal classes
 
 from abc import ABC, abstractmethod
 
+
 class Animal(ABC):
     """
     Animal abstract class
@@ -20,6 +21,7 @@ class Animal(ABC):
 
         raise Exception("sound() is not implemented")
 
+
 class Dog(Animal):
     """
     Dog class
@@ -31,7 +33,8 @@ class Dog(Animal):
         """
 
         return "Bark"
-    
+
+
 class Cat(Animal):
     """
     Cat class

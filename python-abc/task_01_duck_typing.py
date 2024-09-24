@@ -6,6 +6,8 @@ Shape classes
 
 
 from abc import ABC, abstractmethod
+import math
+
 
 class Shape(ABC):
     """
@@ -19,7 +21,7 @@ class Shape(ABC):
         """
 
         raise Exception("area() is not implemented")
-    
+
     @abstractmethod
     def perimeter(self):
         """
@@ -28,7 +30,6 @@ class Shape(ABC):
 
         raise Exception("perimeter() is not implemented")
 
-import math
 
 class Circle(Shape):
     """
@@ -54,6 +55,7 @@ class Circle(Shape):
 
         return 2 * Circle.pi * self.__radius
 
+
 class Rectangle(Shape):
     """
     Rectangle class
@@ -77,6 +79,7 @@ class Rectangle(Shape):
 
         return 2 * (self.__width + self.__height)
 
+
 def shape_info(self):
-        print(f"Area: {self.area()}")
-        print(f"Perimeter: {self.perimeter()}")
+    print(f"Area: {self.area()}")
+    print(f"Perimeter: {self.perimeter()}")
