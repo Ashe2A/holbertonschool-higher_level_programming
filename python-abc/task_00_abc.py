@@ -15,7 +15,7 @@ class Animal(ABC):
     @abstractmethod
     def sound(self):
         """
-        Animal sound abstract method
+        Animal's sound
         """
 
         raise Exception("sound() is not implemented")
