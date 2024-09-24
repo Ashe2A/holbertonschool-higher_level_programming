@@ -30,6 +30,9 @@ class Shape(ABC):
         raise Exception("perimeter() is not implemented")
     
     def shape_info(self):
+        """
+        Displays infos on the Shape
+        """
         print(f"Area: {self.area()}")
         print(f"Perimeter: {self.perimeter()}")
 
