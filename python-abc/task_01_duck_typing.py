@@ -100,8 +100,6 @@ class Rectangle(Shape):
             Perimeter of the Rectangle
         """
 
-        if (self.__width == 0) or (self.__height == 0):
-            return 0
         return 2 * (self.__width + self.__height)
 
 
@@ -112,5 +110,6 @@ def shape_info(shape):
     Parameters:
         shape: the shape
     """
+
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
