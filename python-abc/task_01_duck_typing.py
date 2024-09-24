@@ -19,7 +19,7 @@ class Shape(ABC):
         Shape's area
         """
 
-        raise Exception("area() is not implemented")
+        pass
 
     @abstractmethod
     def perimeter(self):
@@ -27,7 +27,7 @@ class Shape(ABC):
         Shape's perimeter
         """
 
-        raise Exception("perimeter() is not implemented")
+        pass
 
 
 class Circle(Shape):
