@@ -102,6 +102,7 @@ class Rectangle(Shape):
 
         return 2 * (self.__width + self.__height)
 
+
 def shape_info(shape):
     """
     Displays infos on the Shape
