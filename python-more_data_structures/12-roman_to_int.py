@@ -6,27 +6,27 @@ def roman_to_int(roman_string):
             if (roman_string[i] == "M"):
                 res += 1000
                 if (roman_string[i - 1] == "C"):
-                    res -= 100
+                    res -= 200
             elif (roman_string[i] == "D"):
                 res += 500
                 if (roman_string[i - 1] == "C"):
-                    res -= 100
+                    res -= 200
             elif (roman_string[i] == "C"):
                 res += 100
                 if (roman_string[i - 1] == "X"):
-                    res -= 10
+                    res -= 20
             elif (roman_string[i] == "L"):
                 res += 50
                 if (roman_string[i - 1] == "X"):
-                    res -= 10
+                    res -= 20
             elif (roman_string[i] == "X"):
                 res += 10
                 if (roman_string[i - 1] == "I"):
-                    res -= 1
+                    res -= 2
             elif (roman_string[i] == "V"):
                 res += 5
                 if (roman_string[i - 1] == "I"):
-                    res -= 1
+                    res -= 2
             elif (roman_string[i] == "I"):
                 res += 1
         return res
