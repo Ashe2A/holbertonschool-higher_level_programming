@@ -2,7 +2,7 @@
 
 def safe_print_integer(value):
     """
-    Safe print integer.
+    Integer's safe printing.
     """
 
     try:
