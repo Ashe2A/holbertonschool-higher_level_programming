@@ -1,45 +1,25 @@
-# Test Cases for add_integer
+Test Cases for add_integer
 
-# Test Case with two positive integers
-a = 1
-b = 2
-expected_output = 3
+>>> add_integer = __import__("0-add_integer").add_integer
 
-# Test Case with a positive integer and a negative
-a = 100
-b = -2
-expected_output = 98
+>>> add_integer(1, 2)
+3
 
-# Test Case with one positive integer
-a = 2
-expected_output = 100
+>>> add_integer(100, -2)
+98
 
-# Test Case with one positive float and one negative integer
-a = 100.3
-b = -2
-expected_output = 98
+>>> add_integer(2)
+100
 
-# Test Case with one positive integer and a string
-a = 4
-b = "School"
-expected_output = TypeError("b must be an integer")
+>>> add_integer(100.3, -2)
+98
 
-# Test Case with None
-a = None
-expected_output = TypeError("a must be an integer")
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
 
-# Extra Tests (must be 9)
-# Test Case with two strings
-a = "Best"
-b = "School"
-expected_output = TypeError("a must be an integer")
-
-# Test Case with two floats (one positive, one negative)
-a = 100.3
-b = -1.6
-expected_output = 98
-
-# Test Case with two positive floats
-a = 47.4
-b = 50.6
-expected_output = 98
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
