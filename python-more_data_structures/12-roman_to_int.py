@@ -1,34 +1,34 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     res = 0
-    if not ((roman_string is None) or (roman_string is not str)):
+    if not (roman_string is None) and isinstance(roman_string, str):
         for i in roman_string:
-            if (i == 'M'):
+            if (i is "M"):
                 res += 1000
-                if (i - 1 == 'C'):
+                if (i - 1 is "C"):
                     res -= 100
-            if (i == 'D'):
+            if (i is "D"):
                 res += 500
-                if (i - 1 == 'C'):
+                if (i - 1 is "C"):
                     res -= 100
-            if (i == 'C'):
+            if (i is "C"):
                 res += 100
-                if (i - 1 == 'X'):
+                if (i - 1 is "X"):
                     res -= 10
-            if (i == 'L'):
+            if (i is "L"):
                 res += 50
-                if (i - 1 == 'X'):
+                if (i - 1 is "X"):
                     res -= 10
-            if (i == 'X'):
+            if (i is "X"):
                 res += 10
-                if (i - 1 == 'I'):
+                if (i - 1 is "I"):
                     res -= 1
-            if (i == 'V'):
+            if (i is "V"):
                 res += 5
-                if (i - 1 == 'I'):
+                if (i - 1 is "I"):
                     res -= 1
-            if (i == 'I'):
+            if (i is "I"):
                 res += 1
         return res
-    return 0
-
+    else:
+        return 0
