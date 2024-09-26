@@ -22,23 +22,24 @@ expected_output = 98
 # Test Case with one positive integer and a string
 a = 4
 b = "School"
-expected_output = b must be an integer
+expected_output = TypeError("b must be an integer")
 
 # Test Case with None
 a = None
-expected_output = a must be an integer
+expected_output = TypeError("a must be an integer")
 
-# Test Case with one positive integer and b as None
-a = 4
-b = None
-expected_output = b must be an integer
-
-# Test Case with a string and a negative float
+# Extra Tests (must be 9)
+# Test Case with two strings
 a = "Best"
-b = -98.7
-expected_output = a must be an integer
+b = "School"
+expected_output = TypeError("a must be an integer")
 
-# Test Case with two negative floats
-a = -1.6
-b = -98.7
-expected_output = -100.3
+# Test Case with two floats (one positive, one negative)
+a = 100.3
+b = -1.6
+expected_output = 98
+
+# Test Case with two positive floats
+a = 47.4
+b = 50.6
+expected_output = 98
