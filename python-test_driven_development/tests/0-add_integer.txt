@@ -2,29 +2,35 @@ Test Cases for add_integer
 
 >>> add_integer = __import__("0-add_integer").add_integer
 
+# Positives
 >>> add_integer(1, 2)
 3
 
+# Positive and negative
 >>> add_integer(100, -2)
 98
 
+# Int with 98 (default b) 
 >>> add_integer(2)
 100
 
+# Float with negative int
 >>> add_integer(100.3, -2)
 98
 
+# Integer with string
 >>> add_integer(4, "School")
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
 
+# Adding None to 98
 >>> add_integer(None)
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
-# NaN float edge case
+# Not a number edge case
 >>> add_integer(float('NaN'))
 Traceback (most recent call last):
 ...
