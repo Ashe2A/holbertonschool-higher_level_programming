@@ -37,7 +37,11 @@ class Circle(Shape):
 
     pi = math.pi
 
-    def __init__(self, radius):
+    def __init__(self, radius=0):
+        if not isinstance(radius, int):
+            raise TypeError("Radius must be an integer")
+        if radius < 0:
+            raise ValueError("Radius must be positive or zero")
         self.__radius = radius
 
     def area(self):
@@ -72,7 +76,11 @@ class Rectangle(Shape):
     Rectangle class
     """
 
-    def __init__(self, width, height):
+    def __init__(self, width=0, height=0):
+        if (not isinstance(width, int)) or (not isinstance(height, int)):
+            raise TypeError("Dimensions must be integers")
+        if (height < 0) or (width < 0):
+            raise ValueError("Dimensions must be positive or zero")
         self.__width = width
         self.__height = height
 
@@ -100,6 +108,8 @@ class Rectangle(Shape):
             Perimeter of the Rectangle
         """
 
+        if (self.__width == 0) or (self.__height == 0):
+            return 0
         return 2 * (self.__width + self.__height)
 
 
