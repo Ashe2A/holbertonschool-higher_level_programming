@@ -2,32 +2,32 @@
 def roman_to_int(roman_string):
     res = 0
     if (not (roman_string is None)) and isinstance(roman_string, str):
-        for i in roman_string:
-            if (i == "M"):
+        for i in range(roman_string):
+            if (roman_string[i] == "M"):
                 res += 1000
-                if (i - 1 == "C"):
+                if (roman_string[i - 1] == "C"):
                     res -= 100
-            if (i == "D"):
+            if (roman_string[i] == "D"):
                 res += 500
-                if (i - 1 == "C"):
+                if (roman_string[i - 1] == "C"):
                     res -= 100
-            if (i == "C"):
+            if (roman_string[i] == "C"):
                 res += 100
-                if (i - 1 == "X"):
+                if (roman_string[i - 1] == "X"):
                     res -= 10
-            if (i == "L"):
+            if (roman_string[i] == "L"):
                 res += 50
-                if (i - 1 == "X"):
+                if (roman_string[i - 1] == "X"):
                     res -= 10
-            if (i == "X"):
+            if (roman_string[i] == "X"):
                 res += 10
-                if (i - 1 == "I"):
+                if (roman_string[i - 1] == "I"):
                     res -= 1
-            if (i == "V"):
+            if (roman_string[i] == "V"):
                 res += 5
-                if (i - 1 == "I"):
+                if (roman_string[i - 1] == "I"):
                     res -= 1
-            if (i == "I"):
+            if (roman_string[i] == "I"):
                 res += 1
         return res
     else:
