@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     res = 0
     if (not (roman_string is None)) and isinstance(roman_string, str):
-        for i in range(len(roman_string)):
+        for i in range(len(roman_string) + 1):
             if (roman_string[i] == "M"):
                 res += 1000
                 if (roman_string[i - 1] == "C"):
