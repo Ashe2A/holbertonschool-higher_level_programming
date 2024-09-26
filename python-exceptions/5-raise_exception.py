@@ -2,7 +2,7 @@
 
 def raise_exception():
     """
-    Raises TypeError.
+    Raises a type exception.
     """
 
-    raise TypeError("")
+    raise TypeError()
