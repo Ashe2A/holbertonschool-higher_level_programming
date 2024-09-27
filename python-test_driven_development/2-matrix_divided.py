@@ -21,7 +21,7 @@ def matrix_divided(matrix, div):
 
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    
+
     new_matrix = []
     for i in range(len(matrix)):
         new_matrix.append([])
