@@ -44,18 +44,28 @@ Test Cases for matrix_divided
 
 # Matrix with strings
 >>> matrix = [
-    [1, "2", 3, "4"],
-    [5, "6", 7]
+    [1, "2", 3],
+    ["5", 6, "7"]
 ]
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
-# Uneven matrix
+# Uneven matrix (long + short)
+>>> matrix = [
+    [1, 2, 3, 5],
+    [4, 5, 6]
+]
+>>> matrix_divided(matrix, -4)
+Traceback (most recent call last):
+    ...
+TypeError: Each row of the matrix must have the same size
+
+# Uneven matrix (short + long)
 >>> matrix = [
     [1, 2, 3],
-    [4, 5, 6]
+    [4, 5, 6, 7]
 ]
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
