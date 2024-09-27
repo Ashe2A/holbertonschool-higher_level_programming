@@ -26,3 +26,10 @@ Test Cases for matrix_divided
 >>> matrix = [[1.5, -2.4, 3.6], [-4.2, 5.4, -6.3]]
 >>> matrix_divided(matrix, 3)
 [[0.5, -0.8, 1.2], [-1.4, 1.8, -2.1]]
+
+# Matrix contains strings
+>>> matrix = [[1, "2", 3], ["5", 6, "7"]]
+>>> matrix_divided(matrix, -4)
+Traceback (most recent call last):
+    ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
