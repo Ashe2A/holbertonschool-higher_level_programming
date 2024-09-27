@@ -28,7 +28,7 @@ Test Cases for matrix_divided
 [[0.5, -0.8, 1.2], [-1.4, 1.8, -2.1]]
 
 # Matrix contains strings
->>> matrix = [[1, "2", 3], ["5", 6, "7"]]
+>>> matrix = "matrix"
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
     ...
