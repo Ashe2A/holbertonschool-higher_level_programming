@@ -3,123 +3,95 @@ Test Cases for matrix_divided
 >>> matrix_divided = __import__("2-matrix_divided").matrix_divided
 
 # Classic matrix (positives)
->>> matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> matrix_divided(matrix, 3)
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 # Positives and negatives
->>> matrix = [
-    [1, -2, 3],
-    [-4, 5, -6]
-]
+>>> matrix = [[1, -2, 3], [-4, 5, -6]]
 >>> matrix_divided(matrix, 2)
 [[0.5, -1.0, 1.5], [-2.0, 2.5, -3.0]]
 
 # Positives and negatives, divided by negative
->>> matrix = [
-    [1, -2, 3],
-    [-4, 5, -6]
-]
+>>> matrix = [[1, -2, 3], [-4, 5, -6]]
 >>> matrix_divided(matrix, -4)
 [[-0.25, 0.5, -0.75], [1.0, -1.25, 1.5]]
 
 # Positives and negatives, divided by float
->>> matrix = [
-    [1, -2, 3],
-    [-4, 5, -6]
-]
+>>> matrix = [[1, -2, 3], [-4, 5, -6]]
 >>> matrix_divided(matrix, -2.5)
 [[-0.4, 0.8, -1.2], [1.6, -2.0, 2.4]]
 
 # Matrix contains floats
->>> matrix = [
-    [1.5, -2.4, 3.6],
-    [-4.2, 5.4, -6.3]
-]
+>>> matrix = [[1.5, -2.4, 3.6], [-4.2, 5.4, -6.3]]
 >>> matrix_divided(matrix, 3)
 [[0.5, -0.8, 1.2], [-1.4, 1.8, 2.7]]
 
 # Matrix with strings
->>> matrix = [
-    [1, "2", 3],
-    ["5", 6, "7"]
-]
+>>> matrix = [[1, "2", 3], ["5", 6, "7"]]
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
     ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 # Uneven matrix (long + short)
->>> matrix = [
-    [1, 2, 3, 5],
-    [4, 5, 6]
-]
+>>> matrix = [[1, 2, 3, 5], [4, 5, 6]]
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
     ...
 TypeError: Each row of the matrix must have the same size
 
 # Uneven matrix (short + long)
->>> matrix = [
-    [1, 2, 3],
-    [4, 5, 6, 7]
-]
+>>> matrix = [[1, 2, 3], [4, 5, 6, 7]]
 >>> matrix_divided(matrix, -4)
 Traceback (most recent call last):
     ...
 TypeError: Each row of the matrix must have the same size
 
 # Divide by a string
->>> matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> matrix_divided(matrix, "car")
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
 
 # Divide by zero
->>> matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> matrix_divided(matrix, 0)
 Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
 
 # Not a number edge case (divide)
->>> matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
 >>> matrix_divided(matrix, 'NaN')
 [['NaN', 'NaN', 'NaN'], ['NaN', 'NaN', 'NaN']]
 
 # Not a number edge case (matrix)
->>> matrix = [
-    [1, 'NaN', 3],
-    ['NaN', 5, 'NaN']
-]
+>>> matrix = [[1, 'NaN', 3], ['NaN', 5, 'NaN']]
 >>> matrix_divided(matrix, 1)
 [[1.0, 'NaN', 3.0], ['NaN', 5.0, 'NaN']]
 
 # Infinity edge case (divide)
->>> matrix = [
-    [1, -2, 3],
-    [-4, 5, -6]
-]
+>>> matrix = [[1, -2, 3], [-4, 5, -6]]
 >>> matrix_divided(matrix, 'inf')
 [[0.0, -0.0, 0.0], [-0.0, 0.0, -0.0]]
 
 # Infinity edge case (matrix)
->>> matrix = [
-    ['inf', -2, 3],
-    [-'inf', 'inf', -'inf']
-]
+>>> matrix = [['inf', -2, 3], [-'inf', 'inf', -'inf']]
 >>> matrix_divided(matrix, 2)
 [['inf', -1.0, 1.5], [-'inf', 'inf', -'inf']]
+
+# Missing mandatory argument div
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix)
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+# Missing all mandatory arguments
+>>> matrix = [[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided()
+Traceback (most recent call last):
+...
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
