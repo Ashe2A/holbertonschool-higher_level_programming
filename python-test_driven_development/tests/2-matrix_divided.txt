@@ -11,3 +11,8 @@ Test Cases for matrix_divided
 >>> matrix = [[1, -2, 3], [-4, 5, -6]]
 >>> matrix_divided(matrix, 2)
 [[0.5, -1.0, 1.5], [-2.0, 2.5, -3.0]]
+
+# Positives and negatives, divided by negative
+>>> matrix = [[1, -2, 3], [-4, 5, -6]]
+>>> matrix_divided(matrix, -4)
+[[-0.25, 0.5, -0.75], [1.0, -1.25, 1.5]]
