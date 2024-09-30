@@ -13,4 +13,4 @@ for i in sys.argv:
     args.append(i)
 
 with open("add_item.json", 'w', encoding="utf-8") as file:
-    file.write(args)
+    file.write(str(args))
