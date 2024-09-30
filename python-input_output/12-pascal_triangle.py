@@ -17,7 +17,7 @@ def pascal_triangle(n):
             triangle.append([])
             for j in range(i):
                 if 0 < j < i:
-                    app = triangle[i - 1][j - 1] + triangle[i - 1][j]
+                    app = triangle[i - 2][j - 2] + triangle[i - 2][j - 2]
                     triangle[i].append(app)
                 else:
                     triangle[i].append(1)
