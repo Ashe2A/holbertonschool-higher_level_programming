@@ -5,14 +5,14 @@
 
 def matrix_divided(matrix, div):
     """ Divide matrix """
-    if not isinstance(matrix, (list)):
-        raise TypeError("matrix must be a matrix (list of lists)\
-                        of integers/floats")
-    elif not isinstance(matrix[i], (list)):
+    if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists)\
                         of integers/floats")
     else:
         for i in range(len(matrix)):
+            if not isinstance(matrix[i], list):
+                raise TypeError("matrix must be a matrix (list of lists)\
+                        of integers/floats")
             for j in range(len(matrix[i])):
                 if not (isinstance(matrix[i][j], (int, float))):
                     raise TypeError("matrix must be a matrix (list of lists)\
