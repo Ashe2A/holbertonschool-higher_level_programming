@@ -14,6 +14,6 @@ for i in sys.argv:
 args.pop(0)
 
 filename = "add_item.json"
-append_json = load_from_json_file(filename)
-append_json.append(args)
-save_to_json_file(append_json, filename)
+extend_json = load_from_json_file(filename)
+extend_json.extend(args)
+save_to_json_file(extend_json, filename)
