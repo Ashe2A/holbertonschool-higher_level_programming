@@ -11,7 +11,7 @@ import sys
 args = []
 for i in sys.argv:
     args.append(i)
-
+args.pop(0)
 
 save_to_json_file(args, "add_item.json")
 load_from_json_file("add_item.json")
