@@ -9,11 +9,5 @@ def read_file(filename=""):
     """
     Reading the file.
     """
-    with open(filename, encoding="utf-8") as file:
-        try:
-            read_data = file.read()
-        except FileNotFoundError:
-            print("file doesn't exist")
-        except PermissionError:
-            print("file permission")
-        print(read_data)
+    with open(filename, 'r', encoding="utf-8") as file:
+        print(file.read(), end="")
