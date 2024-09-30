@@ -14,10 +14,10 @@ def load_from_json_file(filename):
     Parameters:
         my_obj: object.
         filename (string): the file to convert.
-    
+
     Return:
         The object from the JSON file
     """
 
     with open(filename, 'r', encoding="utf-8") as file:
-        json.loads(file.read())
+        return json.loads(file.read())
