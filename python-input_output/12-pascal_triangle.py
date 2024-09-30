@@ -11,14 +11,14 @@ def pascal_triangle(n):
         n: size.
     """
 
-    triangle = []
+    ptri = []
     if n > 0:
         for i in range(n):
-            triangle.append([])
-            for j in range(i):
+            ptri.append([])
+            for j in range(i + 1):
                 if 0 < j < i:
-                    app = triangle[i - 2][j - 2] + triangle[i - 2][j - 2]
-                    triangle[i].append(app)
+                    app = ((ptri[i - 1])[j - 1]) + ((ptri[i - 1])[j])
+                    ptri[i].append(app)
                 else:
-                    triangle[i].append(1)
-    return triangle
+                    ptri[i].append(1)
+    return ptri
