@@ -6,6 +6,9 @@ Read file.
 
 
 def read_file(filename=""):
+    """
+    Reading the file.
+    """
     with open(filename, encoding="utf-8") as file:
         try:
             read_data = file.read()
