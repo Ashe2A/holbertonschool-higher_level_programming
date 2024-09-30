@@ -14,6 +14,9 @@ for i in sys.argv:
 args.pop(0)
 
 filename = "add_item.json"
-extend_json = load_from_json_file(filename)
+try:
+    extend_json = load_from_json_file(filename)
+except FileNotFoundError:
+    extend_json = []
 extend_json.extend(args)
 save_to_json_file(extend_json, filename)
