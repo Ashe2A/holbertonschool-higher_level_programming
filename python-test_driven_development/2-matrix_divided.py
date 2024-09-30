@@ -1,16 +1,21 @@
 #!/usr/bin/python3
 
-""" Tests function to divide matrix integers with exceptions """
-
+"""
+Tests function to divide matrix integers with exceptions
+"""
 
 def matrix_divided(matrix, div):
-    """ Divide matrix """
-    if not isinstance(matrix, list):
+    """
+    Divide matrix
+    """
+
+    if (not isinstance(matrix, list)) or isinstance(matrix, str):
         raise TypeError("matrix must be a matrix (list of lists)\
                         of integers/floats")
     else:
         for i in range(len(matrix)):
-            if not isinstance(matrix[i], list):
+            if (not isinstance(matrix[i], list))\
+                or isinstance(matrix[i], str):
                 raise TypeError("matrix must be a matrix (list of lists)\
                         of integers/floats")
             for j in range(len(matrix[i])):
