@@ -12,4 +12,6 @@ def from_json_string(my_str):
     Returning the object with JSON info.
     """
 
-    return json.loads(my_str)
+    ret = json.loads(my_str)
+    ret.replace("\'", "\"")
+    return ret
