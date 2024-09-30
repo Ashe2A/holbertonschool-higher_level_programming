@@ -1,11 +1,7 @@
 #!/usr/bin/python3
-
 """
 Pascal triangle.
 """
-
-import json
-
 
 def pascal_triangle(n):
     """
@@ -14,7 +10,6 @@ def pascal_triangle(n):
     Parameters:
         n: size.
     """
-
 
     triangle = []
     if n <= 0:
