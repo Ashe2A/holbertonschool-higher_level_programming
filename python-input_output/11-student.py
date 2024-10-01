@@ -26,5 +26,6 @@ class Student:
             return self.__dict__
 
     def reload_from_json(self, json):
-        if isinstance(json, list):
-            self.__dict__ = json
+        for i in json:
+            if isinstance(i, str) and hasattr(self, i):
+                self.__dict__[i] = json[i]
