@@ -26,9 +26,9 @@ class CustomObject:
         Display of object's data.
         """
 
-        print("Name: {}".format(self.__name))
-        print("Age: {}".format(self.__age))
-        print("Is Student: {}".format(self.__is_student))
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
 
     def serialize(self, filename):
         """
