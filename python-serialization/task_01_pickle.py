@@ -36,7 +36,7 @@ class CustomObject:
         """
         try:
             with open(filename, 'wb') as file:
-                pickle.dump(self.__dict__, file)
+                pickle.dump(self, file)
         except Exception as e:
             print("Error:", e)
 
