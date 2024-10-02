@@ -48,12 +48,12 @@ class CustomObject:
 
         try:
             with open(filename, 'rb') as file:
-                return loaded_file = pickle.load(file)
+                return pickle.load(file)
         except FileNotFoundError:
-            print("File not found.")
+            print("Error : file not found.")
             return None
         except UnpicklingError:
-            print("Pickle doesn't work.")
+            print("Unpickling error.")
             return None
         except Exception as e:
             print("Error:", e)
