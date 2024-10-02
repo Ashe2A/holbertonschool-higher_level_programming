@@ -49,7 +49,7 @@ class CustomObject:
         else:
             with open(filename, 'rb') as file:
                 loaded_file = pickle.load(file)
-                cls_name = "_{}__name__".format(cls.__name__)
+                cls_name = "_{}".format(cls.__name__)
                 return cls(loaded_file.get(cls_name + "__name", ""),
                            loaded_file.get(cls_name + "__age", 0),
                            loaded_file.get(cls_name + "__is_student", True))
