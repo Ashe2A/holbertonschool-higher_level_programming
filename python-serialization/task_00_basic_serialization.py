@@ -4,12 +4,15 @@ Basic serialization.
 """
 
 import json
+import os
 
 
 def serialize_and_save_to_file(data, filename):
     """
     Serialization.
     """
+    if os.path.exists(filename):
+        os.remove(filename)
     with open(filename, 'w') as file:
         json.dumps(data, file)
 
