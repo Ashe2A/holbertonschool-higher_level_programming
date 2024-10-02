@@ -4,12 +4,15 @@ Basic serialization.
 """
 
 import pickle
+import os
 
 
 def serialize_and_save_to_file(data, filename):
     """
     Serialization.
     """
+    if os.path.exists(filename):
+        os.remove
     with open(filename, 'w') as file:
         pickle.dump(data, file)
 
