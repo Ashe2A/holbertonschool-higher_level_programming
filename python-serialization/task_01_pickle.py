@@ -13,13 +13,13 @@ def serialize_and_save_to_file(data, filename):
     """
     if os.path.exists(filename):
         os.remove(filename)
-    with open(filename, 'w') as file:
-        pickle.dumps(data, file)
+    with open(filename, 'wb') as file:
+        pickle.dump(data, file)
 
 
 def load_and_deserialize(filename):
     """
     Deserialization with pickle.
     """
-    with open(filename, 'r') as file:
-        return pickle.loads(file)
+    with open(filename, 'rb') as file:
+        return pickle.load(file)
