@@ -9,4 +9,4 @@ def serialize_and_save_to_file(data, filename):
 def load_and_deserialize(filename):
     with open(filename, 'rb') as file:
         loaded_file = pickle.load(file)
-    return loaded_file.__dict__
+    return loaded_file
