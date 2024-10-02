@@ -49,7 +49,7 @@ class CustomObject:
         try:
             with open(filename, 'rb') as file:
                 unpickle = pickle.load(file)
-                cls_name = "_" + cls.__name__
+                cls_name = "_{}".format(cls.__name__)
                 name = unpickle.get(cls_name + "__name", "")
                 age = unpickle.get(cls_name + "__age", 0)
                 is_student = unpickle.get(cls_name + "__is_student", False)
