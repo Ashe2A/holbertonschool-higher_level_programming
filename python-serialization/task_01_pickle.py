@@ -44,4 +44,6 @@ class CustomObject:
         """
 
         with open(filename, 'rb') as file:
-            return cls(pickle.load(file))
+            return cls(getattr(pickle.load(file), "name"),
+                       getattr(pickle.load(file), "age"),
+                       getattr(pickle.load(file), "is_student"))
