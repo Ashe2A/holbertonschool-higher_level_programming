@@ -4,6 +4,7 @@ Pickle serialization.
 """
 
 import pickle
+from pickle import UnpicklingError
 
 
 class CustomObject:
@@ -47,17 +48,13 @@ class CustomObject:
 
         try:
             with open(filename, 'rb') as file:
-                loaded_file = pickle.load(file)
+                return loaded_file = pickle.load(file)
         except FileNotFoundError:
             print("File not found.")
             return None
-        except pickle.UnpicklingError:
+        except UnpicklingError:
             print("Pickle doesn't work.")
             return None
         except Exception as e:
             print("Error:", e)
             return None
-        cls_name = "_{}".format(cls.__name__)
-        return cls(loaded_file.get(cls_name + "__name", ""),
-                   loaded_file.get(cls_name + "__age", 0),
-                   loaded_file.get(cls_name + "__is_student", True))
