@@ -4,6 +4,7 @@ Pickle serialization.
 """
 
 import pickle
+import os
 
 
 class CustomObject:
@@ -34,7 +35,7 @@ class CustomObject:
         Pickle Serialization.
         """
 
-        with open(filename, 'w') as file:
+        with open(filename, 'wb') as file:
             pickle.dump(self.__dict__, file)
 
     @classmethod
@@ -43,7 +44,11 @@ class CustomObject:
         Pickle Deserialization.
         """
 
-        with open(filename, 'r') as file:
-            return cls(getattr(pickle.load(file), "name"),
-                       getattr(pickle.load(file), "age"),
-                       getattr(pickle.load(file), "is_student"))
+        if not os.path.exists(filename):
+            return None
+        else:
+            with open(filename, 'rb') as file:
+                loaded_file = getattr(pickle.load(file))
+                return cls(loaded_file, "name"),\
+                        getattr(loaded_file, "age"),\
+                        getattr(loaded_file, "is_student")
