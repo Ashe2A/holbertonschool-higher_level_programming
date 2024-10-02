@@ -12,7 +12,7 @@ class CustomObject:
     Custom object.
     """
 
-    def __init__(self, name="", age=0, is_student=False):
+    def __init__(self, name, age, is_student):
         """
         Create the custom object.
         """
@@ -36,7 +36,7 @@ class CustomObject:
         """
         try:
             with open(filename, 'wb') as file:
-                pickle.dump(self, file)
+                pickle.dump(self.__dict__, file)
         except Exception as e:
             print("Error:", e)
 
