@@ -7,7 +7,7 @@ Basic serialization.
 import pickle
 
 
-def serialize_and_save_to_file(data, filename)
+def serialize_and_save_to_file(data, filename):
     """
     Serialization.
     """
