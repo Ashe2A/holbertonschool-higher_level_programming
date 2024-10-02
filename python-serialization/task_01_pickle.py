@@ -33,9 +33,11 @@ class CustomObject:
         """
         Pickle Serialization.
         """
-
-        with open(filename, 'wb') as file:
-            pickle.dump(self.__dict__, file)
+        try:
+            with open(filename, 'wb') as file:
+                pickle.dump(self.__dict__, file)
+        except Exception as e:
+            print("Error:", e)
 
     @classmethod
     def deserialize(cls, filename):
