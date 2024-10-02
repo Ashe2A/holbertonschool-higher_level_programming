@@ -12,7 +12,7 @@ def serialize_and_save_to_file(data, filename):
     Serialization.
     """
     if os.path.exists(filename):
-        os.remove
+        os.remove(filename)
     with open(filename, 'w') as file:
         pickle.dump(data, file)
 
