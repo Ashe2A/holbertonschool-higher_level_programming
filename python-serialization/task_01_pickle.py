@@ -17,9 +17,9 @@ class CustomObject:
         Create the custom object.
         """
 
-        self.name = name
-        self.age = age
-        self.is_student = is_student
+        self.__name = name
+        self.__age = age
+        self.__is_student = is_student
 
     def display(self):
         """
@@ -48,7 +48,12 @@ class CustomObject:
 
         try:
             with open(filename, 'rb') as file:
-                return pickle.load(file)
+                unpickle = pickle.load(file)
+                cls_name = "_" + cls.__name__
+                name = unpickle.get(cls_name + "__name", "")
+                age = unpickle.get(cls_name + "__age", 0)
+                is_student = unpickle.get(cls_name + "__is_student", False)
+                return cls(name, age, is_student)
         except FileNotFoundError:
             print("Error : file not found.")
             return None
