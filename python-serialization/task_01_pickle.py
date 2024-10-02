@@ -50,9 +50,10 @@ class CustomObject:
             with open(filename, 'rb') as file:
                 unpickle = pickle.load(file)
                 cls_name = "_{}".format(cls.__name__)
-                name = unpickle.get(cls_name + "__name", "")
-                age = unpickle.get(cls_name + "__age", 0)
-                is_student = unpickle.get(cls_name + "__is_student", False)
+                name = unpickle.get("{}__name".format(cls_name), "")
+                age = unpickle.get("{}__age".format(cls_name), 0)
+                is_student = unpickle.get("{}__is_student".format(cls_name),
+                                          False)
                 return cls(name, age, is_student)
         except FileNotFoundError:
             print("Error : file not found.")
