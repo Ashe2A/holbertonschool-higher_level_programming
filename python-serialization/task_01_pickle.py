@@ -48,7 +48,7 @@ class CustomObject:
             return None
         else:
             with open(filename, 'rb') as file:
-                loaded_file = getattr(pickle.load(file))
-                return cls(loaded_file, "name"),\
+                loaded_file = pickle.load(file)
+                return cls(getattr(loaded_file, "name"),\
                         getattr(loaded_file, "age"),\
-                        getattr(loaded_file, "is_student")
+                        getattr(loaded_file, "is_student"))
