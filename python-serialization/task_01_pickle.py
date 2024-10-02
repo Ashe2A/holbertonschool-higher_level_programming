@@ -5,17 +5,43 @@ Pickle serialization.
 
 import pickle
 
-def serialize_and_save_to_file(data, filename):
-    """
-    Pickle Serialization.
-    """
-    with open(filename, 'wb') as file:
-        pickle.dump(data, file)
 
+class CustomObject:
+    """
+    Custom object.
+    """
 
-def load_and_deserialize(filename):
-    """
-    Pickle Deserialization.
-    """
-    with open(filename, 'rb') as file:
-        return pickle.load(file)
+    def __init__(self, name="", age=0, is_student=False):
+        """
+        Create the custom object.
+        """
+
+        self.__name = name
+        self.__age = age
+        self.__is_student = is_student
+
+    def display(self):
+        """
+        Display of object's data.
+        """
+
+        print("Name: {}".format(self.__name))
+        print("Age: {}".format(self.__age))
+        print("Is Student: {}".format(self.__is_student))
+
+    def serialize(self, filename):
+        """
+        Pickle Serialization.
+        """
+
+        with open(filename, 'wb') as file:
+            pickle.dump(self.__dict__, file)
+
+    @classmethod
+    def deserialize(cls, filename):
+        """
+        Pickle Deserialization.
+        """
+
+        with open(filename, 'rb') as file:
+            return cls(pickle.load(file))
