@@ -36,7 +36,7 @@ class CustomObject:
         """
         try:
             with open(filename, 'wb') as file:
-                pickle.dump(self.__dict__, file)
+                pickle.dump(self, file)
         except Exception as e:
             print("Error:", e)
 
@@ -59,7 +59,7 @@ class CustomObject:
             print("Error : file not found.")
             return None
         except UnpicklingError:
-            print("Unpickling error.")
+            print("Unpickling error. File might be corrupted.")
             return None
         except Exception as e:
             print("Error:", e)
