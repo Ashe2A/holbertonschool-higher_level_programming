@@ -1,26 +1,22 @@
 #!/usr/bin/python3
 """
-Basic serialization.
+Basic serialization with pickle.
 """
 
 import pickle
-import os
 
 
 def serialize_and_save_to_file(data, filename):
     """
-    Serialization.
+    Serialization with pickle.
     """
-    if os.path.exists(filename):
-        os.remove(filename)
     with open(filename, 'w') as file:
-        pickle.dump(data, file)
+        pickle.dumps(data, file)
 
 
 def load_and_deserialize(filename):
     """
-    Deserialization.
+    Deserialization with pickle.
     """
     with open(filename, 'r') as file:
-        loaded_file = pickle.load(file)
-    return loaded_file
+        return pickle.loads(file)
