@@ -21,3 +21,6 @@ def convert_csv_to_json(csv_filename):
     except Error:
         print("CSV dictionary reading error")
         return False
+    except Exception as e:
+        print("Error: {}".format(e))
+        return False
