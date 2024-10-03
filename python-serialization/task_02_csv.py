@@ -3,7 +3,8 @@
 Converting CSV Data to JSON Format.
 """
 
-import csv, json
+import csv
+import json
 from csv import Error
 
 
