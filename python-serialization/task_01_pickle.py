@@ -56,5 +56,5 @@ class CustomObject:
             print("Unpickling error. File might be corrupted.")
             return None
         except Exception as e:
-        print("Error: {}".format(e))
+            print("Error: {}".format(e))
             return None
