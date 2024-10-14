@@ -13,7 +13,6 @@ class CountedIterator():
         self.iterator = iter(some_iterable)
         self.counter = 0
     
-    @property
     def get_count(self):
         return self.counter
 
