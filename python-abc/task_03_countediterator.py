@@ -18,8 +18,11 @@ class CountedIterator():
         return self.counter
 
     def __next__(self, iterable):
-        if self.counter >= len(self.iterator) - 1:
-            raise StopIteration()
-        else:
-            print(iterable[self.counter])
+        try:
             self.counter += 1
+            return next(self.iterable)
+        except StopIteration:
+            raise StopIteration()
+
+    def __iter__(self):
+        return self
