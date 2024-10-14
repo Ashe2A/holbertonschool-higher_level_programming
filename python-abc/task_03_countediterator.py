@@ -6,7 +6,7 @@ Counted Iterator
 
 class CountedIterator():
     """
-    Updated talkative list
+    Iterator class with counter
     """
 
     def __init__(self, some_iterable):
