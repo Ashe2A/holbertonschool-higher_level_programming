@@ -37,8 +37,8 @@ class Circle(Shape):
 
     pi = math.pi
 
-    def __init__(self, radius=0):
-        self.__radius = radius
+    def __init__(self, radius):
+        self.radius = radius
 
     def area(self):
         """
@@ -51,7 +51,7 @@ class Circle(Shape):
             Area of the Circle
         """
 
-        return Circle.pi * (self.__radius ** 2)
+        return Circle.pi * (self.radius ** 2)
 
     def perimeter(self):
         """
@@ -64,7 +64,7 @@ class Circle(Shape):
             Circumference of the Circle
         """
 
-        return 2 * Circle.pi * self.__radius
+        return abs(2 * Circle.pi * self.radius)
 
 
 class Rectangle(Shape):
@@ -72,9 +72,9 @@ class Rectangle(Shape):
     Rectangle class
     """
 
-    def __init__(self, width=0, height=0):
-        self.__width = width
-        self.__height = height
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
     def area(self):
         """
@@ -87,7 +87,7 @@ class Rectangle(Shape):
             Area of the Rectangle
         """
 
-        return self.__width * self.__height
+        return self.width * self.height
 
     def perimeter(self):
         """
@@ -100,9 +100,7 @@ class Rectangle(Shape):
             Perimeter of the Rectangle
         """
 
-        if (self.__width == 0) or (self.__height == 0):
-            return 0
-        return 2 * (self.__width + self.__height)
+        return 2 * (self.width + self.height)
 
 
 def shape_info(shape):
