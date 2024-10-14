@@ -31,7 +31,7 @@ class VerboseList(list):
         """
         if not (x is None):
             super().extend(x)
-            print("Extended the list with [{}] items.".format(x))
+            print("Extended the list with [{}] items.".format(len(x)))
 
     def remove(self, item):
         """
@@ -43,7 +43,7 @@ class VerboseList(list):
         """
         if item in self:
             super().remove(item)
-            print("Removed [] from the list.".format(item))
+            print("Removed [{}] from the list.".format(item))
 
     def pop(self, item):
         """
