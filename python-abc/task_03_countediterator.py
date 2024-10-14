@@ -18,10 +18,11 @@ class CountedIterator():
 
     def __next__(self):
         try:
+            next = next(self.iterator)
             self.counter += 1
-            return next(self.iterator)
+            return next
         except StopIteration:
-            raise StopIteration()
+            raise StopIteration
 
     def __iter__(self):
         return self
