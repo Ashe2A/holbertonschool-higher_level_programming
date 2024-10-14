@@ -3,10 +3,8 @@
 Counted Iterator
 """
 
-import ABC
 
-
-class CountedIterator(ABC):
+class CountedIterator():
     """
     Updated talkative list
     """
