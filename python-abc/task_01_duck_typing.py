@@ -100,7 +100,7 @@ class Rectangle(Shape):
             Perimeter of the Rectangle
         """
 
-        return 2 * (self.width + self.height)
+        return abs(2 * (self.width + self.height))
 
 
 def shape_info(shape):
