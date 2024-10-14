@@ -19,7 +19,7 @@ class VerboseList(list):
         """
         if not (item is None):
             super().append(item)
-            print(f"Added [{item}] to the list.")
+            print("Added [{}] to the list.".format(item))
 
     def extend(self, x):
         """
@@ -31,7 +31,7 @@ class VerboseList(list):
         """
         if not (x is None):
             super().extend(x)
-            print(f"Extended the list with [{x}] items.")
+            print("Extended the list with [{}] items.".format(x))
 
     def remove(self, item):
         """
@@ -43,7 +43,7 @@ class VerboseList(list):
         """
         if item in self:
             super().remove(item)
-            print(f"Removed [{item}] from the list.")
+            print("Removed [] from the list.".format(item))
 
     def pop(self, item):
         """
@@ -55,7 +55,7 @@ class VerboseList(list):
         """
         if 0 <= item <= len(self) - 1:
             super().pop(item)
-            print(f"Popped [{item}] from the list.")
+            print("Popped [{}] from the list.".format(item))
 
     def pop(self):
         """
@@ -65,4 +65,4 @@ class VerboseList(list):
             self: the list
         """
         super().pop(len(self) - 1)
-        print(f"Popped [{self[len(self) - 1]}] from the list.")
+        print("Popped [{}] from the list.".format(self[len(self) - 1]))
