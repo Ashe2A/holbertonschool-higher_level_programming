@@ -42,7 +42,7 @@ class VerboseList(list):
         super().remove(item)
         print("Removed [{}] from the list.".format(item))
 
-    def pop(self, idx):
+    def pop(self, idx=-1):
         """
         Pops an item to the list
 
