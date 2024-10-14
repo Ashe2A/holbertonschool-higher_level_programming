@@ -17,9 +17,8 @@ class VerboseList(list):
             self: the list
             item: the item to append
         """
-        if not (item is None):
-            super().append(item)
-            print("Added [{}] to the list.".format(item))
+        super().append(item)
+        print("Added [{}] to the list.".format(item))
 
     def extend(self, x):
         """
@@ -29,9 +28,8 @@ class VerboseList(list):
             self: the list to extend
             x: the list to append
         """
-        if not (x is None):
-            super().extend(x)
-            print("Extended the list with [{}] items.".format(len(x)))
+        super().extend(x)
+        print("Extended the list with [{}] items.".format(len(x)))
 
     def remove(self, item):
         """
@@ -41,11 +39,10 @@ class VerboseList(list):
             self: the list
             item: the item to remove
         """
-        if item in self:
-            super().remove(item)
-            print("Removed [{}] from the list.".format(item))
+        super().remove(item)
+        print("Removed [{}] from the list.".format(item))
 
-    def pop(self, item):
+    def pop(self, idx):
         """
         Pops an item to the list
 
@@ -53,16 +50,6 @@ class VerboseList(list):
             self: the list
             item: the index of the item to pop
         """
-        if 0 <= item <= len(self) - 1:
-            super().pop(item)
-            print("Popped [{}] from the list.".format(item))
-
-    def pop(self):
-        """
-        Pops the last item to the list
-
-        Parameters:
-            self: the list
-        """
-        super().pop(len(self) - 1)
-        print("Popped [{}] from the list.".format(self[len(self) - 1]))
+        item = super().pop(idx)
+        print("Popped [{}] from the list.".format(item))
+        return item
