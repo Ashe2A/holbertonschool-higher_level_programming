@@ -17,10 +17,10 @@ class CountedIterator():
     def get_count(self):
         return self.counter
 
-    def __next__(self, iterable):
+    def __next__(self):
         try:
             self.counter += 1
-            return next(self.iterable)
+            return next(self.iterator)
         except StopIteration:
             raise StopIteration()
 
