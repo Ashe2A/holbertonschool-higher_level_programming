@@ -10,7 +10,7 @@ def serialize_to_xml(dictionary, filename):
     json_to_xml = "<data>\n"
     for i in dictionary:
         json_to_xml += "    <{}>{}</{}>\n".format(i, dictionary[i], i)
-    json_to_xml += "</data>"
+    json_to_xml += "</data>\n"
     with open(filename, 'w', encoding="utf-8") as file:
         return file.write(json_to_xml)
 
