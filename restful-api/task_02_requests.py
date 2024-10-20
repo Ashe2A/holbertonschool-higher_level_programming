@@ -36,7 +36,7 @@ def fetch_and_save_posts():
             dict_list.append(new_dict)
 
         with open("posts.csv", 'w', encoding="utf-8") as file:
-            write_to_csv = csv.DictWriter(file, keys=["id", "title", "body"])
+            write_to_csv = csv.DictWriter(file, fieldnames=["id", "title", "body"])
             write_to_csv.writeheader()
             write_to_csv.writerows(dict_list)
 
