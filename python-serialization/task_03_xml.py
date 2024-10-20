@@ -14,6 +14,7 @@ def serialize_to_xml(dictionary, filename):
     with open(filename, 'w', encoding="utf-8") as file:
         return file.write(json_to_xml)
 
+
 def deserialize_from_xml(filename):
     xml_data = ET.parse(filename)
     root = xml_data.getroot()

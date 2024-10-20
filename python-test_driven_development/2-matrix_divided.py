@@ -4,6 +4,7 @@
 Tests function to divide matrix integers with exceptions
 """
 
+
 def matrix_divided(matrix, div):
     """
     Divide matrix
@@ -15,7 +16,7 @@ def matrix_divided(matrix, div):
     else:
         for i in range(len(matrix)):
             if (not isinstance(matrix[i], list))\
-                or isinstance(matrix[i], str):
+                    or isinstance(matrix[i], str):
                 raise TypeError("matrix must be a matrix (list of lists)\
                         of integers/floats")
             for j in range(len(matrix[i])):
