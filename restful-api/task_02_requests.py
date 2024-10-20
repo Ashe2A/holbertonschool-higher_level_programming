@@ -18,9 +18,6 @@ def fetch_and_print_posts():
         print("Error {}".format(fetch_post.status_code))
 
 
-fetch_and_print_posts()
-
-
 def fetch_and_save_posts():
     fetch_post = requests.get('https://jsonplaceholder.typicode.com/posts')
 
@@ -42,6 +39,3 @@ def fetch_and_save_posts():
 
     else:
         print("Error {}".format(fetch_post.status_code))
-
-
-fetch_and_save_posts()
