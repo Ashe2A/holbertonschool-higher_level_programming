@@ -25,15 +25,21 @@ def fetch_and_save_posts():
         json_ed = fetch_post.json()
 
         dict_list = []
+        fieldnames = \
+            [
+                "id",
+                "title",
+                "body"
+            ]
+
         for i in json_ed:
             new_dict = {}
-            new_dict["id"] = i["id"]
-            new_dict["title"] = i["title"]
-            new_dict["body"] = i["body"]
+            for j in fieldnames:
+                new_dict[j] = i[j]
             dict_list.append(new_dict)
 
         with open("posts.csv", 'w', encoding="utf-8") as file:
-            write_to_csv = csv.DictWriter(file, fieldnames=["id", "title", "body"])
+            write_to_csv = csv.DictWriter(file, fieldnames)
             write_to_csv.writeheader()
             write_to_csv.writerows(dict_list)
 
