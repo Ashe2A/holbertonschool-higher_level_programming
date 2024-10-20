@@ -10,20 +10,7 @@ from flask import request
 
 
 app = Flask(__name__)
-users = {
-    "jane": {
-        "username": "jane",
-        "name": "Jane",
-        "age": 28,
-        "city": "Los Angeles"
-    },
-    "john": {
-        "username": "john",
-        "name": "John",
-        "age": 30,
-        "city": "New York"
-    }
-}
+users = {}
 
 
 @app.route("/")
@@ -35,7 +22,7 @@ def home():
 def data_jsonification():
     usernames = []
     for i in users:
-        usernames.append(users[i]["username"])
+        usernames.append(i)
     return jsonify(usernames)
 
 
@@ -52,15 +39,15 @@ def user(username):
         return jsonify(users[username])
 
 
-@app.route("/add_user/<username>", methods=['POST'])
-def post_user(username):
-    if username == "":
+@app.route("/add_user", methods=["POST"])
+def post_user():
+    new_user_json = request.json
+    if not new_user_json or "username" not in new_user_json:
         return jsonify({"error": "Username is required"}), 400
     else:
-        new_user_json = request.json
-        users[username] = new_user_json
         res = {"message": "User added"}
-        res[username] = new_user_json
+        users[new_user_json["username"]] = new_user_json
+        res["user"] = users[new_user_json["username"]]
         return jsonify(res), 201
 
 
