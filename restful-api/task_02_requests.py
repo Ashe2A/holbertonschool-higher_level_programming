@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
-import requests, csv
+import requests
+import csv
 
 
 def fetch_and_print_posts():
@@ -15,6 +16,9 @@ def fetch_and_print_posts():
 
     else:
         print("Error {}".format(fetch_post.status_code))
+
+
+fetch_and_print_posts()
 
 
 def fetch_and_save_posts():
@@ -38,3 +42,6 @@ def fetch_and_save_posts():
 
     else:
         print("Error {}".format(fetch_post.status_code))
+
+
+fetch_and_save_posts()
