@@ -1,9 +1,5 @@
 -- Cities of California:
 SELECT c.*
-FROM (
-    SELECT *
-    FROM states AS s
-    WHERE s.name = "California"
-    ) AS s, cities AS c
-WHERE c.state_id = s.id
+FROM states AS s, cities AS c
+WHERE c.state_id = s.id AND s.name = "California"
 ORDER BY c.id;
