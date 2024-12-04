@@ -24,17 +24,16 @@ users = {
 }
 auth = request.authorization
 
+@auth.verify_password
+def verify_password(username, password):
+    if username in users and \
+            check_password_hash(users.get(username), password):
+        return username
+
 @app.route("/basic-protected", methods=["GET"])
 @auth.login_required
 def basic_auth():
-    if not auth:
-        return jsonify({"message": "Authentication required"}), 401
-    elif auth.username not in users:
-        return jsonify({"message": "User doesn't exist"}), 401
-    elif check_password_hash(users[auth.username]["password"], auth.password):
-        return jsonify({"message": "Basic Auth: Access Granted"}), 200
-    else:
-        return jsonify({"message": "Basic Auth : Access Denied"}), 401
+    return jsonify({"message": "Basic Auth: Access Granted"}), 200
 
 
 if __name__ == '__main__':
