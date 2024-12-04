@@ -27,14 +27,13 @@ auth = HTTPBasicAuth()
 @auth.verify_password
 def verify_password(username, password):
     if username in users and \
-            check_password_hash(users.get(username), password):
+            check_password_hash(users.get(username)["password"], password):
         return username
 
 @app.route("/basic-protected", methods=["GET"])
 @auth.login_required
 def basic_auth():
     return jsonify({"message": "Basic Auth: Access Granted"}), 200
-
 
 if __name__ == '__main__':
     app.run()
