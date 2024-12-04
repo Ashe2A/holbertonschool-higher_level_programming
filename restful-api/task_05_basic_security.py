@@ -6,7 +6,7 @@ Basic security
 
 from flask import Flask
 from flask import jsonify
-from flask import request
+from flask_httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
@@ -22,7 +22,7 @@ users = {
         "role": "admin"
         }
 }
-auth = request.authorization
+auth = HTTPBasicAuth()
 
 @auth.verify_password
 def verify_password(username, password):
