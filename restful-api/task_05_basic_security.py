@@ -22,11 +22,11 @@ users = {
         "role": "admin"
         }
 }
-
+auth = request.authorization
 
 @app.route("/basic-protected", methods=["GET"])
+@auth.login_required
 def basic_auth():
-    auth = request.authorization
     if not auth:
         return jsonify({"message": "Authentication required"}), 401
     elif auth.username not in users:
