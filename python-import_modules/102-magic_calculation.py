@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import dis
 from calculator_1 import add, sub
 
 
@@ -11,6 +10,3 @@ def magic_calculation(a, b):
         return c
     elif a > b:
         return sub(a, b)
-
-
-dis.dis(magic_calculation)
