@@ -12,7 +12,7 @@ def roman_to_int(roman_string):
                 result += 500
             if rs[i] == "C":
                 if i < len(rs) - 1 \
-                      and (rs[i + 1] == "M" or rs[i] == "D"):
+                      and (rs[i + 1] == "M" or rs[i + 1] == "D"):
                     result -= 100
                 else:
                     result += 100
@@ -20,7 +20,7 @@ def roman_to_int(roman_string):
                 result += 50
             if rs[i] == "X":
                 if i < len(rs) - 1 \
-                      and (rs[i + 1] == "C" or rs[i] == "L"):
+                      and (rs[i + 1] == "C" or rs[i + 1] == "L"):
                     result -= 10
                 else:
                     result += 10
@@ -28,7 +28,7 @@ def roman_to_int(roman_string):
                 result += 5
             if rs[i] == "I":
                 if i < len(rs) - 1 \
-                      and (rs[i + 1] == "V" or rs[i] == "X"):
+                      and (rs[i + 1] == "V" or rs[i + 1] == "X"):
                     result -= 1
                 else:
                     result += 1
