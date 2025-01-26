@@ -23,5 +23,4 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
     c = int(a)
     d = int(b)
-    res = c + d
-    return "{:d}".format(res)
+    return c + d
