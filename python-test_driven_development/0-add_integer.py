@@ -5,10 +5,11 @@ add_integer is the function to add integers
 Usage: x = add_integer(a, b)
 """
 
+
 def add_integer(a, b=98):
     """
     Add two integers together.
-    
+
     Params:
         a: first integer
         b: second
