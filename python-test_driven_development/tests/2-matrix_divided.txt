@@ -24,12 +24,12 @@ Traceback (most recent call last):
     ...
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
->>> matrix_divided('NaN')
+>>> matrix_divided(float('NaN'))
 Traceback (most recent call last):
     ...
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
->>> matrix_divided('inf')
+>>> matrix_divided(float('inf'))
 Traceback (most recent call last):
     ...
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
@@ -58,12 +58,12 @@ Traceback (most recent call last):
     ...
 TypeError: div must be a number
 
->>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], 'inf'))
+>>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], float('inf')))
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
 
->>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], 'NaN'))
+>>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], float('NaN')))
 Traceback (most recent call last):
     ...
 TypeError: div must be a number
