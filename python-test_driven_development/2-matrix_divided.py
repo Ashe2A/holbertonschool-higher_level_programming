@@ -41,8 +41,6 @@ def matrix_divided(matrix, div):
     div_number = "div must be a number"
     if not isinstance(div, (int, float)):
         raise TypeError(div_number)
-    if div == float('NaN'):
-        raise ValueError(div_number)
     if div == float('inf'):
         raise OverflowError(div_number)
     if div == 0:
