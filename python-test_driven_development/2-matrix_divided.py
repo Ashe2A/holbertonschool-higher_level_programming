@@ -38,13 +38,17 @@ def matrix_divided(matrix, div):
         if len(i) != matrix_first_row_len:
             raise TypeError("Each row of the matrix must have the same size")
 
-    if not (isinstance(div, int) or isinstance(div, float)):
-        raise TypeError("div must be a number")
-    elif div == 0:
+    div_number = "div must be a number"
+    if not isinstance(div, (int, float)):
+        raise TypeError(div_number)
+    if div == float('NaN'):
+        raise ValueError(div_number)
+    if div == float('inf'):
+        raise OverflowError(div_number)
+    if div == 0:
         raise ZeroDivisionError("division by zero")
-    else:
-        for i in matrix:
-            new_matrix.append([])
-            for j in i:
-                new_matrix[len(new_matrix) - 1].append(round((j / div), 2))
-        return new_matrix
+    for i in matrix:
+        new_matrix.append([])
+        for j in i:
+            new_matrix[len(new_matrix) - 1].append(round((j / div), 2))
+    return new_matrix
