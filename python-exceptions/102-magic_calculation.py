@@ -9,5 +9,4 @@ def magic_calculation(a, b):
             pass
         else:
             result += (a ** b) / i
-        result += b + a
-    return result
+    return result + b + a
