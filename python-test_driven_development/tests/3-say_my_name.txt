@@ -1,32 +1,32 @@
 >>> say_my_name = __import__("3-say_my_name").say_my_name
 
->>> print(say_my_name("John", "Smith"))
+>>> say_my_name("John", "Smith")
 My name is John Smith
 
->>> print(say_my_name("Walter", "White"))
+>>> say_my_name("Walter", "White")
 My name is Walter White
 
->>> print(say_my_name("Bob"))
+>>> say_my_name("Bob")
 My name is Bob 
 
 
 
->>> print(say_my_name(555, "Doe"))
+>>> say_my_name(555, "Doe")
 Traceback (most recent call last):
     ...
 TypeError: first_name must be a string
 
->>> print(say_my_name(555.5, "Doe"))
+>>> say_my_name(555.5, "Doe")
 Traceback (most recent call last):
     ...
 TypeError: first_name must be a string
 
->>> print(say_my_name("John", 666))
+>>> say_my_name("John", 666)
 Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
 
->>> print(say_my_name("John", 666.6))
+>>> say_my_name("John", 666.6)
 Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
@@ -48,17 +48,17 @@ TypeError: first_name must be a string
 
 
 
->>> print(say_my_name("John", None))
+>>> say_my_name("John", None)
 Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
 
->>> print(say_my_name("John", float('inf')))
+>>> say_my_name("John", float('inf'))
 Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
 
->>> print(say_my_name("John", float('NaN')))
+>>> say_my_name("John", float('NaN'))
 Traceback (most recent call last):
     ...
 TypeError: last_name must be a string
