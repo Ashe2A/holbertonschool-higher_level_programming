@@ -10,9 +10,3 @@ def magic_calculation(a, b):
         except Exception:
             result = b + a
     return result
-
-print(magic_calculation(1, 2))
-print(magic_calculation(1, 4))
-print(magic_calculation(4, 1))
-print(magic_calculation(3, 3))
-print(magic_calculation(1, 1))
