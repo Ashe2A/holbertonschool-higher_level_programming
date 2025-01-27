@@ -19,8 +19,9 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     else:
         for i in text:
-            if not (i == " " and new_line):
-                new_text += i
+            if i == " " and new_line:
+                continue
+            new_text += i
             if i == "." or i == "?" or i == ":":
                 new_text += "\n\n"
                 new_line = True
