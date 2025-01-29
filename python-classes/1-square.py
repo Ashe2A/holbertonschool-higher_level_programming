@@ -6,9 +6,9 @@ Square.
 
 class Square:
     """
-    Empty square class.
+    Square class.
     """
-    
+
     def __init__(self, size):
         """Square constructor
 
