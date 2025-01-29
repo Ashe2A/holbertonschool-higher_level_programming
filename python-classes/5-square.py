@@ -30,7 +30,7 @@ class Square:
             int: square of the size (area)
         """
         return self.__size ** 2
-    
+
     def my_print(self):
         """print the square with #
         """
@@ -66,4 +66,3 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
-
