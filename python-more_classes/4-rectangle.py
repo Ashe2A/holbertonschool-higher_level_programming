@@ -108,3 +108,7 @@ class Rectangle:
                 if i < self.__height - 1:
                     res += "\n"
         return res
+
+    def __repr__(self):
+        return "{}({}, {})".format(Rectangle.__name__,
+                                   self.__width, self.__height)
