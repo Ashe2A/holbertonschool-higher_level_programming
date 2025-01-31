@@ -9,6 +9,9 @@ class Rectangle:
     Rectangle class.
     """
 
+    number_of_instances = 0  # Number of rectangles constructed
+    print_symbol = "#"  # String representation char
+
     def __init__(self, width=0, height=0):
         """Rectangle constructor
 
@@ -18,6 +21,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -104,7 +108,8 @@ class Rectangle:
         if not (self.__width == 0 or self.__height == 0):
             for i in range(self.__height):
                 for j in range(self.__width):
-                    res += "#"
+                    res += "{}".format(getattr(self, 'print_symbol',
+                                               Rectangle.print_symbol))
                 if i < self.__height - 1:
                     res += "\n"
         return res
@@ -122,3 +127,15 @@ class Rectangle:
         """When you delete the rectangle, what happens?
         """
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
+
+    @staticmethod
+    def bigger_or_equal(rect_1, rect_2):
+        if not isinstance(rect_1, Rectangle):
+            raise TypeError("rect_1 must be an instance of Rectangle")
+        if not isinstance(rect_2, Rectangle):
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        if Rectangle.area(rect_1) >= Rectangle.area(rect_2):
+            return rect_1
+        else:
+            return rect_2

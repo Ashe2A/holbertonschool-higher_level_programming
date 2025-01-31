@@ -110,5 +110,10 @@ class Rectangle:
         return res
 
     def __repr__(self):
+        """Representation of class call
+
+        Returns:
+            str: Rectangle(<width>, <height>)
+        """
         return "{}({}, {})".format(Rectangle.__name__,
                                    self.__width, self.__height)

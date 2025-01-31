@@ -9,8 +9,8 @@ class Rectangle:
     Rectangle class.
     """
 
-    number_of_instances = 0
-    print_symbol = "#"
+    number_of_instances = 0  # Number of rectangles constructed
+    print_symbol = "#"  # String representation char
 
     def __init__(self, width=0, height=0):
         """Rectangle constructor
@@ -115,9 +115,16 @@ class Rectangle:
         return res
 
     def __repr__(self):
+        """Representation of class call
+
+        Returns:
+            str: Rectangle(<width>, <height>)
+        """
         return "{}({}, {})".format(Rectangle.__name__,
                                    self.__width, self.__height)
 
     def __del__(self):
+        """When you delete the rectangle, what happens?
+        """
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
