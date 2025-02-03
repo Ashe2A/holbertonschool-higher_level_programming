@@ -10,9 +10,6 @@ class MyList(list):
     Args:
         list (list): Extends from a list
     """
-    def __init__(self):
-        """My list constructor"""
-        pass
 
     def print_sorted(self):
         """Sort and print my list"""
