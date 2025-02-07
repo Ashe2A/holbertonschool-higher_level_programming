@@ -6,8 +6,13 @@ Base geometry module.
 
 class BaseGeometry():
     """
-    Basic geometry class.
+    Basic geometry interface.
     """
 
     def area(self):
+        """Area of the figure
+
+        Raises:
+            Exception: not implemented
+        """
         raise Exception("area() is not implemented")
