@@ -14,4 +14,4 @@ def is_kind_of_class(obj, a_class):
     Returns:
         boolean: True if same class or inherited, false otherwise
     """
-    return issubclass(obj, a_class) or type(obj) is a_class
+    return issubclass(type(obj), a_class) or type(obj) is a_class
