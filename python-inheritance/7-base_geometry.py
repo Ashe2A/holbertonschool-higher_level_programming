@@ -4,11 +4,10 @@ Base geometry module.
 """
 
 
-class BaseGeometry():
+class BaseGeometry:
     """
     Basic geometry interface.
     """
-
     def area(self):
         """Area of the figure
 
