@@ -1,22 +1,24 @@
 #!/usr/bin/python3
 """
-Shape classes
+Abstract Shape Class and its Subclasses.
 """
 
 
 from abc import ABC, abstractmethod
-import math
+from math import pi
 
 
 class Shape(ABC):
-    """
-    Shape abstract class
+    """Shape abstract class
+
+    Args:
+        ABC (abc): abstract class module
     """
 
     @abstractmethod
     def area(self):
         """
-        Shape's area
+        Abstract area method
         """
 
         pass
@@ -24,7 +26,7 @@ class Shape(ABC):
     @abstractmethod
     def perimeter(self):
         """
-        Shape's perimeter
+        Abstract perimeter method
         """
 
         pass
@@ -33,71 +35,79 @@ class Shape(ABC):
 class Circle(Shape):
     """
     Circle class
+
+    Args:
+        Shape (Shape): A circle is a shape
     """
 
-    pi = math.pi
-
     def __init__(self, radius):
+        """Circle constructor
+
+        Args:
+            radius (int, optional): radius of the circle. Defaults to 0.
+        """
         self.radius = radius
 
     def area(self):
-        """
-        Circle's area
-
-        Parameters:
-            self: the Circle
+        """Circle area method
 
         Returns:
-            Area of the Circle
+            int: Circle's area (pi x square of radius)
         """
 
-        return Circle.pi * (self.radius ** 2)
+        return pi * (self.radius ** 2)
 
     def perimeter(self):
         """
-        Circle's circumference
-
-        Parameters:
-            self: the Circle
+        Circle circumference (perimeter)
 
         Returns:
-            Circumference of the Circle
+            int: circumference of the Circle (2pi x radius)
         """
 
-        return abs(2 * Circle.pi * self.radius)
+        return abs(2 * pi * self.radius)
 
 
 class Rectangle(Shape):
-    """
-    Rectangle class
+    """Rectangle class
+
+    Args:
+        Shape (Shape): A rectangle is a shape
     """
 
     def __init__(self, width, height):
+        """Rectangle constructor
+
+        Args:
+            width (int, optional): width of the Rectangle. Defaults to 0.
+            height (int, optional): height of the Rectangle. Defaults to 0.
+        """
         self.width = width
         self.height = height
 
     def area(self):
-        """
-        Rectangle's area
+        """Area of Rectangle
 
         Parameters:
             self: the Rectangle
 
         Returns:
-            Area of the Rectangle
+            int: area of rectangle (width x height)
         """
 
         return self.width * self.height
 
     def perimeter(self):
         """
-        Rectangle's perimeter
+        Perimeter of Rectangle
 
         Parameters:
             self: the Rectangle
 
         Returns:
-            Perimeter of the Rectangle
+            int: perimeter of Rectangle
+            (width x 2 + height x 2)
+            or 0 if one of the dimensions is zero
         """
 
         return abs(2 * (self.width + self.height))
@@ -105,10 +115,8 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     """
-    Displays infos on the Shape
-
-    Parameters:
-        shape: the shape
+    Shape info printing
+    Ducktyping allows dynamic methods between subclasses of the same class
     """
 
     print("Area: {}".format(shape.area()))
