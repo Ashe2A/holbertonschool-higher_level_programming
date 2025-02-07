@@ -51,7 +51,7 @@ class Circle(Shape):
         elif radius < 0:
             raise ValueError("Radius must be positive")
         else:
-            self.__radius = radius
+            self.radius = radius
 
     def area(self):
         """Circle area method
@@ -59,7 +59,7 @@ class Circle(Shape):
         Returns:
             int: Circle's area (pi x square of radius)
         """
-        return pi * (self.__radius ** 2)
+        return pi * (self.radius ** 2)
 
     def perimeter(self):
         """Circle circumference (perimeter)
@@ -67,7 +67,7 @@ class Circle(Shape):
         Returns:
             int: circumference of the Circle (2pi x radius)
         """
-        return 2 * pi * self.__radius
+        return 2 * pi * self.radius
 
 
 class Rectangle(Shape):
@@ -95,13 +95,13 @@ class Rectangle(Shape):
         elif width < 0:
             raise ValueError("width must be positive")
         else:
-            self.__width = width
+            self.width = width
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
         elif height < 0:
             raise ValueError("height must be positive")
         else:
-            self.__height = height
+            self.height = height
 
     def area(self):
         """Area of Rectangle
@@ -109,7 +109,7 @@ class Rectangle(Shape):
         Returns:
             int: area of rectangle (width x height)
         """
-        return self.__width * self.__height
+        return self.width * self.height
 
     def perimeter(self):
         """Perimeter of Rectangle
@@ -119,8 +119,8 @@ class Rectangle(Shape):
             (width x 2 + height x 2)
             or 0 if one of the dimensions is zero
         """
-        if self.__width != 0 and self.__height != 0:
-            return self.__width * 2 + self.__height * 2
+        if self.width != 0 and self.height != 0:
+            2 * (self.width + self.height)
         else:
             return 0
 
