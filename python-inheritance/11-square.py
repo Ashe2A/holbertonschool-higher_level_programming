@@ -30,3 +30,7 @@ class Square(Rectangle):
             int: square of the size
         """
         return self.__size ** 2
+
+    def __str__(self):
+        return "[{}] {}/{}".format(__class__.__name__,
+                                   self.__size, self.__size)
