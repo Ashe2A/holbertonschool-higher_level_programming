@@ -4,11 +4,12 @@ Abstract Animal Class and its Subclasses.
 """
 from abc import ABC, abstractmethod
 
+
 class Animal(ABC):
     """Animal abstract class
 
     Args:
-        ABC (abstract class module): abstract class module
+        ABC (abc): abstract class module
     """
 
     @abstractmethod
@@ -25,7 +26,7 @@ class Dog(Animal):
     Args:
         Animal (Animal): A dog is an animal
     """
-    
+
     def sound(self):
         """What sound does the dog make?
 
@@ -41,7 +42,7 @@ class Cat(Animal):
     Args:
         Animal (Animal): A cat is an animal
     """
-    
+
     def sound(self):
         """What sound does the cat make?
 
