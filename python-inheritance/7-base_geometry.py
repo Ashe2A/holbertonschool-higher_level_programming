@@ -9,7 +9,8 @@ class BaseGeometry:
     Basic geometry interface.
     """
     def area(self):
-        """Area of the figure
+        """
+        Area of the figure
 
         Raises:
             Exception: not implemented
