@@ -7,7 +7,7 @@ BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """
-    Rectangle class.
+    Rectangle class inheriting from BaseGeometry.
     """
     def __init__(self, width, height):
         """Rectangle constructor
@@ -26,7 +26,5 @@ class Rectangle(BaseGeometry):
         if height is None:
             raise AttributeError("\'{}\' object has no attribute\
                  'height'".format(__class__.__name__))
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+        self.__width = self.integer_validator("width", width)
+        self.__height = self.integer_validator("height", height)
