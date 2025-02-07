@@ -59,3 +59,14 @@ TypeError: BaseGeometry.integer_validator() missing 1 required positional argume
 Traceback (most recent call last):
     ...
 TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+>>> print("{}", bg.area())
+Traceback (most recent call last):
+    ...
+Exception: area() is not implemented
+
+>>> nbg = BaseGeometry("base")
+Traceback (most recent call last):
+    ...
+TypeError: BaseGeometry() takes no arguments
