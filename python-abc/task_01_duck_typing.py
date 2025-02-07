@@ -36,7 +36,7 @@ class Circle(Shape):
         Shape (Shape): A circle is a shape
     """
 
-    def __init__(self, radius=0):
+    def __init__(self, radius):
         """Circle constructor
 
         Args:
@@ -77,7 +77,7 @@ class Rectangle(Shape):
         Shape (Shape): A rectangle is a shape
     """
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         """Rectangle constructor
 
         Args:
