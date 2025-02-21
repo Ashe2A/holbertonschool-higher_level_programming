@@ -38,15 +38,12 @@ def user_fetch(username):
 
 
 @app.route("/add_user", methods=["POST"])
-def post_user():
+def add_user():
     incoming_json = request.json
     output = {}
     code = 201
     if not incoming_json or "username" not in incoming_json:
         return jsonify({"error": "Username is required"}), 400
-    elif incoming_json["username"] in users:
-        message = "User already exists"
-        code = 409
     else:
         message = "User added"
         users[incoming_json["username"]] = incoming_json
