@@ -41,7 +41,6 @@ def user_fetch(username):
 def add_user():
     incoming_json = request.json
     output = {}
-    code = 201
     if not incoming_json or "username" not in incoming_json:
         return jsonify({"error": "Username is required"}), 400
     else:
@@ -49,7 +48,7 @@ def add_user():
         users[incoming_json["username"]] = incoming_json
     output["message"] = message
     output["user"] = users[incoming_json["username"]]
-    return jsonify(output), code
+    return jsonify(output), 201
 
 
 if __name__ == "__main__":
