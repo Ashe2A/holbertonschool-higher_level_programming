@@ -38,7 +38,7 @@ def user_fetch(username):
 
 
 @app.route("/add_user", methods=["POST"])
-def add_user():
+def post_user():
     incoming_json = request.json
     output = {}
     code = 201
