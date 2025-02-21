@@ -32,7 +32,7 @@ def status():
 @app.route("/users/<username>")
 def user_fetch(username):
     if username not in users:
-        return {"error": "User not found"}, 404
+        return jsonify({"error": "User not found"}), 404
     else:
         return jsonify(users[username])
 
