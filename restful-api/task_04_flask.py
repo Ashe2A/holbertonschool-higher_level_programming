@@ -43,12 +43,10 @@ def add_user():
     if not incoming_json or "username" not in incoming_json:
         return jsonify({"error": "Username is required"}), 400
     elif incoming_json["username"] in users:
-        return jsonify({"message": "User already exists",
-                        "user": incoming_json["username"]}), 409
+        return jsonify({"message": "User already exists"}), 409
     else:
-        username = incoming_json["username"]
-        users[username] = incoming_json
-        return jsonify({"message": "User added", "user": users[username]}), 201
+        users[incoming_json["username"]] = incoming_json
+        return jsonify({"message": "User added"}), 201
 
 
 if __name__ == "__main__":
