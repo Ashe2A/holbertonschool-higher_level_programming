@@ -5,6 +5,7 @@ from math import pi
 Duck typing with shapes
 """
 
+
 class Shape(ABC):
     """Shape class
 
@@ -46,7 +47,7 @@ class Circle(Shape):
             int: area of the circle (pi x square of radius)
         """
         return pi * (self.radius ** 2)
-    
+
     def perimeter(self):
         """Perimeter of the circle
 
@@ -54,6 +55,7 @@ class Circle(Shape):
             int: perimeter of the circle (2 x pi x radius)
         """
         return 2 * pi * self.radius
+
 
 class Rectangle(Shape):
     """Rectangle class
@@ -87,3 +89,13 @@ class Rectangle(Shape):
         """
         return 0 if self.height == 0 or self.width == 0 \
             else self.height * 2 + self.width * 2
+
+
+def shape_info(obj):
+    """Display shape info
+
+    Args:
+        obj (Shape): Shape object
+    """
+    print("Area: {}".format(obj.area()))
+    print("Perimeter: {}".format(obj.perimeter()))
