@@ -1,6 +1,6 @@
--- first table
+-- first table (should not fail)
 
-CREATE TABLE IF EXISTS first_table
+CREATE TABLE IF NOT EXISTS first_table
 (
 	id INT,
 	name VARCHAR(256)
