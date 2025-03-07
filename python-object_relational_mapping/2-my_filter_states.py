@@ -14,7 +14,7 @@ if __name__ == "__main__":
         db=argv[3]
     )
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE states.name = \"{}\" \
+    cursor.execute("SELECT * FROM states WHERE BINARY states.name = \"{}\" \
         ORDER BY states.id;".format(argv[4]))
     for i in cursor.fetchall():
         print("{}".format(i))
