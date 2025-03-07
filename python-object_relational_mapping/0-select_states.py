@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Get all states
+"""
 
 import MySQLdb
 from sys import argv
@@ -11,8 +14,8 @@ if __name__ == "__main__":
         db=argv[3]
     )
     c = server.cursor()
-    numrows = c.execute("SELECT * FROM states ORDER BY states.id;")
+    c.execute("SELECT * FROM states ORDER BY states.id;")
 
-    print(i for i in range(numrows))
+    print(i for i in c.fetchall())
     c.close()
     server.close()
