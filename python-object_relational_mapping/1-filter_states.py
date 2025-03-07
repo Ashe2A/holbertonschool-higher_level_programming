@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Get all states
+Filter states
 """
 
 import MySQLdb
@@ -16,6 +16,7 @@ if __name__ == "__main__":
     c = server.cursor()
     c.execute("SELECT * FROM states ORDER BY states.id;")
     for i in c.fetchall():
-        print(i)
+        if str(i[1]).startswith("N"):
+            print(i)
     c.close()
     server.close()
