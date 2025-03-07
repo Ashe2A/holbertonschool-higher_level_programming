@@ -2,16 +2,16 @@
 
 CREATE TABLE IF NOT EXISTS second_table
 (
-	id INT,
+	id INT PRIMARY KEY,
 	name VARCHAR(256),
 	score INT
 );
 
-INSERT INTO second_table (id, name, score)
-VALUES (1, "John", 10);
-INSERT INTO second_table (id, name, score)
-VALUES (1, "Alex", 3);
-INSERT INTO second_table (id, name, score)
-VALUES (1, "Bob", 14);
-INSERT INTO second_table (id, name, score)
-VALUES (1, "George", 8);
+-- (Inserts)
+INSERT INTO second_table
+(id, name, score)
+VALUES
+(1, "John", 10),
+(1, "Alex", 3),
+(1, "Bob", 14),
+(1, "George", 8);
