@@ -26,3 +26,7 @@
 ## 6. Create a new sentence
 ### [`8-concat_edges.py`](8-concat_edges.py)
 * Concats pieces of the variable `str` to print ``object-oriented programming with Python`, followed by a new line. Avoided to use loops and conditions, new variables, string literals (a string value without the variable name), and used exactly 5 lines.
+
+## 7. Easter Egg
+### [`9-easter_egg.py`](9-easter_egg.py)
+* Prints “The Zen of Python”, by TimPeters (an easter egg in the Python interpreter), followed by a new line.
