@@ -13,4 +13,8 @@
 
 ## 3. Print string
 ### `5-print_string.py`
-* Prints 3 times a string stored in the variable `str`, followed by its first 9 characters. Avoided to use loops and conditions, writing more than 5 lines.
+* Prints 3 times a string stored in the variable `str`, followed by its first 9 characters. Avoided to use loops and conditions, and writing more than 5 lines.
+
+## 4. Play with strings
+### `6-concat.py`
+* Concats the variables `str1` and `str2` and casts it into a printed string. Avoided to use loops and conditions, and used exactly 5 lines.
