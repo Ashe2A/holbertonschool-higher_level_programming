@@ -22,3 +22,7 @@
 ## 5. Copy - Cut - Paste
 ### [`7-edges.py`](7-edges.py)
 * Concats the edges of the variable `word` (first, last and mid) and lists these edges. Avoided to use loops and conditions, and used exactly 8 lines.
+
+## 6. Create a new sentence
+### [`8-concat_edges.py`](8-concat_edges.py)
+* Concats pieces of the variable `str` to print ``object-oriented programming with Python`, followed by a new line. Avoided to use loops and conditions, new variables, string literals (a string value without the variable name), and used exactly 5 lines.
