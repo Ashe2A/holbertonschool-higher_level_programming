@@ -15,3 +15,7 @@
 ## 3. When I was having that alphabet soup, I never thought that it would pay off
 ### [`3-print_alphabt.py`](3-print_alphabt.py)
 * Prints lowercase alphabet except `q` and `e`, with one loop and neither imports nor storage.
+
+## 4. Hexadecimal printing
+### [`4-print_hexa.py`](4-print_hexa.py)
+* Prints all numbers from `0` to `98` in decimal and in hexadecimal.
