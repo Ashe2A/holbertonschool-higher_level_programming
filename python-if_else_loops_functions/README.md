@@ -27,3 +27,10 @@
 ## 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
 ### [`6-print_comb3.py`](6-print_comb3.py)
 * Prints all numbers from `01` to `89` in decimal separated by a comma and followed by a newline. Every number must have the first digit greater than the second. Uses no more than 3 prints with string format, with 2 loops and neither imports nor variable storage.
+
+## 7. islower
+### [`7-islower.py`](7-islower.py)
+* Function that returns whether a character is a lowercase letter without using `str.upper()` or `str.isupper()` or modules.
+### [`7-main.py`](7-main.py)
+* **Tests:** `a` (lowercase), `H` (uppercase), `A` (uppercase), `3` (other), `g` (lowercase).
+    * Note: The main function prints uppercase even for non letter characters, due to only checking lowercase letters.
