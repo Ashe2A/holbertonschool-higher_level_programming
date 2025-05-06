@@ -9,4 +9,8 @@
 
 ## 2. Print float
 ### `4-print_float.py`
-* Prints the float stored in the variable `number`, with a precision of 2 digits. Avoided to cast the variable `number` and writing more than 3 lines, and instead used an f-string.
+* Prints the float stored in the variable `number`, with a precision of 2 digits. Avoided to cast the variable `number` and instead used an f-string.
+
+## 3. Print string
+### `5-print_string.py`
+* Prints 3 times a string stored in the variable `str`, followed by its first 9 characters. Avoided to use loops and conditions, writing more than 5 lines.
