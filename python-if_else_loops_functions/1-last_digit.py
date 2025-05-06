@@ -6,9 +6,9 @@ if number < 0:
     moduloten = -moduloten
 print("Last digit of {} is {} and is ".
       format(number, moduloten), end="")
-if abs(moduloten) > 5:
+if moduloten > 5:
     print("greater than 5")
-elif abs(moduloten) == 0:
+elif moduloten == 0:
     print("0")
 else:
     print("less than 6 and not 0")
