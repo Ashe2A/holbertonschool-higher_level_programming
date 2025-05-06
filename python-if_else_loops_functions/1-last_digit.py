@@ -2,8 +2,8 @@
 import random
 number = random.randint(-10000, 10000)
 moduloten = abs(number) % 10
-print("Last digit of {} is {} and is ".
-      format(number, moduloten * int(number / abs(number))), end="")
+print("Last digit of {} is {:0.0f} and is ".
+      format(number, moduloten * number / abs(number)), end="")
 
 if moduloten > 5:
     print("greater than 5")
