@@ -18,4 +18,8 @@
 
 ## 4. Hexadecimal printing
 ### [`4-print_hexa.py`](4-print_hexa.py)
-* Prints all numbers from `0` to `98` in decimal and in hexadecimal.
+* Prints all numbers from `0` to `98` in decimal and in hexadecimal, with one loop and neither imports nor storage.
+
+## 5. 00...99
+### [`5-print_comb2.py`](5-print_comb2.py)
+* Prints all numbers from `00` to `99` in decimal separated by a comma and followed by a newline. Uses no more than 2 prints with string format, with one loop and neither imports nor storage.
