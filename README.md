@@ -1,1 +1,1 @@
-# [Python - Hello, World](https://intranet.hbtn.io/projects/2170)
+# [Python - Hello, World](python-hello_world/README.md)
