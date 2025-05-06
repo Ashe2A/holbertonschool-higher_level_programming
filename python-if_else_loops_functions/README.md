@@ -14,12 +14,16 @@
 
 ## 3. When I was having that alphabet soup, I never thought that it would pay off
 ### [`3-print_alphabt.py`](3-print_alphabt.py)
-* Prints lowercase alphabet except `q` and `e`, with one loop and neither imports nor storage.
+* Prints lowercase alphabet except `q` and `e`, with one loop and neither imports nor variable storage.
 
 ## 4. Hexadecimal printing
 ### [`4-print_hexa.py`](4-print_hexa.py)
-* Prints all numbers from `0` to `98` in decimal and in hexadecimal, with one loop and neither imports nor storage.
+* Prints all numbers from `0` to `98` in decimal and in hexadecimal, with one loop and neither imports nor variable storage.
 
 ## 5. 00...99
 ### [`5-print_comb2.py`](5-print_comb2.py)
-* Prints all numbers from `00` to `99` in decimal separated by a comma and followed by a newline. Uses no more than 2 prints with string format, with one loop and neither imports nor storage.
+* Prints all numbers from `00` to `99` in decimal separated by a comma and followed by a newline. Uses no more than 2 prints with string format, with one loop and neither imports nor variable storage.
+
+## 6. Inventing is a combination of brains and materials. The more brains you use, the less material you need
+### [`6-print_comb3.py`](6-print_comb3.py)
+* Prints all numbers from `01` to `89` in decimal separated by a comma and followed by a newline. Every number must have the first digit greater than the second. Uses no more than 3 prints with string format, with 2 loops and neither imports nor variable storage.
