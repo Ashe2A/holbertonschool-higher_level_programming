@@ -77,3 +77,9 @@
     * `98`<sup>`0`</sup> = `1`
     * `100`<sup>`-2`</sup> = `0.0001`
     * `-4`<sup>`5`</sup> = `-1024`
+
+## 12. Fizz Buzz
+### [`12-fizzbuzz.py`](12-fizzbuzz.py)
+* Function that lists all numbers from 1 to 100, replacing multiples of 3 with `Fizz` and those of 5 by `Buzz` (multiples of 15, combination of 5 and 3, are replaced by `FizzBuzz`).
+### [`12-main.py`](12-main.py)
+* **Tests:** The test will only call the `fizzbuzz` function, with a newline, as there is only one possible output :
