@@ -66,3 +66,14 @@
     * `1` + `2` = `3`
     * `98` + `0` = `98`
     * `100` + `-2` = `98`
+
+## 11. a ^ b
+### [`11-pow.py`](11-pow.py)
+* Function that returns a number to the power of a second one, without imports nor modules.
+### [`11-main.py`](11-main.py)
+* **Tests:**
+    * `2`<sup>`2`</sup> = `4`
+    * `98`<sup>`2`</sup> = `9604`
+    * `98`<sup>`0`</sup> = `1`
+    * `100`<sup>`-2`</sup> = `0.0001`
+    * `-4`<sup>`5`</sup> = `-1024`
