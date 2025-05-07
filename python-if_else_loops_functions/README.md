@@ -40,3 +40,9 @@
 * Function that turns lowercase letters of a string into uppercase ones, using 2 prints with string format, one loop, and neither `str.upper()` or `str.isupper()`, imports nor modules.
 ### [`8-main.py`](8-main.py)
 * **Tests:** `"best"` (`"BEST"`), `"Best School 98 Battery street"` (`"BEST SCHOOL 98 BATTERY STREET"`)
+
+## 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
+### [`9-print_last_digit.py`](9-print_last_digit.py)
+* Function that prints the last digit of a number, without imports nor modules.
+### [`9-main.py`](9-main.py)
+* **Tests:** `98` (`"8"`), `0` (`"0"`), `-1024` (`"4"`)
