@@ -30,7 +30,13 @@
 
 ## 7. islower
 ### [`7-islower.py`](7-islower.py)
-* Function that returns whether a character is a lowercase letter without using `str.upper()` or `str.isupper()` or modules.
+* Function that returns whether a character is a lowercase letter without using `str.upper()` or `str.isupper()`, imports or modules.
 ### [`7-main.py`](7-main.py)
 * **Tests:** `a` (lowercase), `H` (uppercase), `A` (uppercase), `3` (other), `g` (lowercase).
     * Note: The main function prints uppercase even for non letter characters, due to only checking lowercase letters.
+
+## 8. To uppercase
+### [`8-uppercase.py`](8-uppercase.py)
+* Function that turns lowercase letters of a string into uppercase ones, using 2 prints with string format, one loop, and neither `str.upper()` or `str.isupper()`, imports nor modules.
+### [`8-main.py`](8-main.py)
+* **Tests:** `"best"` (`"BEST"`), `"Best School 98 Battery street"` (`"BEST SCHOOL 98 BATTERY STREET"`)
