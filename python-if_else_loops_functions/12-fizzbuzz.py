@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def fizzbuzz():
+    """
+    FizzBuzz
+    """
     for i in range(1, 100 + 1):
         whatnum = ""
         if i % 3 == 0:

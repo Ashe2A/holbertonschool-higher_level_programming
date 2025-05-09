@@ -87,3 +87,7 @@
 ## 13. Smile in the mirror
 ### [`100-print_tebahpla.py`](100-print_tebahpla.py)
 * Prints reverse alphabet with alterning lowercases and uppercases, with one `print` function, one loop and neither imports nor storage.
+
+## 14. Remove at position
+### [`101-remove_char_at.py`](101-remove_char_at.py)
+* Returns a copy of the string with the character at position `n` removed. Avoided module import.
