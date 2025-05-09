@@ -83,3 +83,7 @@
 * Function that lists all numbers from 1 to 100, replacing multiples of 3 with `Fizz` and those of 5 by `Buzz` (multiples of 15, combination of 5 and 3, are replaced by `FizzBuzz`).
 ### [`12-main.py`](12-main.py)
 * **Tests:** The test will only call the `fizzbuzz` function, with a newline, as there is only one possible output :
+
+## 13. Smile in the mirror
+### [`100-print_tebahpla.py`](100-print_tebahpla.py)
+* Prints reverse alphabet with alterning lowercases and uppercases, with one `print` function, one loop and neither imports nor storage.
