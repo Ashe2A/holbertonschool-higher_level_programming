@@ -14,9 +14,17 @@
 
 ## 2. How to make a script dynamic!
 ### [`2-args.py`](2-args.py)
-* Prints all args and counts them. Importing `2-args.py` shouldn't execute it.
+* Prints all args and counts them. Importing the script shouldn't execute it.
 
 ## 3. Infinite addition
 ### [`3-infinite_add.py`](3-infinite_add.py)
-* Sums up all args and prints them. Importing `3-infinite_add.py` shouldn't execute it.
+* Sums up all args and prints them. Importing the script shouldn't execute it.
 * Note : Only use this script with integer-castable numbers.
+
+## 4. Who are you? <small>(for archive purposes)</small>
+### [`4-hidden_discovery.py`](4-hidden_discovery.py)
+* Lists all non-private (that don't start with two underscores `__`) name definitions in the [`hidden_4.pyc`](hidden_4.pyc) module, imported via the following curl command :
+```
+curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
+```
+* Importing `4-hidden_discovery.py` shouldn't execute it. This file needs to be used in a namespace folder, such as `/tmp/`.
