@@ -8,6 +8,10 @@
 
 ## 1. My first toolbox!
 ### [`1-calculation.py`](1-calculation.py)
-* Adds two variable by importing functions from [`calculator_1.py`](calculator_1.py), without importing wildcards. Avoided `__import__`-type import usage. Importing `1-calculation.py` shouldn't execute the script.
+* Computes two variables by importing functions from [`calculator_1.py`](calculator_1.py) ans prints the math, without importing wildcards. Avoided `__import__`-type import usage. Importing `1-calculation.py` shouldn't execute the script.
 ### [`calculator_1.py`](calculator_1.py)
 * Contains math functions : `add` (addition), `sub` (substraction), `mul` (multiplication) and `div` (division).
+
+## 2. How to make a script dynamic!
+### [`2-args.py`](2-args.py)
+* Prints all args and counts them. Importing `2-args.py` shouldn't execute the script.
