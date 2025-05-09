@@ -28,3 +28,7 @@
 curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
 ```
 * Importing `4-hidden_discovery.py` shouldn't execute it. This file needs to be used in a namespace folder, such as `/tmp/`.
+
+## 5. Everything can be imported
+### [`5-variable_load.py`](5-variable_load.py)
+* Imports and prints the value of the `a` (with the value `98`) variable, contained in the [`variable_load_5.py`](variable_load_5.py), without importing wildcards. Avoided `__import__`-type import usage. Importing `5-variable_load.py` shouldn't execute it.
