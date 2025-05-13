@@ -6,3 +6,10 @@
 ### [`0-main.py`](0-main.py)
 * **Test:** `[1, 2, 3, 4, 5]` should print `1`, `2`, `3`, `4` and `5` ending each with a new line
 * Note : Every list should be made of integers.
+
+## 1. Secure access to an element in a list
+### [`1-element_at.py`](1-element_at.py)
+* Function that retrives an element from a list. Avoided module import as well as `try`/`except`.
+### [`1-main.py`](1-main.py)
+* **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` should be `4`.
+* Note : Out of range index should retrieve `None`
