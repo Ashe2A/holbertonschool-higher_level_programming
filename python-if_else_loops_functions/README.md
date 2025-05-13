@@ -91,3 +91,10 @@
 ## 14. Remove at position
 ### [`101-remove_char_at.py`](101-remove_char_at.py)
 * Returns a copy of the string with the character at position `n` removed. Avoided module import.
+### [`101-main.py`](101-main.py)
+* **Tests :**
+    * `"Best School"` and `3` should output `Bes School`
+    * `"Chicago"` and `2` should output `Chcago`
+    * `"C is fun!"` and `0` should output ` is fun!` (first character)
+    * `"School"` and `10` should output `School` (out of range)
+    * `"Python"` and `-2` should output `Pythn` (negative range)
