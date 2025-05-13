@@ -13,3 +13,10 @@
 ### [`1-main.py`](1-main.py)
 * **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` should be `4`.
 * Note : Out of range index should retrieve `None`
+
+## 2. Replace element
+### [`2-replace_in_list.py`](2-replace_in_list.py)
+* Function that replaces an element in a list and returns the list (modified or not). Avoided module import as well as `try`/`except`.
+### [`2-main.py`](2-main.py)
+* **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` can be replaced by `9`.
+* Note : Out of range index should not rewrite anything

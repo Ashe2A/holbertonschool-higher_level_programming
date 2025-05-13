@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    """Retrieves an elements from a list
+    """Retrieves an element from a list
 
     Args:
         my_list (list): The list
