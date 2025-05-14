@@ -21,9 +21,16 @@
 * **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` can be replaced by `9`.
 * Note : Out of range index should not rewrite anything
 
-## 0. Print a list of integers
+## 3. Print a list of integers... in reverse!
 ### [`3-print_reversed_list_integer.py`](3-print_reversed_list_integer.py)
 * Function that prints a list of integers (one each line) backwards. Avoided module import as well as integer-casting, and used the `.format()` method.
 ### [`3-main.py`](3-main.py)
 * **Test:** `[1, 2, 3, 4, 5]` should print `5`, `4`, `3`, `2` and `1` ending each with a new line
 * Note : Every list should be made of integers, and the `:d` format is enforced.
+
+## 4. Replace in a copy
+### [`4-new_in_list.py`](4-new_in_list.py)
+* Function that replaces an element in a list and returns a modified copy of the list. Avoided module import as well as `try`/`except`.
+### [`4-main.py`](4-main.py)
+* **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` can be replaced by `9` in the new list.
+* Note : Out of range index should not rewrite anything
