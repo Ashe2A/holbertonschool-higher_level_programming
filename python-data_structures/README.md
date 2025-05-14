@@ -52,3 +52,12 @@
     * `[[1, 2, 3], [4, 5, 6], [7, 8, 9]]` should print `1`, `2`, `3`, separated by spaces, a newline, `4`, `5`, `6`, separated by spaces, a newline, `4`, `5`, `6`, separated by spaces, and a newline.
     * Empty matrix should simply print a newline.
 * Note : Every matrix should be made of integers, and the `:d` format is enforced.
+
+## 7. Tuples addition
+### [`7-add_tuple.py`](7-add_tuple.py)
+* Function that sums up the two first integers of two tuples. If a tuple is smaller than 2, the value 0 should be used in the sum insted of the empty integers. Avoided module import.
+### [`7-main.py`](7-main.py)
+* **Tests:**
+    * `(1, 89)` and `(88, 11)` should sum up to `(89, 100)`.
+    * `(1, 89)` and `(1, )` should sum up to `(2, 89)`.
+    * `(1, 89)` and `()` should sum up to `(1, 89)`.
