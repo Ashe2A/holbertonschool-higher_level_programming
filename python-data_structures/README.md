@@ -55,7 +55,7 @@
 
 ## 7. Tuples addition
 ### [`7-add_tuple.py`](7-add_tuple.py)
-* Function that sums up the two first integers of two tuples. If a tuple is smaller than 2, the value 0 should be used in the sum insted of the empty integers. Avoided module import.
+* Function that sums up the two first integers of two tuples. If a tuple is smaller than 2, the value 0 should be used in the sum insted of the missing integers. Avoided module import.
 ### [`7-main.py`](7-main.py)
 * **Tests:**
     * `(1, 89)` and `(88, 11)` should sum up to `(89, 100)`.
