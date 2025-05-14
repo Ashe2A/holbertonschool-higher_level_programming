@@ -34,3 +34,12 @@
 ### [`4-main.py`](4-main.py)
 * **Test:** Element at index 3 of `[1, 2, 3, 4, 5]` can be replaced by `9` in the new list.
 * Note : Out of range index should not rewrite anything
+
+## 5. Can you C me now?
+### [`5-no_c.py`](5-no_c.py)
+* Function that removes Cs (lowercase or uppercase) from a string (returns a modified copy of the string). Avoided module import as well as the `replace()` method.
+### [`5-main.py`](5-main.py)
+* **Tests:**
+    * `"Best School"` should return `"Best Shool"`
+    * `"Chicago"` should return `"hiago"`
+    * `"C is fun!"` should return `" is fun!"`
