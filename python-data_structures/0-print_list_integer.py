@@ -6,4 +6,4 @@ def print_list_integer(my_list=[]):
         my_list (list, optional): The list. Defaults to empty list.
     """
     for i in my_list:
-        print(f"{i}")
+        print("{:d}".format(i))
