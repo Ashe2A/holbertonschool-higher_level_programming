@@ -43,3 +43,12 @@
     * `"Best School"` should return `"Best Shool"`
     * `"Chicago"` should return `"hiago"`
     * `"C is fun!"` should return `" is fun!"`
+
+## 6. Lists of lists = Matrix
+### [`6-print_matrix_integer.py`](6-print_matrix_integer.py)
+* Function that prints a matrix of integers (row by row). Avoided module import as well as integer-casting, and used the `.format()` method.
+### [`6-main.py`](6-main.py)
+* **Tests:**
+    * `[[1, 2, 3], [4, 5, 6], [7, 8, 9]]` should print `1`, `2`, `3`, separated by spaces, a newline, `4`, `5`, `6`, separated by spaces, a newline, `4`, `5`, `6`, separated by spaces, and a newline.
+    * Empty matrix should simply print a newline.
+* Note : Every matrix should be made of integers, and the `:d` format is enforced.
