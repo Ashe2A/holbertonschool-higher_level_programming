@@ -61,3 +61,9 @@
     * `(1, 89)` and `(88, 11)` should sum up to `(89, 100)`.
     * `(1, 89)` and `(1, )` should sum up to `(2, 89)`.
     * `(1, 89)` and `()` should sum up to `(1, 89)`.
+
+## 8. More returns!
+### [`8-multiple_returns.py`](8-multiple_returns.py)
+* Function that reports the length and starting character of a string. If the string is empty, `None` is returned. Avoided module import.
+### [`8-main.py`](8-main.py)
+* **Test:** `"At school, I learnt C!"` returns `(22, "A")`.
