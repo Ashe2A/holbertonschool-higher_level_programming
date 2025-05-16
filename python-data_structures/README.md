@@ -61,9 +61,17 @@
     * `(1, 89)` and `(88, 11)` should sum up to `(89, 100)`.
     * `(1, 89)` and `(1, )` should sum up to `(2, 89)`.
     * `(1, 89)` and `()` should sum up to `(1, 89)`.
+* Note : Every tuple should be made of integers.
 
 ## 8. More returns!
 ### [`8-multiple_returns.py`](8-multiple_returns.py)
 * Function that reports the length and starting character of a string. If the string is empty, `None` is returned. Avoided module import.
 ### [`8-main.py`](8-main.py)
 * **Test:** `"At school, I learnt C!"` returns `(22, "A")`.
+
+## 9. Find the max
+### [`9-max_integer.py`](9-max_integer.py)
+* Function that computes the largest number in a list. If the string is empty, `None` is returned. Avoided module import and the `max()` built-in.
+### [`9-main.py`](9-main.py)
+* **Test:** `[1, 90, 2, 13, 34, 5, -13, 3]` returns `90`.
+* Note : Every list should be made of integers.
