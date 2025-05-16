@@ -71,7 +71,14 @@
 
 ## 9. Find the max
 ### [`9-max_integer.py`](9-max_integer.py)
-* Function that computes the largest number in a list. If the string is empty, `None` is returned. Avoided module import and the `max()` built-in.
+* Function that computes the largest number in a list. If the list is empty, `None` is returned. Avoided module import and the `max()` built-in.
 ### [`9-main.py`](9-main.py)
 * **Test:** `[1, 90, 2, 13, 34, 5, -13, 3]` returns `90`.
+* Note : Every list should be made of integers.
+
+## 10. Only by 2
+### [`10-divisible_by_2.py`](10-divisible_by_2.py)
+* Function that verifies whether the numbers of a list are odd or even, and returns a corresponding bool list that verfies each number. Avoided module import.
+### [`10-main.py`](10-main.py)
+* **Test:** `[0, 1, 2, 3, 4, 5, 6]` returns `[True, False, True, False, True, False]`.
 * Note : Every list should be made of integers.
