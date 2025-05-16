@@ -83,9 +83,6 @@
 * **Test:** `[0, 1, 2, 3, 4, 5, 6]` returns `[True, False, True, False, True, False]`.
 * Note: Every list should be made of integers.
 
-## 11. Delete at
-### [`11-delete_at.py`](11-delete_at.py)
-* Function that verifies whether the numbers of a list are odd or even, and returns a corresponding bool list that verfies each number. Avoided module import.
-### [`11-main.py`](11-main.py)
-* **Test:** Removing item at index 3 of `[1, 2, 3, 4, 5]` returns `[1, 2, 3, 5]`.
-* Note: The `delete_at()` function should update the list passed in parameters, simply return a list.
+## 12. Switch
+### [`12-switch.py`](12-switch.py)
+* Switches variables with multiple assignment. 5-line long script.
