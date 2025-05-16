@@ -1,4 +1,4 @@
-# [Python - data_structures](https://intranet.hbtn.io/projects/2120)
+# [Python - Data Structures: Lists, Tuples](https://intranet.hbtn.io/projects/2120)
 
 ## 0. Print a list of integers
 ### [`0-print_list_integer.py`](0-print_list_integer.py)
