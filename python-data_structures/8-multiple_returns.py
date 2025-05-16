@@ -8,4 +8,7 @@ def multiple_returns(sentence):
     Returns:
         tuple(int, str): The report (length and first char)
     """
-    return (len(sentence), sentence[0])
+    if sentence == "":
+        return (0, None)
+    else:
+        return (len(sentence), sentence[0])
