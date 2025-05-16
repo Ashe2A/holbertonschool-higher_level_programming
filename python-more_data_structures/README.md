@@ -12,3 +12,11 @@
 * Function that replaces all occurrences of an element in a list by another. Avoided module import.
 ### [`1-main.py`](1-main.py)
 * **Test:** `[1, 2, 3, 4, 5, 4, 2, 1, 1, 4, 89]` with `89` replacing every `2` should return `[1, 89, 3, 4, 5, 4, 89, 1, 1, 4, 89]`.
+* Note: The original matrix stays untouched.
+
+## 2. Unique addition
+### [`2-uniq_add.py`](2-uniq_add.py)
+* Function that adds all unique integers in a list. Avoided module import.
+### [`2-main.py`](2-main.py)
+* **Test:** `[1, 2, 3, 1, 4, 2, 5]` should return `15`.
+* Note: Every list should be made of integers.
