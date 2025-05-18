@@ -8,3 +8,12 @@
     * `[1, 2, 3, 4, 5]` and `2` should print `12` and return `2`
     * `[1, 2, 3, 4, 5]` and `5` should print `12345` and return `5`
     * `[1, 2, 3, 4, 5]` and `7` should print `12345` and return `5`
+
+## 1. Safe printing of an integers list
+### [`1-safe_print_integer.py`](1-safe_print_integer.py)
+* Function that prints a list in the same line, up to a certain number of elements and returns the number of printed elements. Avoided module importing or `len()`. Used `try`/`except`.
+### [`1-main.py`](1-main.py)
+* **Tests:**
+    * `89` should print `89` and return `True`
+    * `-89` should print `-89` and return `True`
+    * `"School"` should return `False`
