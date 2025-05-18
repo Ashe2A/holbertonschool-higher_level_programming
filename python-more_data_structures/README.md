@@ -20,3 +20,9 @@
 ### [`2-main.py`](2-main.py)
 * **Test:** `[1, 2, 3, 1, 4, 2, 5]` should return `15`.
 * Note: Every list should be made of integers.
+
+## 3. Present in both
+### [`3-common_elements.py`](3-common_elements.py)
+* Function that intersects sets. Avoided module import.
+### [`3-main.py`](3-main.py)
+* **Test:** `{"Python", "C", "Javascript"}` and `{"Bash", "C", "Ruby", "Perl"}` should return `{"C"}`.
