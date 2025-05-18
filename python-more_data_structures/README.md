@@ -26,3 +26,9 @@
 * Function that intersects sets. Avoided module import.
 ### [`3-main.py`](3-main.py)
 * **Test:** `{"Python", "C", "Javascript"}` and `{"Bash", "C", "Ruby", "Perl"}` should return `{"C"}`.
+
+## 4. Only differents
+### [`4-only_diff_elements.py`](4-only_diff_elements.py)
+* Function that unifies sets (without intersects). Avoided module import.
+### [`4-main.py`](4-main.py)
+* **Test:** `{"Python", "C", "Javascript"}` and `{"Bash", "C", "Ruby", "Perl"}` should return `{"Bash", "Javascript", "Perl", "Python", "Ruby"}`.
