@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    """Gets the highest value's key in a dictionary
+    """Gets the highest value"s key in a dictionary
 
     Args:
         a_dictionary (dict): The dictionary

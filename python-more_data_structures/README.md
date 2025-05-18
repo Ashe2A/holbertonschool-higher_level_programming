@@ -68,8 +68,14 @@
 * Note: Every value in the dictionary should be integers.
 
 ## 10. Best score
-### [`9-multiply_by_2.py`](9-multiply_by_2.py)
+### [`10-best_score.py`](10-best_score.py)
 * Function that finds the key of the highest value. Avoided module import. Returns `None` when there is no score.
-### [`9-main.py`](9-main.py)
-* **Test:** `{"John": 12, "Alex": 8, "Bob": 14, "Mike": 14, "Molly": 16}` should return `{"John": 24, "Alex": 16, "Bob": 28, "Mike": 28, "Molly": 32}`.
+### [`10-main.py`](10-main.py)
+* **Test:** `{"John": 12, "Bob": 14, "Mike": 14, "Molly": 16, "Adam": 10}` should return `"Molly"`.
 * Note: Every value in the dictionary should be integers.
+
+## 11. Multiply by using map
+### [`11-multiply_list_map.py`](11-multiply_list_map.py)
+* Function that maps a list by multiplying the elements by a number. Avoided module import, loops, modifying the original list and writing more than 3 lines.
+### [`11-main.py`](11-main.py)
+* **Test:** `[1, 2, 3, 4, 6]` should return `[4, 8, 12, 16, 24]`.
