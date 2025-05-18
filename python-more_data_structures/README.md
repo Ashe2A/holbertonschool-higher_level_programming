@@ -79,3 +79,14 @@
 * Function that maps a list by multiplying the elements by a number and converts it back to list format. Avoided module import, loops, modifying the original list and writing more than 3 lines.
 ### [`11-main.py`](11-main.py)
 * **Test:** `[1, 2, 3, 4, 6]` and `4` should return `[4, 8, 12, 16, 24]`.
+
+## 12. Roman to Integer
+### [`12-roman_to_int.py`](12-roman_to_int.py)
+* Function that maps a list by multiplying the elements by a number and converts it back to list format. Avoided module import, loops, modifying the original list and writing more than 3 lines.
+### [`12-main.py`](12-main.py)
+* **Tests:**
+    * `"X"` should return `10`
+    * `"VII"` should return `7`
+    * `"IX"` should return `9`
+    * `"LXXXVII"` should return `87`
+    * `"DCCVII"` should return `707`
