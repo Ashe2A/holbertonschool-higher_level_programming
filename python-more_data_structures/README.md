@@ -40,8 +40,8 @@
 * **Test:** `{"language": "C", "number": 13, "track": "Low level"}` should return `3`.
 
 ## 6. Print sorted dictionary
-### [`6-print_sorted_dictionary.py`](6-print_sorted_dictionary.py)
-* Function that prints a dictionary ordered alphabetically by keys. Avoided module import. Only first-level keys are sorted.
-### [`6-main.py`](6-main.py)
-* **Test:** `{"language": "C", "Number": 89, "track": "Low level", "ids": [1, 2, 3]}` should return `3`.
-* Note: Every keys in the dictionary should be strings.
+### [`7-update_dictionary.py`](7-update_dictionary.py)
+* Function that replaces/adds a key/value in a dictionary and returns it. Avoided module import.
+### [`7-main.py`](7-main.py)
+* **Test:** `{"language": "C", "number": 89, "track": "Low level"}` with the `'language': "Python"` key/value should return `{"language": "Python", "number": 89, "track": "Low level"}`.
+* Note: Every key in the dictionary should be strings.
