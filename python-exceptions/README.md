@@ -38,7 +38,7 @@
 
 ## 4. Divide a list
 ### [`4-list_division.py`](4-list_division.py)
-* Function that returns a list of float division results between lists and prints `wrong type` when an element is not an int or float, `division by 0` when there's a zero division, and `out of range` when the new list length is higher than any of the lists'. Avoided module importing. Used `try`/`except`/`finally`.
+* Function that returns a list of float division results between lists and prints `wrong type` when an element is not an int or float, `division by 0` when there"s a zero division, and `out of range` when the new list length is higher than any of the lists". Avoided module importing. Used `try`/`except`/`finally`.
 ### [`4-main.py`](4-main.py)
 * **Tests:**
     * `[10, 8, 4]` and `[2, 4, 4]` with `3` should return `[5.0, 2.0, 1.0]`
