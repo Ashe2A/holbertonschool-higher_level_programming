@@ -66,3 +66,10 @@
 ### [`9-main.py`](9-main.py)
 * **Test:** `{"John": 12, "Alex": 8, "Bob": 14, "Mike": 14, "Molly": 16}` should return `{"John": 24, "Alex": 16, "Bob": 28, "Mike": 28, "Molly": 32}`.
 * Note: Every value in the dictionary should be integers.
+
+## 10. Best score
+### [`9-multiply_by_2.py`](9-multiply_by_2.py)
+* Function that finds the key of the highest value. Avoided module import. Returns `None` when there is no score.
+### [`9-main.py`](9-main.py)
+* **Test:** `{"John": 12, "Alex": 8, "Bob": 14, "Mike": 14, "Molly": 16}` should return `{"John": 24, "Alex": 16, "Bob": 28, "Mike": 28, "Molly": 32}`.
+* Note: Every value in the dictionary should be integers.
