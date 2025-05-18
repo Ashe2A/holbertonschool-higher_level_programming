@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
-    """Prints an integer and checking it's an integer
+    """Prints an integer and checking it"s an integer
 
     Args:
         value (int): The integer, should be an integer or else...

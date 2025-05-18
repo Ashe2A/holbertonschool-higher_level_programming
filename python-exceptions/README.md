@@ -35,3 +35,11 @@
     * `12` and `2` should return `6.0` and print `Inside result: 6.0`
     * `12` and `0` should return `None` and print `Inside result: None`
 * Note: `a` and `b` should be integers
+
+## 4. Divide a list
+### [`4-list_division.py`](4-list_division.py)
+* Function that returns a list of float division results between lists and prints `wrong type` when an element is not an int or float, `division by 0` when there's a zero division, and `out of range` when the new list length is higher than any of the lists'. Avoided module importing. Used `try`/`except`/`finally`.
+### [`4-main.py`](4-main.py)
+* **Tests:**
+    * `[10, 8, 4]` and `[2, 4, 4]` with `3` should return `[5.0, 2.0, 1.0]`
+    * `[10, 8, 4, 4]` and `[2, 0, "H", 2, 7]` with `5` should return `[5.0, 0, 0, 2.0, 0]` and print `division by 0`, `wrong type`, `out of range`
