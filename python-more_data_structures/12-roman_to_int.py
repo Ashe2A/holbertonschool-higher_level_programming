@@ -1,5 +1,13 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    """Converts roman numeral to int
+
+    Args:
+        roman_string (str): Roman numera
+
+    Returns:
+        int: The corresponding number
+    """
     res = 0
     i = 0
     if roman_string is not None and isinstance(roman_string, str):
