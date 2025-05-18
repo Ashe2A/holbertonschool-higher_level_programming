@@ -26,3 +26,12 @@
     * `[1, 2, 3, 4, 5]` and `2` should print `12` and return `2`
     * `[1, 2, 3, 4, 5]` and `5` should print `12345` and return `5`
     * `[1, 2, 3, 4, 5]` and `7` should print `12345` and an `IndexError` message
+
+## 3. Integers division with debug
+### [`3-safe_print_division.py`](3-safe_print_division.py)
+* Function that returns a float division result and prints `Inside result: ` with the result. Avoided module importing. Used `try`/`except`/`finally` and `"{}".format()`.
+### [`3-main.py`](3-main.py)
+* **Tests:**
+    * `12` and `2` should return `6.0` and print `Inside result: 6.0`
+    * `12` and `0` should return `None` and print `Inside result: None`
+* Note: `a` and `b` should be integers
