@@ -38,3 +38,10 @@
 * Function that counts keys in a dictionary. Avoided module import.
 ### [`5-main.py`](5-main.py)
 * **Test:** `{"language": "C", "number": 13, "track": "Low level"}` should return `3`.
+
+## 6. Print sorted dictionary
+### [`6-print_sorted_dictionary.py`](6-print_sorted_dictionary.py)
+* Function that prints a dictionary ordered alphabetically by keys. Avoided module import. Only first-level keys are sorted.
+### [`6-main.py`](6-main.py)
+* **Test:** `{"language": "C", "Number": 89, "track": "Low level", "ids": [1, 2, 3]}` should return `3`.
+* Note: Every keys in the dictionary should be strings.
