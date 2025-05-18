@@ -9,4 +9,4 @@ def multiply_list_map(my_list=[], number=0):
     Returns:
         list: The new list
     """
-    return map(lambda i: i * number, my_list)
+    return list(map(lambda i: i * number, my_list))
