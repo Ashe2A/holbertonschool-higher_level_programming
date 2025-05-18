@@ -32,3 +32,9 @@
 * Function that unifies sets (without intersects). Avoided module import.
 ### [`4-main.py`](4-main.py)
 * **Test:** `{"Python", "C", "Javascript"}` and `{"Bash", "C", "Ruby", "Perl"}` should return `{"Bash", "Javascript", "Perl", "Python", "Ruby"}`.
+
+## 5. Number of keys
+### [`5-number_keys.py`](5-number_keys.py)
+* Function that counts keys in a dictionary. Avoided module import.
+### [`5-main.py`](5-main.py)
+* **Test:** `{"language": "C", "number": 13, "track": "Low level"}` should return `3`.
