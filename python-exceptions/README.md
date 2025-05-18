@@ -46,6 +46,12 @@
 
 ## 5. Raise exception
 ### [`5-raise_exception.py`](5-raise_exception.py)
-* Raise type error exception. Avoided module importing.
+* Raise `TypeError` exception. Avoided module importing.
 ### [`5-main.py`](5-main.py)
 * **Test:** Prints `"Exception raised"` when the exception is raised.
+
+## 6. Raise a message
+### [`6-raise_exception_msg.py`](6-raise_exception_msg.py)
+* Raise `NameError` exception with a message. Avoided module importing.
+### [`6-main.py`](6-main.py)
+* **Test:** Prints the message when the exception is raised.
