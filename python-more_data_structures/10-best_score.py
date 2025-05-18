@@ -8,7 +8,7 @@ def best_score(a_dictionary):
     Returns:
         string: The corresponding key, None if there is none
     """
-    if a_dictionary is None:
+    if a_dictionary is None or a_dictionary == {}:
         return None
     else:
         max = None
