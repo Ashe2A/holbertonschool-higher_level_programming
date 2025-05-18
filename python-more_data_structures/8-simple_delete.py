@@ -4,7 +4,8 @@ def simple_delete(a_dictionary, key=""):
 
     Args:
         a_dictionary (dict): The dictionary
-        key (str, optional): The key of the entry to delete. Defaults to empty string.
+        key (str, optional): The key of the entry to delete.
+            Defaults to empty string.
 
     Returns:
         dict: the updated dictionary
