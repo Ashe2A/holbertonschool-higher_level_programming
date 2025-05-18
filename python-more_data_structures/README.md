@@ -59,3 +59,10 @@
 ### [`8-main.py`](8-main.py)
 * **Test:** `{"language": "C", "number": 89, "track": "Low", "ids": [1, 2, 3]}` with the `"track"` key should return `{"language": "C", "number": 89, "ids": [1, 2, 3]}`.
 * Note: Every key should be strings.
+
+## 9. Multiply by 2
+### [`9-multiply_by_2.py`](9-multiply_by_2.py)
+* Function that doubles values in a dictionary and returns an updated copy of the dictionary. Avoided module import.
+### [`9-main.py`](9-main.py)
+* **Test:** `{"John": 12, "Alex": 8, "Bob": 14, "Mike": 14, "Molly": 16}` should return `{"John": 24, "Alex": 16, "Bob": 28, "Mike": 28, "Molly": 32}`.
+* Note: Every value in the dictionary should be integers.
