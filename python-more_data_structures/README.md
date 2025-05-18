@@ -78,4 +78,4 @@
 ### [`11-multiply_list_map.py`](11-multiply_list_map.py)
 * Function that maps a list by multiplying the elements by a number and converts it back to list format. Avoided module import, loops, modifying the original list and writing more than 3 lines.
 ### [`11-main.py`](11-main.py)
-* **Test:** `[1, 2, 3, 4, 6]` should return `[4, 8, 12, 16, 24]`.
+* **Test:** `[1, 2, 3, 4, 6]` and `4` should return `[4, 8, 12, 16, 24]`.
