@@ -43,3 +43,9 @@
 * **Tests:**
     * `[10, 8, 4]` and `[2, 4, 4]` with `3` should return `[5.0, 2.0, 1.0]`
     * `[10, 8, 4, 4]` and `[2, 0, "H", 2, 7]` with `5` should return `[5.0, 0, 0, 2.0, 0]` and print `division by 0`, `wrong type`, `out of range`
+
+## 5. Raise exception
+### [`5-raise_exception.py`](5-raise_exception.py)
+* Raise type error exception. Avoided module importing.
+### [`5-main.py`](5-main.py)
+* **Test:** Prints `"Exception raised"` when the exception is raised.
