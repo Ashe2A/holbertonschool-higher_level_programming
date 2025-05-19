@@ -2,13 +2,13 @@
 
 ## 0. Positive anything is better than negative nothing
 ### [`0-positive_or_negative.py`](0-positive_or_negative.py)
-* Randomizes the variable `number` and prints if it"s negative, positive or zero, followed by a newline.
+* Randomizes the variable `number` and prints if it's negative, positive or zero, followed by a newline.
 
 ## 1. The last digit
 ### [`1-last_digit.py`](1-last_digit.py)
 * Randomizes the variable `number` and prints if the last digit is between 0 and 5, greater than 5 or 0.
 
-## 2. I sometimes suffer from insomnia. And when I can"t fall asleep, I play what I call the alphabet game
+## 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game
 ### [`2-print_alphabet.py`](2-print_alphabet.py)
 * Prints lowercase alphabet, with one loop and neither imports nor storage.
 
@@ -45,17 +45,17 @@
 * Function that turns lowercase letters of a string into uppercase ones, using 2 `print` functions with string format, one loop, and neither of the `upper()` nor `isupper()` methods, nor imports nor modules.
 ### [`8-main.py`](8-main.py)
 * **Tests:**
-    * `"best"`: `"BEST"`
-    * `"Best School 98 Battery street"`: `"BEST SCHOOL 98 BATTERY STREET"`
+    * `'best'`: `'BEST'`
+    * `'Best School 98 Battery street'`: `'BEST SCHOOL 98 BATTERY STREET'`
 
-## 9. There are only 3 colors, 10 digits, and 7 notes; it"s what we do with them that"s important
+## 9. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important
 ### [`9-print_last_digit.py`](9-print_last_digit.py)
 * Function that prints the last digit of a number, without imports nor modules.
 ### [`9-main.py`](9-main.py)
 * **Tests:**
-    * `98`: Prints `"8"`
-    * `0`: Prints `"0"`
-    * `-1024`: Prints `"4"`
+    * `98`: Prints `'8'`
+    * `0`: Prints `'0'`
+    * `-1024`: Prints `'4'`
         * Returns `4`
 
 ## 10. a + b
@@ -93,8 +93,8 @@
 * Returns a copy of the string with the character at position `n` removed. Avoided module import.
 ### [`101-main.py`](101-main.py)
 * **Tests :**
-    * `"Best School"` and `3` should output `Bes School`
-    * `"Chicago"` and `2` should output `Chcago`
-    * `"C is fun!"` and `0` should output ` is fun!` (first character)
-    * `"School"` and `10` should output `School` (out of range)
-    * `"Python"` and `-2` should output `Pythn` (negative range)
+    * `'Best School'` and `3` should output `Bes School`
+    * `'Chicago'` and `2` should output `Chcago`
+    * `'C is fun!'` and `0` should output ` is fun!` (first character)
+    * `'School'` and `10` should output `School` (out of range)
+    * `'Python'` and `-2` should output `Pythn` (negative range)

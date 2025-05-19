@@ -1,7 +1,7 @@
 # [Python - Hello World](https://intranet.hbtn.io/projects/2170)
 ## 0. Hello, print
 ### [`2-print.py`](2-print.py)
-* Prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line, using the `print()` function.
+* Prints exactly `'Programming is like building a multilingual puzzle`, followed by a new line, using the `print()` function.
 
 ## 1. Print integer
 ### [`3-print_number.py`](3-print_number.py)

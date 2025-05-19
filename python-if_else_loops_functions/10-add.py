@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add(a, b):
-    """Adds two integers
+    '''Adds two integers
 
     Args:
         a (int): First integer
@@ -8,5 +8,5 @@ def add(a, b):
 
     Returns:
         int: sum of the integers
-    """
+    '''
     return a + b

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
-    """Sums tuples together
+    '''Sums tuples together
 
     Args:
         tuple_a (tuple, optional): The first tuple. Defaults to empty tuple.
@@ -8,7 +8,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
 
     Returns:
         The summed up tuple
-    """
+    '''
     res_zero = 0
     res_one = 0
     if len(tuple_a) > 0:

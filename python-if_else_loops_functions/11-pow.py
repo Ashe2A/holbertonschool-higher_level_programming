@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def pow(a, b):
-    """Powers a number to another
+    '''Powers a number to another
 
     Args:
         a (int): Computed number
@@ -8,5 +8,5 @@ def pow(a, b):
 
     Returns:
         int: Result of the power
-    """
+    '''
     return a ** b
