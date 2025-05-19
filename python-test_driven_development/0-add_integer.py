@@ -10,8 +10,8 @@ def add_integer(a, b=98):
         b (int, optional): second integer. Defaults to 98.
 
     Raises:
-        TypeError: if a isn't int or float
-        TypeError: if b isn't int or float
+        TypeError: if a isn"t int or float
+        TypeError: if b isn"t int or float
 
     Returns:
         int: sum of the two integers
