@@ -20,3 +20,8 @@
 ### [`4-print_square.py`](4-print_square.py)
 * Function that prints a square and raises `TypeError` when the specified size is not an integer, and `ValueError` when it's negative. Avoided module importing.
 ### [See test file](tests/4-print_square.txt)
+
+## 4. Text indentation
+### [`5-text_indentation.py`](5-text_indentation.py)
+* Function that prints a string with a newline each `.`, `?` and `:` character. It raises `TypeError` when the text to indent isn't a string. Avoided module importing and removed newline early spaces.
+### [See test file](tests/5-text_indentation.txt)
