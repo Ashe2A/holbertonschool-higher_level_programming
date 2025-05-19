@@ -3,6 +3,14 @@
 
 
 def text_indentation(text):
+    '''Indents text by characters
+
+    Args:
+        text (str): The text to indent
+
+    Raises:
+        TypeError: If text isn't a string
+    '''
     if not isinstance(text, str):
         raise TypeError('text must be a string')
     i = 0
