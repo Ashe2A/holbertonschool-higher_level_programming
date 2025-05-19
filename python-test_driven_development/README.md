@@ -25,3 +25,10 @@
 ### [`5-text_indentation.py`](5-text_indentation.py)
 * Function that prints a string with a newline each `.`, `?` and `:` character. It raises `TypeError` when the text to indent isn't a string. Avoided module importing and removed newline early spaces.
 ### [See test file](tests/5-text_indentation.txt)
+
+## 5. Max integer - Unittest
+### [`6-max_integer.py`](6-max_integer.py)
+* Function that find and return the max integer in a list of integers. If the list is empty, the function returns `None`.
+* Note: The file is already created and only unit tests have been implemented.
+### [See unit test file](tests/6-max_integer_test.txt)
+* Note: Test with `python3 -m unittest tests.6-max_integer_test`
