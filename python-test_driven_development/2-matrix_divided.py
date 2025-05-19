@@ -13,7 +13,7 @@ def matrix_divided(matrix, div=1):
     Raises:
         TypeError: matrix is not a list of list of integers
         TypeError: uneven matrix
-        TypeError: div isn't a number
+        TypeError: div isn"t a number
         ZeroDivisionError: div is zero
 
     Returns:
