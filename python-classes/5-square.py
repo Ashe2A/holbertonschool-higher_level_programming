@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Access and update private attribute'''
+'''Printing a square'''
 
 
 class Square():
@@ -41,3 +41,11 @@ class Square():
         if size < 0:
             raise ValueError('size must be >= 0')
         self.__size = size
+
+    def my_print(self):
+        if self.__size == 0:
+            print()
+        for i in range(self.__size):
+            for j in range(self.__size):
+                print("#", end="")
+            print()
