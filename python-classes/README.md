@@ -11,8 +11,9 @@
     * [`1-square.py`](1-square.py): a private `size` instance attribute
     * [`2-square.py`](2-square.py): as a positive integer (`TypeError` and `ValueError`).
     * [`3-square.py`](3-square.py): an `area` public method.
-    * [`4-square.py`](4-square.py): `size` getter and setter methods.
-    * [`5-square.py`](5-square.py): print method (`my_print()`).
+    * [`4-square.py`](4-square.py): a `size` getter and setter methods.
+    * [`5-square.py`](5-square.py): a print method (`my_print()`).
+    * [`6-square.py`](6-square.py): a `position` instance attribute, with getter and setter methods and updated print method (`my_print()`).
     * Avoided module import.
 
 # Why a getter and setter?
