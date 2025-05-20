@@ -6,8 +6,8 @@ class Square():
     '''Square class'''
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.   size = size
+        self.position = position
 
     def area(self):
         '''Area of the square
@@ -75,8 +75,8 @@ class Square():
         Raises:
             TypeError: If the position isn't a tuple of positive int
         '''
-        if not isinstance(value, tuple) or len(value) != 2\
-            or not isinstance(value[0], int) or not isinstance(value[1], int)\
-                or value[0] < 0 or value[1] < 0:
+        if not (isinstance(value, tuple) and len(value) == 2\
+            and isinstance(value[0], int) and isinstance(value[1], int)\
+                and value[0] >= 0 and value[1] >= 0):
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
