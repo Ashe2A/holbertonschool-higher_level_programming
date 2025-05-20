@@ -7,4 +7,7 @@
 * Displays square info
 
 ## 1-6. Square class
-* `Square` class with private `size` instance attribute ([`1-square.py`](1-square.py)). Avoided module import.
+* `Square` class with :
+    * [`1-square.py`](1-square.py): private `size` instance attribute
+    * [`2-square.py`](2-square.py): as a positive integer (`TypeError` and `ValueError`).
+    * Avoided module import.
