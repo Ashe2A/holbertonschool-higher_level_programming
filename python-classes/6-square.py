@@ -1,12 +1,13 @@
 #!/usr/bin/python3
-'''Printing a square'''
+'''Coordinates of a square'''
 
 
 class Square():
     '''Square class'''
 
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         self.__size = size
+        self.__position = position
 
     def area(self):
         '''Area of the square
@@ -46,7 +47,35 @@ class Square():
         '''Print square depending on size'''
         if self.__size == 0:
             print()
+        for i in range(self.__position[1]):
+            print()
         for i in range(self.__size):
+            print(" " * self.__position[0], end="")
             for j in range(self.__size):
                 print('#', end='')
             print()
+
+    @property
+    def position(self):
+        '''Position getter
+
+        Returns:
+            tuple of int: position of the square
+        '''
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        '''Position setter
+
+        Args:
+            value (tuple of int): the position of the square
+
+        Raises:
+            TypeError: If the position isn't a tuple of positive int
+        '''
+        if not (isinstance(value, tuple)
+                and isinstance(value[0], int) and isinstance(value[1], int)
+                and value[0] >= 0 and value[1] >= 0):
+            raise TypeError('position must be a tuple of 2 positive integers')
+        self.__position = value
