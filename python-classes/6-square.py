@@ -6,8 +6,8 @@ class Square():
     '''Square class'''
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         '''Area of the square
@@ -15,7 +15,19 @@ class Square():
         Returns:
             int: area of the square
         '''
-        return self.size ** 2
+        return self.__size ** 2
+
+    def my_print(self):
+        '''Print square depending on size'''
+        if self.__size == 0:
+            print()
+        for i in range(self.__position[1]):
+            print()
+        for i in range(self.__size):
+            print(' ' * self.__position[0], end='')
+            for j in range(self.__size):
+                print('#', end='')
+            print()
 
     @property
     def size(self):
@@ -42,18 +54,6 @@ class Square():
         if size < 0:
             raise ValueError('size must be >= 0')
         self.__size = size
-
-    def my_print(self):
-        '''Print square depending on size'''
-        if self.__size == 0:
-            print()
-        for i in range(self.position[1]):
-            print()
-        for i in range(self.size):
-            print(' ' * self.position[0], end='')
-            for j in range(self.size):
-                print('#', end='')
-            print()
 
     @property
     def position(self):
