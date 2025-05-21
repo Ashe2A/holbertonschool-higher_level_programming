@@ -13,6 +13,7 @@
     * [`3-rectangle.py`](3-rectangle.py): `__str__()` and `print()` instance methods for string representation
     * [`4-rectangle.py`](4-rectangle.py): `__repr__()` method for object construction representation
     * [`5-rectangle.py`](5-rectangle.py): `__del__()` method for object deletion message
+    * [`6-rectangle.py`](6-rectangle.py): class attribute `number_of_instances` in order to count the instances created
     * Avoided module import.
 
 # Why a getter and setter?
