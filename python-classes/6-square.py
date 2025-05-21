@@ -6,13 +6,13 @@ class Square():
     '''Square class'''
 
     def __init__(self, size=0, position=(0, 0)):
-        """Initialize instance attributes
+        '''Initialize instance attributes
 
         Args:
             size (int, optional): The size of the square. Defaults to 0.
             position (tuple, optional): Position of the square.
                 Defaults to (0, 0).
-        """
+        '''
         self.size = size
         self.position = position
 
