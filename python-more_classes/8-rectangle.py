@@ -135,7 +135,8 @@ class Rectangle():
             TypeError: If the second rectangle isn't a Rectangle
 
         Returns:
-            Rectangle: the biggest of both rectangle, or the first one if they're as large
+            Rectangle: the biggest of both rectangle,
+                or the first one if they're as large
         '''
         if not isinstance(rect_1, __class__):
             raise TypeError('rect_1 must be an instance of Rectangle')
