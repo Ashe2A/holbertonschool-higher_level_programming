@@ -6,7 +6,7 @@
 ### [`0-main.py`](0-main.py)
 * Displays rectangle info
 
-## 1-6. Rectangle class
+## 1-9. Rectangle class
 * `Rectangle` class with :
     * [`1-rectangle.py`](1-rectangle.py): private `width` and `height` instance attributes with getters and setters (positive integers)
     * [`2-rectangle.py`](2-rectangle.py): `area()` and `perimeter()` instance methods
@@ -15,6 +15,8 @@
     * [`5-rectangle.py`](5-rectangle.py): `__del__()` method for object deletion message
     * [`6-rectangle.py`](6-rectangle.py): class attribute `number_of_instances` in order to count the instances created
     * [`7-rectangle.py`](7-rectangle.py): class attribute `print_symbol` in order define which symbol for string representation
+    * [`8-rectangle.py`](8-rectangle.py): static method `bigger_or_equal` to get the biggest rectangle among two
+    * [`9-rectangle.py`](9-rectangle.py): class method `square` to create a square based on a rectangle
     * Avoided module import.
 
 # Why a getter and setter?
