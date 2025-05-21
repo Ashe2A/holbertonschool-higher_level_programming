@@ -96,5 +96,10 @@ class Rectangle():
         for i in range(self.__height):
             for j in range(self.__width):
                 res += '#'
-            res += '\n'
+            if i < self.__height - 1:
+                res += '\n'
         return res
+
+    def print(self):
+        '''Print the rectangle'''
+        print(self.__str__, end='')
