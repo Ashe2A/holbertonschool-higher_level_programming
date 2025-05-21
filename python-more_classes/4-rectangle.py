@@ -111,4 +111,4 @@ class Rectangle():
         Returns:
             _type_: _description_
         """
-        return "{}({}, {})".format(self.__class__.__name__, self.__width, self.__height)
+        return "{}({}, {})".format(__class__.__name__, self.__width, self.__height)
