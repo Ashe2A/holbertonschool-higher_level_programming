@@ -85,3 +85,20 @@ class Rectangle():
             return 0
         else:
             return 2 * (self.__height + self.__width)
+
+    def __str__(self):
+        '''String representation of rectangle
+
+        Returns:
+            str: string representation of rectangle
+        '''
+        res = ''
+        for i in range(self.__height):
+            for j in range(self.__width):
+                res += '#'
+            res += '\n'
+        return res
+
+    def print(self):
+        '''Print the rectangle'''
+        print(self.__str__, end='')
