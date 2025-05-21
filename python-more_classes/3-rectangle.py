@@ -98,7 +98,3 @@ class Rectangle():
                 res += '#'
             res += '\n'
         return res
-
-    def print(self):
-        '''Print the rectangle'''
-        print(self.__str__, end='')
