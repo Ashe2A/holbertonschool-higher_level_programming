@@ -106,9 +106,10 @@ class Rectangle():
         print(self.__str__, end='')
 
     def __repr__(self):
-        """_summary_
+        """Representation of Rectangle object
 
         Returns:
-            _type_: _description_
+            str: The string representation of the rectangle
         """
-        return "{}({}, {})".format(__class__.__name__, self.__width, self.__height)
+        return "{}({}, {})".format(__class__.__name__,
+                                   self.__width, self.__height)
