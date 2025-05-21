@@ -93,11 +93,12 @@ class Rectangle():
             str: string representation of rectangle
         '''
         res = ''
-        for i in range(self.__height):
-            for j in range(self.__width):
-                res += '#'
-            if i < self.__height - 1:
-                res += '\n'
+        if self.__height > 0 and self.__width > 0:
+            for i in range(self.__height):
+                for j in range(self.__width):
+                    res += '#'
+                if i < self.__height - 1:
+                    res += '\n'
         return res
 
     def print(self):
