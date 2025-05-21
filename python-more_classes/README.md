@@ -8,7 +8,8 @@
 
 ## 1-6. Rectangle class
 * `Rectangle` class with :
-    * [`1-square.py`](1-square.py): private `width` and `height` instance attributes with getters and setters
+    * [`1-square.py`](1-square.py): private `width` and `height` instance attributes with getters and setters (positive integers)
+    * [`2-square.py`](2-square.py): `area()` and `perimeter()` instance methods
     * Avoided module import.
 
 # Why a getter and setter?
