@@ -113,3 +113,7 @@ class Rectangle():
         '''
         return '{}({}, {})'.format(__class__.__name__,
                                    self.__width, self.__height)
+
+    def __del__(self):
+        '''Print goodbye (and pray your god)'''
+        print('Bye rectangle...')
