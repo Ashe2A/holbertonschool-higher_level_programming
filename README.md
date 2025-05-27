@@ -12,3 +12,6 @@
 * Week 2
     # [Python - Classes and Objects](python-classes/README.md)
     # [Python - More classes and Objects](python-more_classes/README.md)
+
+* Week 3
+    # [Python - Inheritance](python-inheritance/README.md)
