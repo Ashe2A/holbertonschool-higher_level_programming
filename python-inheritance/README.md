@@ -8,3 +8,9 @@
     * Lookup first empty class inheriting `object` class
     * Lookup second class with a method inheriting `object` class
     * Lookup `int` type
+
+## 1. My list
+### [`1-my_list.py`](1-my_list.py)
+* Function that sorts and prints an instance of the new class `MyList` inheriting from `list`. Avoided module import
+### [See test file](tests/inheritance.py)
+* Note: all the elements of the list will be of type `int`
