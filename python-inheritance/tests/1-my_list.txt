@@ -10,7 +10,6 @@
 [1, 4, 2, 3, 5]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [1, 2, 3, 4, 5]
 
 >>> my_list = MyList([1, 4, 2, 3, 5])
@@ -31,7 +30,6 @@
 [1, -4, 2, -3, 5]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4, -3, 1, 2, 5]
 
 >>> my_list = MyList([1, -4, 2, -3, 5])
@@ -52,7 +50,6 @@
 [1, -4, 2, -3, 5]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4, -3, 1, 2, 5]
 
 
@@ -73,7 +70,6 @@
 [1.0, -4, 2.4, -3.6, 5]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4, -3.6, 1.0, 2.4, 5]
 
 
@@ -90,7 +86,6 @@
 [-4]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4]
 
 
@@ -111,7 +106,7 @@
 
 >>> my_list = MyList()
 >>> my_list.append(-4.0)
->>> my_list.append(-4)
+>>> my_list.append(-4.0)
 >>> my_list.append(2.4)
 >>> my_list.append(-3.6)
 >>> my_list.append(5)
@@ -119,13 +114,12 @@
 [-4.0, -4.0, 2.4, -3.6, 5]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4.0, -4.0, -3.6, 2.4, 5]
 
->>> my_list = MyList([-4.0, -4.0, 2.4, -3.6, 5])
->>> print(my_list)
-[-4.0, -4.0, 2.4, -3.6, 5]
 
+>>> my_list = MyList([-4.0, -4.0, -4.0, -4.0, -4.0])
+>>> print(my_list)
+[-4.0, -4.0, -4.0, -4.0, -4.0]
 
 >>> my_list.print_sorted()
 [-4.0, -4.0, -4.0, -4.0, -4.0]
@@ -140,5 +134,4 @@
 [-4.0, -4.0, -4.0, -4.0, -4.0]
 
 >>> my_list.print_sorted()
->>> print(my_list)
 [-4.0, -4.0, -4.0, -4.0, -4.0]
