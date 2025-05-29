@@ -32,3 +32,9 @@
 * Function that checks if is an instance of a subclass of a class. Avoided module import
 ### [`4-main.py`](4-main.py)
 * **Test:** `1` should inherit from `int` and `object`, but not from `float`
+
+## 5. Geometry module
+### [`5-base_geometry.py`](5-base_geometry.py)
+* Empty `BaseGeometry` class. Nothing to report. Avoided module import
+### [`5-main.py`](5-main.py)
+* Displays geometry info
