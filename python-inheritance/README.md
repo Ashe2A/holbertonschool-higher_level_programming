@@ -14,3 +14,9 @@
 * Function that sorts and prints an instance of the new class `MyList` inheriting from `list`. Avoided module import
 ### [See test file](tests/inheritance.py)
 * Note: all the elements of the list will be of type `int`
+
+## 2. Exact same object
+### [`2-is_same_class.py`](2-is_same_class.py)
+* Function that checks whether an object is an instance of a class. Avoided module import
+### [`2-main.py`](2-main.py)
+* **Test:** `1` should be an `int`, but neither a `float` nor an `object`
