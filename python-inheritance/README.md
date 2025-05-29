@@ -23,6 +23,12 @@
 
 ## 3. Same class or inherit from
 ### [`3-is_kind_of_class.py`](3-is_kind_of_class.py)
-* Function that checks whether an object is an instance of a class or a subclass of this class. Avoided module import
+* Function that checks whether an object is an instance or subclass of a class, or not. Avoided module import
 ### [`3-main.py`](3-main.py)
 * **Test:** `1` should be an `int` and an `object`, but not a `float`
+
+## 4. Only sub class of
+### [`4-inherits_from.py`](4-inherits_from.py)
+* Function that checks if is an instance of a subclass of a class. Avoided module import
+### [`4-main.py`](4-main.py)
+* **Test:** `1` should inherit from `int` and `object`, but not from `float`
