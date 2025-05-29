@@ -38,3 +38,13 @@
 * Empty `BaseGeometry` class. Nothing to report. Avoided module import
 ### [`5-main.py`](5-main.py)
 * Displays geometry info
+
+## 6-11. BaseGeometry, Rectangle & Square classes
+* `BaseGeometry` class with :
+    * [`6-base_geometry.py`](6-base_geometry.py): an `area()` method
+    * [`7-base_geometry.py`](7-base_geometry.py): an `integer_validator()` method **[(See test file)](tests/7-base_geometry.txt)**
+    * [`8-rectangle.py`](8-rectangle.py): a `Rectangle` subclass
+    * [`9-rectangle.py`](9-rectangle.py): a implementation of the `area()` super method
+    * [`10-square.py`](10-square.py): a `Square` subclass
+    * [`11-square.py`](11-square.py): a string description print method (`str()`)
+    * Avoided module import.
