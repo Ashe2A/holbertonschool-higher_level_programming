@@ -20,3 +20,9 @@
 * Function that checks whether an object is an instance of a class. Avoided module import
 ### [`2-main.py`](2-main.py)
 * **Test:** `1` should be an `int`, but neither a `float` nor an `object`
+
+## 3. Same class or inherit from
+### [`3-is_kind_of_class.py`](3-is_kind_of_class.py)
+* Function that checks whether an object is an instance of a class or a subclass of this class. Avoided module import
+### [`3-main.py`](3-main.py)
+* **Test:** `1` should be an `int` and an `object`, but not a `float`
