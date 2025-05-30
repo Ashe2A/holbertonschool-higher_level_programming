@@ -30,4 +30,5 @@ class Rectangle(BaseGeometry):
         Returns:
             str: string representation of the rectangle
         '''
-        return '[{}] {}/{}'.format(__class__.__name__, self.__width, self.__height)
+        return '[{}] {}/{}'.format(__class__.__name__,
+                                   self.__width, self.__height)
