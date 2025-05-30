@@ -11,8 +11,8 @@ class Animal(ABC):
         ABC (class): Inherits from bstract class
     '''
 
-    @abstractmethod()
-    def sound():
+    @abstractmethod
+    def sound(self):
         '''Sound abstract method
 
         Raises:
@@ -25,7 +25,7 @@ class Animal(ABC):
 class Dog(Animal):
     '''Dog class'''
 
-    def sound():
+    def sound(self):
         '''Dog sound method
 
         Returns:
@@ -37,7 +37,7 @@ class Dog(Animal):
 class Cat(Animal):
     '''Cat class'''
 
-    def sound():
+    def sound(self):
         '''Car sound method
 
         Returns:
