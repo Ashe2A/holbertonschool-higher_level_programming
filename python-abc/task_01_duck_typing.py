@@ -52,7 +52,7 @@ class Circle(Shape):
         Returns:
             int: circumference of the circle (pi·2r)
         '''
-        return abs(self.__radius * pi * 2) 
+        return abs(self.__radius * pi * 2)
 
 
 class Rectangle(Shape):
