@@ -44,7 +44,7 @@ class Circle(Shape):
         Returns:
             int: area of the circle (pi·r²)
         '''
-        return (self.radius ** 2) * pi
+        return self.radius * self.radius * pi
 
     def perimeter(self):
         '''Circumference of the circle
