@@ -11,7 +11,7 @@ class CountedIterator():
         try:
             next_iteration = next(self.__iterator)
         except StopIteration as e:
-            print(e)
+            raise StopIteration(e)
         self.__counter += 1
         return next_iteration
 
