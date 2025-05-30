@@ -27,3 +27,4 @@ class VerboseList(list):
     def pop(self, index=-1):
         '''Pop overriding class'''
         print("Popped [{}] from the list.".format(super().pop(index)))
+        return self
