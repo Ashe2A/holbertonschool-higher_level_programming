@@ -37,3 +37,27 @@
     * `remove(2)` should print `Removed [2] from the list.` and edit the list into `[1, 3, 4, 5, 6]`
     * `pop()` should print `Popped [6] from the list.` and edit the list into `[1, 3, 4, 5]`
     * `pop(0)` should print `Popped [1] from the list.` and edit the list into `[3, 4, 5]`
+
+## 3. CountedIterator - Keeping Track of Iteration
+### [`task_03_countediterator.py`](task_03_countediterator.py)
+* `CountedIterator` iterating and counting iterations.
+### [`main_03_countediterator.py`](main_03_countediterator.py)
+* **Test:** with a the list `[1, 2, 3, 4]`, it iterates four times on `1`, `2`, `3` and `4`
+
+## 4. The Enigmatic FlyingFish - Exploring Multiple Inheritance
+### [`task_04_flyingfish.py`](task_04_flyingfish.py)
+* `FlyingFish` class inheriting from both flying airborne `Bird` class and swiming underwater `Fish`.
+### [`main_04_flyingfish.py`](main_04_flyingfish.py)
+* **Test:**
+    * The flying fish is swimming!
+    * The flying fish is soaring!
+    * The flying fish lives both in water and the sky!
+
+## 5. The Mystical Dragon - Mastering Mixins
+### [`task_05_dragon.py`](task_05_dragon.py)
+* `Dragon` class inheriting from both flying airborne `FlyMixin` class and swiming underwater `SwimMixin`.
+### [`main_05_dragon.py`](main_05_dragon.py)
+* **Test:**
+    * The creature swims!
+    * The creature flies!
+    * The dragon roars!
