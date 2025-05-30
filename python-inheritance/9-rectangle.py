@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Rectangle'''
+'''Full Rectangle'''
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -7,7 +7,7 @@ class Rectangle(BaseGeometry):
     '''Rectangle subclass'''
 
     def __init__(self, width, height):
-        '''Rectangle construct
+        '''Rectangle constructor
 
         Args:
             width (int): Width of the rectangle

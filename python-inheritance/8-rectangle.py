@@ -7,7 +7,7 @@ class Rectangle(BaseGeometry):
     '''Rectangle subclass'''
 
     def __init__(self, width, height):
-        '''Rectangle construct
+        '''Rectangle constructor
 
         Args:
             width (int): Width of the rectangle
