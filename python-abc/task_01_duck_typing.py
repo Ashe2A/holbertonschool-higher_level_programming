@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 '''Shapes, Interfaces, and Duck Typing'''
-from abc import ABC
-from abc import abstractmethod
+from abc import ABC, abstractmethod
 from math import pi
 
 
@@ -44,7 +43,7 @@ class Circle(Shape):
         Returns:
             int: area of the circle (pi·r²)
         '''
-        return self.radius * self.radius * pi
+        return (self.radius ** 2) * pi
 
     def perimeter(self):
         '''Circumference of the circle
