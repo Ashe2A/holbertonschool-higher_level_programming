@@ -8,7 +8,7 @@ class Animal(ABC):
     '''Animal abstract class
 
     Args:
-        ABC (class): Inherits from bstract class
+        ABC (class): Inherits from abstract class
     '''
 
     @abstractmethod
