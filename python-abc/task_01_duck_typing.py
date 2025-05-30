@@ -30,11 +30,11 @@ class Circle(Shape):
         Shape (abstractclass): Inherits from Shape superclass
     '''
 
-    def __init__(self, radius=0):
+    def __init__(self, radius):
         '''Circle constructor
 
         Args:
-            radius (int, optional): Radius of the circle. Defaults to 0.
+            radius (int): Radius of the circle.
         '''
         self.radius = radius
 
@@ -62,12 +62,12 @@ class Rectangle(Shape):
         Shape (abstractclass): Inherits from Shape superclass
     '''
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         '''Rectangle constructor
 
         Args:
-            width (int, optional): Width of the rectangle. Defaults to 0.
-            height (int, optional): Height of the rectangle. Defaults to 0.
+            width (int): Width of the rectangle.
+            height (int): Height of the rectangle.
         '''
         self.width = width
         self.height = height
