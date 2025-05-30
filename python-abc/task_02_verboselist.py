@@ -12,20 +12,20 @@ class VerboseList(list):
     def append(self, object):
         '''Append overriding class'''
         super().append(object)
-        print("Added [{}] to the list.".format(object))
+        print('Added [{}] to the list.'.format(object))
 
     def extend(self, iterable):
         '''Extend overriding class'''
         super().extend(iterable)
-        print("Extended the list with [{}] items.".format(len(iterable)))
+        print('Extended the list with [{}] items.'.format(len(iterable)))
 
     def remove(self, value):
         '''Remove overriding class'''
-        print("Removed [{}] from the list.".format(value))
+        print('Removed [{}] from the list.'.format(value))
         super().remove(value)
 
     def pop(self, index=-1):
         '''Pop overriding class'''
         popped_item = self[index]
-        print("Popped [{}] from the list.".format(popped_item))
+        print('Popped [{}] from the list.'.format(popped_item))
         return super().pop(index)
