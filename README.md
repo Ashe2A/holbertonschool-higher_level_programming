@@ -16,3 +16,8 @@
 * Week 3
     # [Python - Inheritance](python-inheritance/README.md)
     # [Python - Abstract Classes and Interfaces](python-abc/README.md)
+
+* Week 4
+    # [Python - Input/Output](python-input_output/README.md)
+
+Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache__/` folder creation upon execution.
