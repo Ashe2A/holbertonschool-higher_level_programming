@@ -20,19 +20,25 @@
 
 ## 3. To JSON string
 ### [`3-to_json_string.py`](3-to_json_string.py)
-* Function that converts an object into a JSON dump.
+* Function that converts an object into a JSON dump. Avoided exceptions.
 ### [`3-main.py`](3-main.py)
 * **Tests:** List `[1, 2, 3]` and dictionary `{'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo'], 'is_active': True, 'info': {'age': 36, 'average': 3.14}}`
 
 ## 4. From JSON string to Object
 ### [`4-from_json_string.py`](4-from_json_string.py)
-* Function that converts a JSON dump into a python object.
+* Function that converts a JSON dump into a python object. Avoided exceptions.
 ### [`4-main.py`](4-main.py)
 * **Tests:** List `'[1, 2, 3]'` and dictionary `'''{'is_active': true, 'info': {'age': 36, 'average': 3.14}, 'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo']}'''`
 
 ## 5. Save Object to a file
 ### [`5-save_to_json_file.py`](5-save_to_json_file.py)
-* Writes an object's JSON dump into a file.
+* Writes an object's JSON dump into a file. Avoided exceptions.
 ### [`5-main.py`](5-main.py)
 * **Tests:** See [`my_list.json`](my_list.json), [`my_dict.json`](my_dict.json), [`my_set.json`](my_set.json) files
 * Sets are not a JSON serializable object type
+
+## 6. Create object from a JSON file
+### [`6-load_from_json_file.py`](6-load_from_json_file.py)
+* Creates an object's from its JSON dump. Avoided exceptions.
+### [`6-main.py`](6-main.py)
+* **Tests:** See [`my_list.json`](my_list.json), [`my_dict.json`](my_dict.json)
