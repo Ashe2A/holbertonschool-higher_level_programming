@@ -42,3 +42,11 @@
 * Creates an object's from its JSON dump. Avoided exceptions.
 ### [`6-main.py`](6-main.py)
 * **Tests:** See [`my_list.json`](my_list.json), [`my_dict.json`](my_dict.json)
+
+## 7. Load, add, save
+### [`7-add_item.py`](7-add_item.py)
+* Script that takes args and writes them into a JSON dump in a file.
+* **Tests:**
+    * No args writes `[]`
+    * `'Best'` and `'School'` writes `['Best', 'School']`
+    * `'89'`, `'School'` and `'C'` updates into `['Best', 'School', '89', 'Python', 'C']`
