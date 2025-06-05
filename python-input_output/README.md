@@ -17,3 +17,15 @@
 * Write into a file, creates a file when non existent or appends to its content if it exists. Returns the number of printed characters. Avoided module import and exceptions.
 ### [`2-main.py`](2-main.py)
 * **Tests:** `file_append.txt` text file encoded in UTF-8
+
+## 3. To JSON string
+### [`3-to_json_string.py`](3-to_json_string.py)
+* Function that converts an object into a JSON dump.
+### [`3-main.py`](3-main.py)
+* **Tests:** List `[1, 2, 3]` and dictionary `{'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo'], 'is_active': True, 'info': {'age': 36, 'average': 3.14}}`
+
+## 4. From JSON string to Object
+### [`4-from_json_string.py`](4-from_json_string.py)
+* Function that converts a JSON dump into a python object.
+### [`4-main.py`](4-main.py)
+* **Tests:** List `'[1, 2, 3]'` and dictionary `'''{'is_active': true, 'info': {'age': 36, 'average': 3.14}, 'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo']}'''`
