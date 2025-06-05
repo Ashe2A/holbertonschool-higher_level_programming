@@ -4,19 +4,19 @@
 ### [`0-read_file.py`](0-read_file.py)
 * Read a file. Avoided module import and exceptions.
 ### [`0-main.py`](0-main.py)
-* **Tests:** `my_file_0.txt` text file encoded in UTF-8
+* **Tests:** [`my_file_0.txt`](my_file_0.txt) text file encoded in UTF-8
 
 ## 1. Write to a file
 ### [`1-write_file.py`](1-write_file.py)
 * Write into a file, creates a file when non existent or overwrites its content if it exists. Returns the number of printed characters. Avoided module import and exceptions.
 ### [`1-main.py`](1-main.py)
-* **Tests:** Write `my_first_file.txt` text file encoded in UTF-8
+* **Tests:** Write [`my_first_file.txt`](my_first_file.txt) text file encoded in UTF-8
 
 ## 2. Append to a file
 ### [`2-append_write.py`](2-append_write.py)
 * Write into a file, creates a file when non existent or appends to its content if it exists. Returns the number of printed characters. Avoided module import and exceptions.
 ### [`2-main.py`](2-main.py)
-* **Tests:** `file_append.txt` text file encoded in UTF-8
+* **Tests:** [`file_append.txt`](file_append.txt) text file encoded in UTF-8
 
 ## 3. To JSON string
 ### [`3-to_json_string.py`](3-to_json_string.py)
@@ -29,3 +29,10 @@
 * Function that converts a JSON dump into a python object.
 ### [`4-main.py`](4-main.py)
 * **Tests:** List `'[1, 2, 3]'` and dictionary `'''{'is_active': true, 'info': {'age': 36, 'average': 3.14}, 'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo']}'''`
+
+## 5. Save Object to a file
+### [`5-save_to_json_file.py`](5-save_to_json_file.py)
+* Writes an object's JSON dump into a file.
+### [`5-main.py`](5-main.py)
+* **Tests:** See [`my_list.json`](my_list.json), [`my_dict.json`](my_dict.json), [`my_set.json`](my_set.json) files
+* Sets are not a JSON serializable object type

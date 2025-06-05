@@ -7,6 +7,6 @@ def from_json_string(my_str):
     '''Convert an object's JSON string representation into an object
 
     Args:
-        my_str (obj): The JSON string
+        my_str (str): The JSON string
     '''
     return json.loads(my_str)
