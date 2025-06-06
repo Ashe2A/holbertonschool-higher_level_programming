@@ -53,7 +53,7 @@
 
 ## 8. Class to JSON
 ### [`8-class_to_json.py`](8-class_to_json.py)
-* Function that creates a class' JSON dump. Avoided module import.
+* Function that creates a class' dictionary corresponding to its JSON dump. Avoided module import.
 ### [`8-main.py`](8-main.py) & [`8-main_2.py`](8-main_2.py)
 * **Tests:** `number` gets `89` or the `John` class calls the `win()` method
-* Note: Sets or other non serializable object types will not be passed.
+* Note: Sets or other non serializable object types will not be included in the class.
