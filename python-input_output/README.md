@@ -57,3 +57,12 @@
 ### [`8-main.py`](8-main.py) & [`8-main_2.py`](8-main_2.py)
 * **Tests:** `number` gets `89` or the `John` class calls the `win()` method
 * Note: Sets or other non serializable object types will not be included in the class.
+
+## 9. Student to JSON
+### [`9-student.py`](9-student.py)
+* Class with a method that returns the dictionary of the class. Avoided module import.
+### [`9-main.py`](9-main.py)
+* **Tests:**
+    * John Doe, 23
+    * Bob Dylan, 27
+    * Call of all the instances to display their dictionaries
