@@ -1,46 +1,46 @@
 #!/usr/bin/python3
-'''Abstract Animal Class and its Subclasses'''
+"""Abstract Animal Class and its Subclasses"""
 from abc import ABC
 from abc import abstractmethod
 
 
 class Animal(ABC):
-    '''Animal abstract class
+    """Animal abstract class
 
     Args:
         ABC (class): Inherits from abstract class
-    '''
+    """
 
     @abstractmethod
     def sound(self):
-        '''Sound abstract method
+        """Sound abstract method
 
         Raises:
             TypeError: If subclasses don't implement the method
-        '''
-        raise TypeError('Can\'t instantiate abstract class Animal with\
-            abstract method sound')
+        """
+        raise TypeError("Can\'t instantiate abstract class Animal with\
+            abstract method sound")
 
 
 class Dog(Animal):
-    '''Dog class'''
+    """Dog class"""
 
     def sound(self):
-        '''Dog sound method
+        """Dog sound method
 
         Returns:
             str: A dog barks
-        '''
-        return 'Bark'
+        """
+        return "Bark"
 
 
 class Cat(Animal):
-    '''Cat class'''
+    """Cat class"""
 
     def sound(self):
-        '''Car sound method
+        """Car sound method
 
         Returns:
             str: A cat meows
-        '''
-        return 'Meow'
+        """
+        return "Meow"

@@ -1,5 +1,5 @@
 Tests for print_square()
->>> print_square = __import__('4-print_square').print_square
+>>> print_square = __import__("4-print_square").print_square
 
 >>> print_square(4)
 ####
@@ -26,7 +26,7 @@ Tests for print_square()
 #
 
 
->>> print_square('Square')
+>>> print_square("Square")
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
@@ -36,12 +36,12 @@ Traceback (most recent call last):
     ...
 TypeError: size must be an integer
 
->>> print_square(float('inf'))
+>>> print_square(float("inf"))
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
 
->>> print_square(float('NaN'))
+>>> print_square(float("NaN"))
 Traceback (most recent call last):
     ...
 TypeError: size must be an integer
@@ -60,4 +60,4 @@ TypeError: size must be an integer
 >>> print_square()
 Traceback (most recent call last):
     ...
-TypeError: print_square() missing 1 required positional argument: 'size'
+TypeError: print_square() missing 1 required positional argument: "size"

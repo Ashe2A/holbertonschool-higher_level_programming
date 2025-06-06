@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''Simple rectangle'''
+"""Simple rectangle"""
 
 
 class Rectangle():
-    '''Empty rectangle'''
+    """Empty rectangle"""
     pass

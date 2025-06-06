@@ -5,8 +5,8 @@
 * Abstract `Animal` class as well as `Dog` and `Cat` subclasses.
 ### [`main_00_abc.py`](main_00_abc.py)
 * **Tests:**
-    * `Dog` sound: `'Bark'`
-    * `Cat` sound: `'Meow'`
+    * `Dog` sound: `"Bark"`
+    * `Cat` sound: `"Meow"`
 
 ## 1. Shapes, Interfaces, and Duck Typing
 ### [`task_01_duck_typing.py`](task_01_duck_typing.py)

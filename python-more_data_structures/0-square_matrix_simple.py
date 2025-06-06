@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    '''Squares up a matrix
+    """Squares up a matrix
 
     Args:
         matrix (list, optional): The matrix. Defaults to empty list.
 
     Returns:
         list(list): The squared up matrix
-    '''
+    """
     new_matrix = []
     for i in matrix:
         new_i = []

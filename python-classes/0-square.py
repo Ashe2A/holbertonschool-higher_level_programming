@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''My first square'''
+"""My first square"""
 
 
 class Square():
-    '''Empty square'''
+    """Empty square"""
     pass

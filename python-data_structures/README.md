@@ -40,9 +40,9 @@
 * Function that removes Cs (lowercase or uppercase) from a string (returns a modified copy of the string). Avoided module import as well as the `replace()` method.
 ### [`5-main.py`](5-main.py)
 * **Tests:**
-    * `'Best School'` should return `'Best Shool'`
-    * `'Chicago'` should return `'hiago'`
-    * `'C is fun!'` should return `' is fun!'`
+    * `"Best School"` should return `"Best Shool"`
+    * `"Chicago"` should return `"hiago"`
+    * `"C is fun!"` should return `" is fun!"`
 
 ## 6. Lists of lists = Matrix
 ### [`6-print_matrix_integer.py`](6-print_matrix_integer.py)
@@ -67,7 +67,7 @@
 ### [`8-multiple_returns.py`](8-multiple_returns.py)
 * Function that reports the length and starting character of a string. If the string is empty, `None` is returned. Avoided module import.
 ### [`8-main.py`](8-main.py)
-* **Test:** `'At school, I learnt C!'` returns `(22, 'A')`.
+* **Test:** `"At school, I learnt C!"` returns `(22, "A")`.
 
 ## 9. Find the max
 ### [`9-max_integer.py`](9-max_integer.py)

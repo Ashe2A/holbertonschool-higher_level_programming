@@ -1,15 +1,15 @@
 #!/usr/bin/python3
-'''Unittest for max_integer([..])
-'''
+"""Unittest for max_integer([..])
+"""
 import unittest
-max_integer = __import__('6-max_integer').max_integer
+max_integer = __import__("6-max_integer").max_integer
 
 
 class TestMaxInteger(unittest.TestCase):
-    '''Unit test class'''
+    """Unit test class"""
 
     def test_ordered_list(self):
-        '''Ordered lists unit tests'''
+        """Ordered lists unit tests"""
         ordered_list_1 = [1, 2, 3, 4]
         ordered_list_2 = [-50, 20, 37, 425]
         
@@ -26,7 +26,7 @@ class TestMaxInteger(unittest.TestCase):
 
 
     def test_unordered_list(self):
-        '''Unordered lists unit tests'''
+        """Unordered lists unit tests"""
         unordered_list_1 = [1, 3, 2, 4]
         unordered_list_2 = [-50, 20, 425, 37]
 
@@ -43,10 +43,10 @@ class TestMaxInteger(unittest.TestCase):
 
 
     def test_other_list(self):
-        '''
+        """
         Other lists unit tests
         (float, negative, None, inf, NaN, empty, missing arg)
-        '''
+        """
         other_list_1 = [242.124, -611.661, 166, -805]
         other_list_2 = [242.124, 611.661, -166, -805]
         other_list_3 = [-242.124, -611.661, 166, -805]
@@ -79,5 +79,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([98]), 98)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

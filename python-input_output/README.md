@@ -22,13 +22,13 @@
 ### [`3-to_json_string.py`](3-to_json_string.py)
 * Function that converts an object into a JSON dump. Avoided exceptions.
 ### [`3-main.py`](3-main.py)
-* **Tests:** List `[1, 2, 3]` and dictionary `{'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo'], 'is_active': True, 'info': {'age': 36, 'average': 3.14}}`
+* **Tests:** List `[1, 2, 3]` and dictionary `{"id": 12, "name": "John", "places": ["San Francisco", "Tokyo"], "is_active": True, "info": {"age": 36, "average": 3.14}}`
 
 ## 4. From JSON string to Object
 ### [`4-from_json_string.py`](4-from_json_string.py)
 * Function that converts a JSON dump into a python object. Avoided exceptions.
 ### [`4-main.py`](4-main.py)
-* **Tests:** List `'[1, 2, 3]'` and dictionary `'''{'is_active': true, 'info': {'age': 36, 'average': 3.14}, 'id': 12, 'name': 'John', 'places': ['San Francisco', 'Tokyo']}'''`
+* **Tests:** List `"[1, 2, 3]"` and dictionary `"""{"is_active": true, "info": {"age": 36, "average": 3.14}, "id": 12, "name": "John", "places": ["San Francisco", "Tokyo"]}"""`
 
 ## 5. Save Object to a file
 ### [`5-save_to_json_file.py`](5-save_to_json_file.py)
@@ -48,8 +48,8 @@
 * Script that takes args and writes them into a JSON dump in a file.
 * **Tests:**
     * No args writes `[]`
-    * `'Best'` and `'School'` writes `['Best', 'School']`
-    * `'89'`, `'School'` and `'C'` updates into `['Best', 'School', '89', 'Python', 'C']`
+    * `"Best"` and `"School"` writes `["Best", "School"]`
+    * `"89"`, `"School"` and `"C"` updates into `["Best", "School", "89", "Python", "C"]`
 
 ## 8. Class to JSON
 ### [`8-class_to_json.py`](8-class_to_json.py)

@@ -7,6 +7,6 @@ counted_iter = CountedIterator(data)
 try:
     while True:
         item = next(counted_iter)
-        print(f'Got {item}, total {counted_iter.get_count()} items iterated.')
+        print(f"Got {item}, total {counted_iter.get_count()} items iterated.")
 except StopIteration:
-    print('No more items.')
+    print("No more items.")

@@ -25,7 +25,7 @@
 ### [`4-hidden_discovery.py`](4-hidden_discovery.py)
 * Lists all non-private (that don't start with two underscores `__`) name definitions in the [`hidden_4.pyc`](hidden_4.pyc) module, imported via the following curl command :
 ```
-curl -Lso 'hidden_4.pyc' 'https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc'
+curl -Lso "hidden_4.pyc" "https://github.com/hs-hq/0x02.py/raw/main/hidden_4.pyc"
 ```
 * Importing `4-hidden_discovery.py` shouldn't execute it. This file needs to be used in a namespace folder, such as `/tmp/`.
 

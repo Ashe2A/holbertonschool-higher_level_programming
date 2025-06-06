@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-'''Only sub class of'''
+"""Only sub class of"""
 
 
 def inherits_from(obj, a_class):
-    '''Checks if object is an instance of subclass
+    """Checks if object is an instance of subclass
 
     Args:
         obj (obj): The object to identify
@@ -11,5 +11,5 @@ def inherits_from(obj, a_class):
 
     Returns:
         bool: True if obj is a subclass instance of a_class, False otherwise
-    '''
+    """
     return isinstance(obj, a_class) and not type(obj) is a_class

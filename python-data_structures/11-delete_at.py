@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def delete_at(my_list=[], idx=0):
-    '''Deletes an element of a list
+    """Deletes an element of a list
 
     Args:
         my_list (list, optional): The list. Defaults to empty list.
@@ -8,7 +8,7 @@ def delete_at(my_list=[], idx=0):
 
     Returns:
         list: The list minus the deleted element
-    '''
+    """
     if 0 <= idx < len(my_list):
         my_list.remove(idx + 1)
     return my_list
