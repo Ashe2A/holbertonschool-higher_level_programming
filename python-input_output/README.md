@@ -71,3 +71,10 @@
     * Bob Dylan, 27
     * Fake Fake, 89
     * Call of all the instances to display their dictionaries
+
+## 12. Pascal's Triangle
+### [`12-pascal_triangle.py`](12-pascal_triangle.py)
+* Function that returns a pascal triangle with variable size. Avoided module import.
+### [`12-main.py`](12-main.py)
+* **Tests:** 5-sized Pascal triangle
+* Note: `n` is always an integer.
