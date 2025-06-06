@@ -58,11 +58,16 @@
 * **Tests:** `number` gets `89` or the `John` class calls the `win()` method
 * Note: Sets or other non serializable object types will not be included in the class.
 
-## 9. Student to JSON
+## 9-11. Student to JSON with filter/to disk and reload
 ### [`9-student.py`](9-student.py)
 * Class with a method that returns the dictionary of the class. Avoided module import.
-### [`9-main.py`](9-main.py)
+### [`10-student.py`](10-student.py)
+* Added filter to only display a selection of attributes in the dictionary
+### [`11-student.py`](11-student.py)
+* Reloads a Student object instance with a dictionary
+### [`9-main.py`](9-main.py) / [`10-main.py`](10-main.py) / [`11-main.py`](11-main.py)
 * **Tests:**
     * John Doe, 23
     * Bob Dylan, 27
+    * Fake Fake, 89
     * Call of all the instances to display their dictionaries
