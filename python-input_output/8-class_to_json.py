@@ -4,9 +4,9 @@ import json
 
 
 def class_to_json(obj):
-    """Creates an object with its JSON string representation read in a file
+    """Gets an object's dictionary convertible into JSON format
 
     Args:
-        obj (obj): The file name containing the JSON dump
+        obj (obj): The object
     """
     return obj.__dict__
