@@ -19,5 +19,6 @@
 
 * Week 4
     # [Python - Input/Output](python-input_output/README.md)
+    # [Python - Serialization](python-serialization/README.md)
 
 Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache__/` folder creation upon execution.
