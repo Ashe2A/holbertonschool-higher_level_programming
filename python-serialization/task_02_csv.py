@@ -13,7 +13,7 @@ def convert_csv_to_json(filename):
                 dict_list.append(i)
                 
         with open("data.json", "w", encoding="utf-8") as f:
-            f.write("{}".format(dict_list))
+            f.write("{}".format(dict_list).replace("\'", "\""))
     except Exception as e:
         print(e)
         return False
