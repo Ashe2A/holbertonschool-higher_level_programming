@@ -2,6 +2,7 @@
 """Converting CSV Data to JSON Format"""
 import csv
 
+
 def convert_csv_to_json(filename):
     try:
         with open(filename, encoding="utf-8") as f:
