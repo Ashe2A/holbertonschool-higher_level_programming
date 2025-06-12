@@ -4,6 +4,14 @@ import csv
 
 
 def convert_csv_to_json(filename):
+    """Convert a CSV file to a JSON dictionary
+
+    Args:
+        filename (str): The CSV file name
+
+    Returns:
+        dict: The JSON dictionary
+    """
     try:
         with open(filename, encoding="utf-8") as f:
             csv_data = csv.DictReader(f)

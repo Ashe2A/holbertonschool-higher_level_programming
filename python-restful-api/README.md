@@ -31,3 +31,8 @@ Fetching webpage content:
 * `curl https://jsonplaceholder.typicode.com/posts` gives a [JSON array of posts](posts.json) as an output.
 * `curl -I https://jsonplaceholder.typicode.com/posts` gives [the headers of the JSON array](posts-i.txt) as an output. 
 * `curl -X POST -d "title=foo&body=bar&userId=1" https://jsonplaceholder.typicode.com/posts` gives a [JSON array of posted data](foobar.json) as an output (with `-X` for HTTP method, here `POST`, and `-d` for the data input).
+
+# 2. Consuming and processing data from an API using Python
+### [`task_02_requests.py`](task_02_requests.py)
+* Functions that fetch posts from JSON PlaceHolder, and either prints the posts' titles or convert the posts JSON into a [CSV file](posts.csv).
+### [`main_02_requests.py`](main_02_requests.py)
