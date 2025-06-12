@@ -17,8 +17,10 @@ def fetch_and_save_posts():
     print("Status Code: {}".format(r.status_code))
     if 200 <= r.status_code <= 299:
         parse_fetched_request = r.json()
-        with open("posts.csv", "w") as f:
-            csv_data = csv.DictWriter(f, ["id", "title", "body", "userId"])
+        with open("posts.csv", "w", encoding="utf-8", newline="") as f:
+            csv_data = csv.DictWriter(f,
+                                      ["id", "title", "body"],
+                                      extrasaction="ignore")
             csv_data.writeheader()
             for i in parse_fetched_request:
                 csv_data.writerow(i)
