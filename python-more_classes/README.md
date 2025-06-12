@@ -7,7 +7,7 @@
 * Displays rectangle info
 
 ## 1-9. Rectangle class
-* `Rectangle` class with :
+* `Rectangle` class with:
     * [`1-rectangle.py`](1-rectangle.py): private `width` and `height` instance attributes with getters and setters (positive integers)
     * [`2-rectangle.py`](2-rectangle.py): `area()` and `perimeter()` instance methods
     * [`3-rectangle.py`](3-rectangle.py): `__str__()` and `print()` instance methods for string representation

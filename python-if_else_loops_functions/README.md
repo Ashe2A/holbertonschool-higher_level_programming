@@ -82,7 +82,7 @@
 ### [`12-fizzbuzz.py`](12-fizzbuzz.py)
 * Function that lists all numbers from 1 to 100, replacing multiples of 3 with `Fizz` and those of 5 by `Buzz` (multiples of 15, combination of 5 and 3, are replaced by `FizzBuzz`).
 ### [`12-main.py`](12-main.py)
-* **Tests:** The test will only call the `fizzbuzz` function, with a newline, as there is only one possible output :
+* **Tests:** The test will only call the `fizzbuzz` function, with a newline, as there is only one possible output:
 
 ## 13. Smile in the mirror
 ### [`100-print_tebahpla.py`](100-print_tebahpla.py)
@@ -92,7 +92,7 @@
 ### [`101-remove_char_at.py`](101-remove_char_at.py)
 * Returns a copy of the string with the character at position `n` removed. Avoided module import.
 ### [`101-main.py`](101-main.py)
-* **Tests :**
+* **Tests:**
     * `"Best School"` and `3` should output `Bes School`
     * `"Chicago"` and `2` should output `Chcago`
     * `"C is fun!"` and `0` should output ` is fun!` (first character)

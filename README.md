@@ -1,3 +1,5 @@
+Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache__/` folder creation upon execution.
+
 * Week 0
     # [Python - Hello, World](python-hello_world/README.md)
     # [Python - if/else, loops, functions](python-if_else_loops_functions/README.md)
@@ -21,4 +23,5 @@
     # [Python - Input/Output](python-input_output/README.md)
     # [Python - Serialization](python-serialization/README.md)
 
-Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache__/` folder creation upon execution.
+* Week 5
+    # [Python - RESTful API](python-restful-api/README.md)

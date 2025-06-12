@@ -40,7 +40,7 @@
 * Displays geometry info
 
 ## 6-11. BaseGeometry, Rectangle & Square classes
-* `BaseGeometry` class with :
+* `BaseGeometry` class with:
     * [`6-base_geometry.py`](6-base_geometry.py): an `area()` method
     * [`7-base_geometry.py`](7-base_geometry.py): an `integer_validator()` method **[(See test file)](tests/7-base_geometry.txt)**
     * [`8-rectangle.py`](8-rectangle.py): a `Rectangle` subclass

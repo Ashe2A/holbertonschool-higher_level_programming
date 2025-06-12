@@ -7,7 +7,7 @@
 * Displays square info
 
 ## 1-6. Square class
-* `Square` class with :
+* `Square` class with:
     * [`1-square.py`](1-square.py): a private `size` instance attribute
     * [`2-square.py`](2-square.py): as a positive integer (`TypeError` and `ValueError`).
     * [`3-square.py`](3-square.py): an `area` public method.
