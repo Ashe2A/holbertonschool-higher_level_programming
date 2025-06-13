@@ -60,7 +60,7 @@ def get_user(username):
 def add_user():
     if request.method == "POST":
         user_input = request.get_json()
-        if "username" not in request.form:
+        if "username" not in user_input:
             users[user_input["username"]] = user_input
             return {
                 "message": "User added",
