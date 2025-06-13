@@ -6,13 +6,14 @@ import json
 
 class MyServer(BHRH):
     def do_GET(self):
+        """GET method endpoints"""
         if self.path == "/":
             self.send_response(200)
             self.send_header("Content-Type", "text/plain")
             self.end_headers()
             self.wfile.write(b"Hello, this is a simple API!")
         elif self.path == "/data":
-            self.send_response(200, "OK")
+            self.send_response(200)
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             self.wfile.write(json.dumps(

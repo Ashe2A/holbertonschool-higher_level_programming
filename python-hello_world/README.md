@@ -29,4 +29,4 @@
 
 ## 7. Easter Egg
 ### [`9-easter_egg.py`](9-easter_egg.py)
-* Prints “The Zen of Python”, by TimPeters (an easter egg in the Python interpreter), followed by a new line.
+* Prints "The Zen of Python", by TimPeters (an easter egg in the Python interpreter), followed by a new line.
