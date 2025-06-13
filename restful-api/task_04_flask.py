@@ -24,10 +24,7 @@ def users_to_list():
     Returns:
         list: list of all users added
     """
-    user_list = []
-    for i in users:
-        user_list.append(i)
-    return jsonify(user_list)
+    return jsonify(list(users.keys()))
 
 
 @app.route("/status")
@@ -65,7 +62,7 @@ def add_user():
     """
     if request.method == "POST":
         user_input = request.get_json()
-        if "username" in user_input:
+        if user_input and "username" in user_input:
             users[user_input["username"]] = user_input
             return {
                 "message": "User added",
