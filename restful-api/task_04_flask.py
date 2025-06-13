@@ -60,18 +60,15 @@ def add_user():
     Returns:
         dict: JSON returns (message + user data / error)
     """
-    if request.method == "POST":
-        user_input = request.get_json()
-        if user_input and "username" in user_input:
-            users[user_input["username"]] = user_input
-            return jsonify({
-                "message": "User added",
-                user_input["username"]: user_input
-                }), 201
-        else:
-            return jsonify({"error": "Username is required"}), 400
+    user_input = request.get_json()
+    if user_input and "username" in user_input:
+        users[user_input["username"]] = user_input
+        return jsonify({
+            "message": "User added",
+            user_input["username"]: user_input
+            }), 201
     else:
-        return jsonify({"error": "Adding an user is a post request"}), 400
+            return jsonify({"error": "Username is required"}), 400
 
 
 if __name__ == "__main__":

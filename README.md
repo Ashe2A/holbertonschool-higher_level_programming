@@ -24,4 +24,4 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
     # [Python - Serialization](python-serialization/README.md)
 
 * Week 5
-    # [Python - RESTful API](python-restful-api/README.md)
+    # [Python - RESTful API](restful-api/README.md)
