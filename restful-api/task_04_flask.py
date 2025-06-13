@@ -18,7 +18,7 @@ def home():
 
 
 @app.route("/data")
-def users_to_json():
+def users_to_list():
     """List of all users
 
     Returns:
@@ -27,7 +27,7 @@ def users_to_json():
     user_list = []
     for i in users:
         user_list.append(i)
-    return user_list
+    return jsonify(user_list)
 
 
 @app.route("/status")
@@ -48,16 +48,21 @@ def get_user(username):
         username (str): The username
 
     Returns:
-        _type_: _description_
+        dict: User JSON
     """
     if username in users:
-        return users[username]
+        return jsonify(users[username])
     else:
-        return {"error": "User not found"}
+        return jsonify({"error": "User not found"})
 
 
 @app.route("/add_user", methods=["POST"])
 def add_user():
+    """Add user to the user dictionary
+
+    Returns:
+        dict: JSON returns (message + user data / error)
+    """
     if request.method == "POST":
         user_input = request.get_json()
         if "username" not in user_input:
@@ -67,9 +72,9 @@ def add_user():
                 user_input["username"]: user_input
                 }, 201
         else:
-            return {"error": "Username is required"}, 400
+            return jsonify({"error": "Username is required"}), 400
     else:
-        return {"error": "Adding an user is a post request"}, 400
+        return jsonify({"error": "Adding an user is a post request"}), 400
 
 
 if __name__ == "__main__":
