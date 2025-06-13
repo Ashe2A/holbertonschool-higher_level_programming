@@ -65,7 +65,7 @@ def add_user():
     """
     if request.method == "POST":
         user_input = request.get_json()
-        if "username" not in user_input:
+        if "username" in user_input:
             users[user_input["username"]] = user_input
             return {
                 "message": "User added",
