@@ -64,10 +64,10 @@ def add_user():
         user_input = request.get_json()
         if user_input and "username" in user_input:
             users[user_input["username"]] = user_input
-            return {
+            return jsonify({
                 "message": "User added",
                 user_input["username"]: user_input
-                }, 201
+                }), 201
         else:
             return jsonify({"error": "Username is required"}), 400
     else:
