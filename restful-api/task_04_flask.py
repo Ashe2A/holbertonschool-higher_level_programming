@@ -16,6 +16,7 @@ def home():
     """
     return "Welcome to the Flask API!"
 
+
 @app.route("/data")
 def users_to_json():
     """List of all users
@@ -28,6 +29,7 @@ def users_to_json():
         user_list.append(i)
     return user_list
 
+
 @app.route("/status")
 def get_status():
     """Check the status of the site
@@ -36,6 +38,7 @@ def get_status():
         str: Just "ok" to confirm the API works
     """
     return "OK"
+
 
 @app.route("/users/<username>")
 def get_user(username):
@@ -52,11 +55,12 @@ def get_user(username):
     else:
         return {"error": "User not found"}
 
+
 @app.route("/add_user", methods=["POST"])
 def add_user():
     if request.method == "POST":
         user_input = request.get_json()
-        if not "username" in request.form:
+        if "username" not in request.form:
             users[user_input["username"]] = user_input
             return {
                 "message": "User added",
