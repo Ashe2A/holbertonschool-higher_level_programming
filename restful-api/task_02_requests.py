@@ -4,6 +4,7 @@ import csv
 
 
 def fetch_and_print_posts():
+    """Fetch posts from JSON PlaceHolder and print titles"""
     r = requests.get("https://jsonplaceholder.typicode.com/posts")
     print("Status Code: {}".format(r.status_code))
     if 200 <= r.status_code <= 299:
@@ -13,6 +14,7 @@ def fetch_and_print_posts():
 
 
 def fetch_and_save_posts():
+    """Fetch posts from JSON PlaceHolder and write it out a CSV file"""
     r = requests.get("https://jsonplaceholder.typicode.com/posts")
     print("Status Code: {}".format(r.status_code))
     if 200 <= r.status_code <= 299:
