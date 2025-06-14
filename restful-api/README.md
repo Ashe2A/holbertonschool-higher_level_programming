@@ -53,7 +53,9 @@ Fetching webpage content:
     * On `/status` page, a plain text `"OK"` is returned and displayed.
     * On `/users/<username>` pages (with `<username>` being replaced by an actual username no matter if it exists in the `users` dictionary), the JSON of the specified user is returned and loaded.
         * If the user doesn't exist, `{"error": "User not found"}` is returned.
-    * On `/add_user` page, the `users` dictionary is updated with a new user and a "new user" JSON message is returned and loaded (also returns an `HTTP 201` status code). If no username is specified, `{"error": "Username is required"}` is returned with an `HTTP 400` status code.
+    * On `/add_user` page, the `users` dictionary is updated with a new user and a "new user" JSON message is returned and loaded (also returns an `HTTP 201` status code).
+        * If no username is specified, `{"error": "Username is required"}` is returned with an `HTTP 400` status code.
+        * If the request isn't using the `POST` method, `{"error": "Adding an user is a post request"}` is returned with an `HTTP 400` status code.
         * Examples of CURL commands to add users:
         ```
         curl -X POST http://localhost:5000/add_user -H "Content-Type: application/json" -d '{"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"}'
@@ -61,3 +63,4 @@ Fetching webpage content:
         ```
         curl -X POST http://localhost:5000/add_user -H "Content-Type: application/json" -d '{"username": "john", "name": "John", "age": 30, "city": "New York"}'
         ```
+    

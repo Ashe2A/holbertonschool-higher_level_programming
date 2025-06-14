@@ -18,13 +18,16 @@ def home():
 
 
 @app.route("/data")
-def users_to_list():
+def users_to_json():
     """List of all users
 
     Returns:
         list: list of all users added
     """
-    return jsonify(list(users.keys()))
+    user_list = []
+    for i in users:
+        user_list.append(i)
+    return jsonify(user_list)
 
 
 @app.route("/status")
@@ -60,15 +63,18 @@ def add_user():
     Returns:
         dict: JSON returns (message + user data / error)
     """
-    user_input = request.get_json()
-    if user_input and "username" in user_input:
-        users[user_input["username"]] = user_input
-        return jsonify({
-            "message": "User added",
-            user_input["username"]: user_input
-            }), 201
+    if request.method == "POST":
+        user_input = request.get_json()
+        if user_input and "username" in user_input:
+            users[user_input["username"]] = user_input
+            return jsonify({
+                "message": "User added",
+                "user": user_input
+                }), 201
+        else:
+                return jsonify({"error": "Username is required"}), 400
     else:
-            return jsonify({"error": "Username is required"}), 400
+        return jsonify({"error": "Adding an user is a post request"}), 400
 
 
 if __name__ == "__main__":
