@@ -1,3 +1,3 @@
 -- Full description
 
-SHOW CREATE TABLE;
+SHOW first_table;
