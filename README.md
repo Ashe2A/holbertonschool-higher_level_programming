@@ -25,3 +25,8 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 
 * Week 5
     # [Python - RESTful API](restful-api/README.md)
+
+* Week 6
+    # [SQL - Introduction](SQL_introduction/README.md)
+    # [SQL - More queries]
+    # [Python - Object-relational mapping]
