@@ -1,3 +1,3 @@
--- Create a database (shouldn't fail when existing)
+-- Create a database
 
 CREATE database IF NOT EXISTS hbtn_0c_0;

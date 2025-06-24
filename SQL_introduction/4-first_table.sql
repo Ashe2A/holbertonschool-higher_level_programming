@@ -1,4 +1,4 @@
--- First table (shouldn't fail when existing)
+-- First table
 
 CREATE TABLE IF NOT EXISTS first_table (
     id int,
