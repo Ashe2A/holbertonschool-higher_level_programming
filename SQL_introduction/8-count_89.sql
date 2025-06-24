@@ -1,5 +1,5 @@
 -- Count 89
 
-SELECT id
+SELECT id as i
 FROM first_table
-WHERE "id" = 89
+WHERE i = 89
