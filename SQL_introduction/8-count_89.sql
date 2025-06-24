@@ -2,4 +2,4 @@
 
 SELECT id as i
 FROM first_table
-WHERE i = 89
+WHERE i = 89;
