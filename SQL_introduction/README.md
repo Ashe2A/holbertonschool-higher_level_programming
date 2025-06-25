@@ -38,3 +38,9 @@ Script that creates a table `second_table` in the database `hbtn_0c_0` in the cu
 | 2 | `Alex` | 3 |
 | 3 | `Bob` | 14 |
 | 4 | `George` | 8 |
+
+## [10. List by best](10-top_score.sql)
+Script that lists all records of the table `second_table` in the database `hbtn_0c_0` in the current MySQL server, displaying the score and the name, ordering them in descending order (from highest to lowest score).
+
+## [11. Select the best](11-best_score.sql)
+Script that lists all records with a score higher than or equaling 10 in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server, displaying the score and the name, ordering them in descending order (from highest to lowest score).
