@@ -44,3 +44,19 @@ Script that lists all records of the table `second_table` in the database `hbtn_
 
 ## [11. Select the best](11-best_score.sql)
 Script that lists all records with a score higher than or equaling 10 in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server, displaying the score and the name, ordering them in descending order (from highest to lowest score).
+
+## [12. Cheating is bad](12-no_cheating.sql)
+Script that replaces Bob's score into 10 (because he cheated), in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server.
+
+Before:
+| `id` | `name` | `score` |
+| - | - | - |
+| 3 | `Bob` | 14 |
+
+After:
+| `id` | `name` | `score` |
+| - | - | - |
+| 3 | `Bob` | 10 |
+
+## [13. Score too low](13-change_class.sql)
+Script that removes every row with a score under (or equal to) 5 (terribly failed the test), in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server.
