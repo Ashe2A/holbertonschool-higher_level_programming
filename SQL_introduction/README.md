@@ -66,3 +66,6 @@ Script that computes the average of every score as a synthetic column `average` 
 
 ## [15. Number by score](15-groups.sql)
 Script that sorts the rows with the same score and count them in a synthetic column `number` in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server. Ordering the groups in descending order (from highest to lowest score).
+
+## [16. Say my name](16-no_link.sql)
+Script that lists all records (with non `NULL` names) of the table `second_table` in the database `hbtn_0c_0` in the current MySQL server, displaying the score and the name, ordering them in descending order (from highest to lowest score).
