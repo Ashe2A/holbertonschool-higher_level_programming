@@ -63,3 +63,6 @@ Script that removes every row with a score under (or equal to) 5 (terribly faile
 
 ## [14. Average](14-average.sql)
 Script that computes the average of every score as a synthetic column `average` in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server.
+
+## [15. Number by score](15-groups.sql)
+Script that sorts the rows with the same score and count them in a synthetic column `number` in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server. Ordering the groups in descending order (from highest to lowest score).
