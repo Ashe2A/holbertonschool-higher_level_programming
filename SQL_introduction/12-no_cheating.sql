@@ -1,5 +1,5 @@
--- Select the best
+-- Cheating is bad
 
 UPDATE second_table
-SET id = 10
+SET score = 10
 WHERE name = "Bob";
