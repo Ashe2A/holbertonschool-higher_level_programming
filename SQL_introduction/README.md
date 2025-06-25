@@ -60,3 +60,6 @@ After:
 
 ## [13. Score too low](13-change_class.sql)
 Script that removes every row with a score under (or equal to) 5 (terribly failed the test), in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server.
+
+## [14. Average](14-average.sql)
+Script that computes the average of every score as a synthetic column `average` in the table `second_table` in the database `hbtn_0c_0` in the current MySQL server.
