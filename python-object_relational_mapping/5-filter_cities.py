@@ -19,9 +19,15 @@ if __name__ == "__main__":
         FROM cities\
         INNER JOIN states ON states.id = cities.state_id\
         ORDER BY cities.id;")
+    first_city = True
     for i in c.fetchall():
         if i[1] == argv[4]:
-            print(i[0])
+            if not first_city:
+                print(", ", end="")
+            if first_city:
+                first_city = False
+            print(i[0], end="")
+    print()
 
     c.close()
     db.close()
