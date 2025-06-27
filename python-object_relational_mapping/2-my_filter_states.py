@@ -15,7 +15,7 @@ if __name__ == "__main__":
         )
 
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE states.name = \"{}\"\
+    c.execute("SELECT * FROM states WHERE BINARY states.name = \"{}\"\
 ORDER BY states.id;".format(argv[4]))
     for i in c.fetchall():
         print("{}".format(i))
