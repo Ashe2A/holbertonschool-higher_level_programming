@@ -15,7 +15,10 @@ if __name__ == "__main__":
         )
 
     c = db.cursor()
-    c.execute("SELECT * FROM cities ORDER BY cities.id;")
+    c.execute("SELECT cities.id, cities.name, states.name\
+        FROM cities\
+        INNER JOIN states ON states.id = cities.state_id\
+        ORDER BY cities.id;")
     for i in c.fetchall():
         print(i)
 
