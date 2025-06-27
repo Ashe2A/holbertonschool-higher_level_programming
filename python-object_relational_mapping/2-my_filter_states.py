@@ -15,9 +15,10 @@ if __name__ == "__main__":
         )
 
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE states.name = \"{}\" ORDER BY states.id;".format(argv[4]))
+    c.execute("SELECT * FROM states WHERE states.name = \"{}\"\
+ORDER BY states.id;".format(argv[4]))
     for i in c.fetchall():
-        print(i)
+        print("{}".format(i))
 
     c.close()
     db.close()
