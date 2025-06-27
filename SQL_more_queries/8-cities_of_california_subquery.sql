@@ -2,7 +2,11 @@
 
 USE hbtn_0d_usa;
 
-SELECT cities.id AS id, cities.name AS name
-FROM cities, states
-WHERE cities.state_id = state.id AND states.name = "California"
+SELECT id, name
+FROM cities
+WHERE state_id = (
+    SELECT id
+    FROM states
+    WHERE name = "California"
+    )
 ORDER BY cities.id;
