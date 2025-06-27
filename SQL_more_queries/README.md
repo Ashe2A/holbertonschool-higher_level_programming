@@ -8,3 +8,5 @@ Script that creates the `user_0d_1` on the current MySQL `localhost` server, wit
 
 ## [2. Read user](2-create_read_user.sql)
 Script that creates the `hbtn_0d_2` database, and the `user_0d_2` on the current MySQL `localhost` server, with password `user_0d_2_pwd`, and gives it `SELECT` (read) privileges on the new database.
+
+TBA
