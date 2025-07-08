@@ -95,14 +95,6 @@ def jwt_protected():
     return "JWT Auth: No user found for this token - Access Denied", 401
 
 
-@app.route("/jwt-protected", methods=["GET"])
-@jwt_required()
-def jwt_protected():
-    if get_jwt_identity() in users:
-        return "JWT Auth: Access Granted", 200
-    return "JWT Auth: Access Denied", 401
-
-
 @app.route("/admin-only", methods=["GET"])
 @jwt_required()
 def admin_protected_jwt():
