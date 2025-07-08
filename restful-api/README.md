@@ -63,4 +63,37 @@ Fetching webpage content:
         ```
         curl -X POST http://localhost:5000/add_user -H "Content-Type: application/json" -d '{"username": "john", "name": "John", "age": 30, "city": "New York"}'
         ```
-    
+
+## 5. API Security and Authentication Techniques
+### [`task_05_basic_security.py`](task_05_basic_security.py)
+* **Basic HTTP Authentication (with `Flask-HTTPAuth`):** Creates and list of users and their hashed passwords, using the the `werkzeug.security` library for password hashing and verification.
+
+* **JWT-based Authentication (with `Flask-JWT-Extended`):** Creates and uses a secret key for token generation and validation. Also restrains non-admin users from accessing admin-exclusive routes.
+
+#### 1. Basic Authentication:
+* Protected Route:
+    * URL: `/basic-protected`
+        * The route is protected by `@auth.login_required`, running the method in the route only if the `verify_password()` method returns the requested username (meaning authentification succeeded)
+    * Method: `GET`
+    * Description: Returns a message `"Basic Auth: Access Granted"` if the user provides valid basic authentication credentials.
+    * Authentication: Basic
+    * **Test:** Accessing the route prompts the user authentification through a dialogue box. The users should be contained in a dictionary :
+    ```
+    {
+    "user1": {
+        "username": "user1",
+        "password": generate_password_hash("password"),
+        },
+    "admin1": {
+        "username": "admin1",
+        "password": generate_password_hash("password"),
+        }
+    }
+    ```
+
+#### 2. JWT Authentication:
+* Protected Route:
+    * URL: `/login`
+    * Method: `POST` (Requires a username and password keys in aa posted JSON)
+    * Description: Accepts JSON payload with `username` and `password.` Returns a JWT token if credentials are valid.
+    * **Test:** `{"username": "user1", "password": "password"}` which responds with `{"access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc1MjAxMzE5NiwianRpIjoiYTIwNTg4MGUtMWVjMS00ZmEwLThhODctZWQ4ZTc4MjQxMjE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6ImFkbWluMSIsIm5iZiI6MTc1MjAxMzE5NiwiY3NyZiI6IjllMTk0ZTJmLTJiZmYtNDA2Ni1iNTEzLWJkZjY3NDc3ZWI3NCIsImV4cCI6MTc1MjAxNDA5Nn0.wykG4Zyhl0GsbIRl9x2AleTsXCk6tFcxcLvoQJeGbKw"}` (with the new token being created)

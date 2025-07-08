@@ -72,7 +72,7 @@ def add_user():
                 "user": user_input
                 }), 201
         else:
-                return jsonify({"error": "Username is required"}), 400
+            return jsonify({"error": "Username is required"}), 400
     else:
         return jsonify({"error": "Adding an user is a post request"}), 400
 
