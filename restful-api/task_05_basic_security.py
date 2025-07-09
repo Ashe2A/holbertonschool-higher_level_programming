@@ -71,12 +71,12 @@ def login():
         if "username" in data:
             username = data["username"]
         else:
-            return jsonify({"message": "Username is required"}), 401
+            return jsonify({"msg": "Username is required"}), 401
 
         if "password" in data:
             password = data["password"]
         else:
-            return jsonify({"message": "Password is required"}), 401
+            return jsonify({"msg": "Password is required"}), 401
 
         if username in users and\
             check_password_hash(users[username]["password"], password):
@@ -84,9 +84,9 @@ def login():
                     "access_token": create_access_token(identity=username)
                     }), 201
         else:
-            return jsonify({"message": "Unknown username"}), 401
+            return jsonify({"msg": "Unknown username"}), 401
     else:
-        return jsonify({"message": "Invalid JSON request"}), 400
+        return jsonify({"msg": "Invalid JSON request"}), 400
 
 
 @app.route("/jwt-protected", methods=["GET"])
@@ -103,7 +103,7 @@ def admin_protected_jwt():
     current_user = get_jwt_identity()
     if current_user in users:
         if users[current_user]["role"] == "admin":
-            return jsonify({"message": "Admin Access: Granted"}), 200
+            return jsonify({"msg": "Admin Access: Granted"}), 200
     return jsonify({"error": "Admin access required"}), 403
 
 
