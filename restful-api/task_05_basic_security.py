@@ -74,21 +74,19 @@ def login():
             return jsonify({"error": "Username is required"}), 401
 
         if "password" in data:
-            password = generate_password_hash(data["password"])
+            password = data["password"]
         else:
             return jsonify({"error": "Password is required"}), 401
 
-        if username and\
+        if username and username in users and password and\
             check_password_hash(users[username]["password"], password):
                 return jsonify({
                     "access_token": create_access_token(identity={
                         "username": username,
-                        "password": password,
                         "role": users[username]["role"]
                     })
-                    }), 201
-        else:
-            return jsonify({"msg": "Unknown username"}), 401
+                    }), 200
+        return jsonify({"msg": "Unknown username"}), 401
     else:
         return jsonify({"error": "Invalid JSON request"}), 400
 
