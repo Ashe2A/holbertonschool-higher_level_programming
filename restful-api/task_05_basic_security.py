@@ -78,17 +78,21 @@ def login():
         else:
             return jsonify({"error": "Password is required"}), 401
 
-        if username and username in users and password and\
-            check_password_hash(users[username]["password"], password):
+        if username and username in users and password:
+            if check_password_hash(
+                users[username]["password"],
+                password
+                ):
                 return jsonify({
                     "access_token": create_access_token(identity={
                         "username": username,
                         "role": users[username]["role"]
-                    })
+                        })
                     }), 200
-        return jsonify({"msg": "Unknown username"}), 401
+            return jsonify({"error": "Wrong password"}), 400
+        return jsonify({"error": "Unknown username"}), 400
     else:
-        return jsonify({"error": "Invalid JSON request"}), 400
+        return jsonify({"error": "Invalid JSON request"}), 401
 
 
 @app.route("/jwt-protected", methods=["GET"])
