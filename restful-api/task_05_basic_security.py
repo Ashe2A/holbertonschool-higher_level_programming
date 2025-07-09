@@ -105,7 +105,7 @@ def admin_protected_jwt():
     current_user = get_jwt_identity()
     if current_user in users:
         if users[current_user]["role"] == "admin":
-            return jsonify({"msg": "Admin Access: Granted"}), 200
+            return "Admin Access: Granted", 200
     return jsonify({"error": "Admin access required"}), 403
 
 
