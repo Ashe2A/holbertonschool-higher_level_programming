@@ -65,7 +65,7 @@ def index():
 
 
 @app.route('/login', methods=["POST"])
-def login():
+def login():    
     data = request.json
     if data and isinstance(data, dict):
         if "username" in data:
@@ -97,10 +97,7 @@ def login():
 @app.route("/jwt-protected", methods=["GET"])
 @jwt_required()
 def jwt_protected():
-    if get_jwt_identity() in users:
-        return "JWT Auth: Access Granted", 200
-    return "JWT Auth: No user found for this token - Access Denied", 401
-
+    return "JWT Auth: Access Granted", 200
 
 @app.route("/admin-only", methods=["GET"])
 @jwt_required()
