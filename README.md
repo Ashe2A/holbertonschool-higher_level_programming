@@ -32,4 +32,10 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 ### Week 7
 * [SQL - Introduction](SQL_introduction/README.md)
 * [SQL - More queries](SQL_more_queries/README.md)
-* [Python - Object-relational mapping]()
+* [Python - Object-relational mapping](python-object_relational_mapping/README.md)
+
+### Week 8
+* N/A
+
+### Week 9
+* [Advanced HTML](html_advanced/README.md)
