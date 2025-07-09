@@ -81,16 +81,15 @@ def login():
         if username and username in users and password:
             if check_password_hash(
                 users[username]["password"],
-                password
-                ):
+                password):
                 return jsonify({
                     "access_token": create_access_token(identity={
                         "username": username,
                         "role": users[username]["role"]
                         })
                     }), 200
-            return jsonify({"error": "Wrong password"}), 400
-        return jsonify({"error": "Unknown username"}), 400
+            return jsonify({"error": "Wrong password"}), 401
+        return jsonify({"error": "Unknown username"}), 401
     else:
         return jsonify({"error": "Invalid JSON request"}), 401
 
