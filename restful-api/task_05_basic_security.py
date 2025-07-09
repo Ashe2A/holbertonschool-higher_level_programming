@@ -71,14 +71,14 @@ def login():
         if "username" in data:
             username = data["username"]
         else:
-            return jsonify({"msg": "Username is required"}), 401
+            return jsonify({"error": "Username is required"}), 401
 
         if "password" in data:
             password = generate_password_hash(data["password"])
         else:
-            return jsonify({"msg": "Password is required"}), 401
+            return jsonify({"error": "Password is required"}), 401
 
-        if username in users and\
+        if username and\
             check_password_hash(users[username]["password"], password):
                 return jsonify({
                     "access_token": create_access_token(identity={
@@ -90,7 +90,7 @@ def login():
         else:
             return jsonify({"msg": "Unknown username"}), 401
     else:
-        return jsonify({"msg": "Invalid JSON request"}), 400
+        return jsonify({"error": "Invalid JSON request"}), 400
 
 
 @app.route("/jwt-protected", methods=["GET"])
