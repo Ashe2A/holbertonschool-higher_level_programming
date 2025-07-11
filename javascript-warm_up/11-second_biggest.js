@@ -1,5 +1,6 @@
 #!/usr/bin/node
 const { argv } = require('node:process');
+const args = argv.slice(2);
 
 function secondBiggest (i) {
   let max = i[0];
@@ -10,11 +11,11 @@ function secondBiggest (i) {
       max = i[x];
     }
   }
-  return secMax;
+  console.log(secMax);
 }
 
 if (argv.length <= 3) {
   console.log(0);
 } else {
-  console.log(secondBiggest(argv.slice(2)));
+  secondBiggest(args);
 }
