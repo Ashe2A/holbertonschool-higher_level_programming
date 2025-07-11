@@ -38,4 +38,4 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 * N/A
 
 ### Week 9
-* [Advanced HTML](html_advanced/README.md)
+* [JavaScript - Warm up](javascript-warm_up/README.md)
