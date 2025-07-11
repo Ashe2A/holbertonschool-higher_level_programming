@@ -2,19 +2,16 @@
 const { argv } = require('node:process');
 const args = argv.slice(2);
 
-function secondBiggest (i) {
-  let max = i[0];
-  let secMax;
-  for (let x = 1; x < i.length; x++) {
-    if (i[x] > max) {
-      secMax = max;
-      max = i[x];
-    }
-  }
-  console.log(secMax);
+function compareNumbers (a, b) {
+  return a - b;
 }
 
-if (argv.length <= 3) {
+function secondBiggest (i) {
+  i.sort(compareNumbers);
+  console.log(i[i.length - 2]);
+}
+
+if (args.length <= 1) {
   console.log(0);
 } else {
   secondBiggest(args);
