@@ -39,3 +39,6 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 
 ### Week 9
 * [JavaScript - Warm up](javascript-warm_up/README.md)
+
+### Week 10
+* [JavaScript DOM manipulation](javascript-dom_manipulation/README.md)
