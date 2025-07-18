@@ -24,11 +24,12 @@ def contact():
 @app.route("/items")
 def items():
     try:
-        with open("items.json", encoding="utf-8") as f:
+        with open("items.json", "r") as f:
             data = json.load(f)
             items = data["items"]
-    except FileNotFoundError:
-        data = []
+    except Exception as e:
+        print(str(e))
+        items = []
 
     return render_template("items.html", items=items)
 
