@@ -12,29 +12,18 @@ def generate_invitations(template, attendees):
         raise ValueError("The list of attendees should not be empty")
 
     output_no = 0
-    for i in attendees:            
-        name = i["name"]
-        if name is None:
-            name = "N/A"
-            
-        event_title = i["event_title"]
-        if event_title is None:
-            event_title = "N/A"
+    for i in attendees:
+        name = i.get("name") or "N/A"
+        event_title = i.get("event_title") or "N/A"
+        event_date = i.get("event_date") or "N/A"
+        event_location = i.get("event_location") or "N/A"
 
-        event_date = i["event_date"]
-        if event_date is None:
-            event_date = "N/A"
+        formatted = template.replace("{name}", name)
+        formatted = formatted.replace("{event_title}", event_title)
+        formatted = formatted.replace("{event_date}", event_date)
+        formatted = formatted.replace("{event_location}", event_location)
 
-        event_location = i["event_location"]
-        if event_location is None:
-            event_location = "N/A"
-
-        format = template.replace("{name}", name)
-        format = format.replace("{event_title}", event_title)
-        format = format.replace("{event_date}", event_date)
-        format = format.replace("{event_location}", event_location)
-        
         output_no += 1
 
-        with open("output_" + str(output_no) + ".txt", "w", encoding="utf-8") as f:
-            f.write(format)
+        with open(f"output_{output_no}.txt", "w", encoding="utf-8") as f:
+            f.write(formatted)
