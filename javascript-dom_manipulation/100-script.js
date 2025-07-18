@@ -1,5 +1,5 @@
 #!/usr/bin/node
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   const addItem = document.querySelector('#add_item');
   const removeItem = document.querySelector('#remove_item');
   const clearList = document.querySelector('#clear_list');
