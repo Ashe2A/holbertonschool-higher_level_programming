@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 def generate_invitations(template, attendees):
     if not isinstance(template, str):
-        raise TypeError(str("Template should be a string"))
+        raise TypeError("Template should be a string")
     if template == "":
-        raise ValueError(str("Template should not be an empty string"))
+        raise ValueError("Template should not be an empty string")
 
-    if not isinstance(attendees, list) and \
+    if not isinstance(attendees, list) or \
        all(isinstance(i, dict) for i in attendees):
-        raise TypeError(str("Attendees should be a list of dictionaries"))
+        raise TypeError("Attendees should be a list of dictionaries")
     if attendees == []:
-        raise ValueError(str("The list of attendees should not be empty"))
+        raise ValueError("The list of attendees should not be empty")
 
-    output_no = -1
+    output_no = 0
     for i in attendees:            
         name = i["name"]
         if name is None:
@@ -29,12 +29,12 @@ def generate_invitations(template, attendees):
         if event_location is None:
             event_location = "N/A"
 
-        new_template = template.replace("{name}", name)
-        new_template = new_template.replace("{event_title}", event_title)
-        new_template = new_template.replace("{event_date}", event_date)
-        new_template = new_template.replace("{event_location}", event_location)
+        format = template.replace("{name}", name)
+        format = format.replace("{event_title}", event_title)
+        format = format.replace("{event_date}", event_date)
+        format = format.replace("{event_location}", event_location)
         
         output_no += 1
 
         with open("output_" + str(output_no) + ".txt", "w", encoding="utf-8") as f:
-            f.write(new_template)
+            f.write(format)
