@@ -22,7 +22,7 @@ def contact():
 
 
 @app.route("/items")
-def contact():
+def items():
     try:
         with open("items.json", encoding="utf-8") as f:
             items = json.load(f)["items"]
