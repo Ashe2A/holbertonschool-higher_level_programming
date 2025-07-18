@@ -25,9 +25,11 @@ def contact():
 def items():
     try:
         with open("items.json", encoding="utf-8") as f:
-            items = json.load(f)["items"]
-    except FileNotFoundError as e:
-        items = []
+            data = json.load(f)
+            items = data["items"]
+    except FileNotFoundError:
+        data = []
+
     return render_template("items.html", items=items)
 
 
