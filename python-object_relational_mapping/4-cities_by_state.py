@@ -11,13 +11,13 @@ if __name__ == "__main__":
         port=3306,
         user=argv[1],
         password=argv[2],
-        database=argv[3],
+        database=argv[3]
         )
 
     c = db.cursor()
     c.execute("SELECT cities.id, cities.name, states.name\
         FROM cities\
-        INNER JOIN states ON states.id = cities.state_id\
+        LEFT JOIN states ON cities.state_id = states.id\
         ORDER BY cities.id;")
     for i in c.fetchall():
         print(i)
