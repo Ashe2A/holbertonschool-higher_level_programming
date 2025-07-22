@@ -43,3 +43,6 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 ### Week 10
 * [JavaScript DOM manipulation](javascript-dom_manipulation/README.md)
 * [Python - Server-Side Rendering](python-server_side_rendering/README.md)
+
+### Week 11
+* [Python - Everything is object](python-everything_is_object/README.md)
