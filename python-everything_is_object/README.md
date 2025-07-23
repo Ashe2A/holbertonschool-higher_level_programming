@@ -14,7 +14,7 @@ Python Doc: [CPython implementation detail: For CPython, id(x) is the memory add
 ## 7. Is the same
 ## 8. Is really equal
 ## 9. Is really the same
-Identical list comparison should return True, but seems like False is required (is Python wrong?)
+Identical list comparison should return True, but seems like False is required since they don't share the same address (is Python wrong on this one?)
 
 ## 10. And with a list, is it equal
 
