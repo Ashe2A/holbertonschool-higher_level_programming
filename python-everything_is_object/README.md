@@ -40,6 +40,8 @@ Poiting a list argument to another list argument doesn't point the original list
 ## 23. Tuple or not?
 ## 24. Who I am?
 ## 25. Tuple or not
+Identical tuple comparison should return True, but seems like False is required since they don't share the same address (is Python wrong on this one?)
+
 ## 26. Empty is not empty
 ## 27. Still the same?
 ## 28. Same or not?
