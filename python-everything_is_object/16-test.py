@@ -1,6 +1,7 @@
-
 #!/usr/bin/python3
 """Tests for Integer incrementation"""
+
+
 def increment(n):
     n += 1
 
