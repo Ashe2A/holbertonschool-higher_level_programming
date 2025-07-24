@@ -61,7 +61,7 @@ def product_display():
 
             if product_display == []:
                 return render_template("product_display.html",
-                                       error="Product not found."), 404
+                                       error="Product not found."), 200
 
         return render_template("product_display.html",
                                products=product_display), 200
