@@ -49,7 +49,7 @@ def product_display():
                 products = list(csv.DictReader(f))
         else:
             return render_template("product_display.html",
-                                   error="Wrong source"), 400
+                                   error="Wrong source"), 200
 
         if not id:
             product_display = products
