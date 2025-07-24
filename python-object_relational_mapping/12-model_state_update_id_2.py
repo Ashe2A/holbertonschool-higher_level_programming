@@ -18,6 +18,8 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    i = session.query(State).where(State.name == argv[4])
-    print(i.id)
+    i = session.query(State).filter(State.id == 2).first()
+    if i:
+        i.name = "New Mexico"
+    session.commit()
     session.close()
