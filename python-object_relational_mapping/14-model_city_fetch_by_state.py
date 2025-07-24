@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-"""First state"""
+"""Delete states"""
 
 from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from model_city import City
 
 
 if __name__ == "__main__":
@@ -18,9 +19,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    first_state = session.query(State).first()
-    if first_state:
-        print("{}: {}".format(first_state.id, first_state.name))
-    else:
-        print("Nothing")
+    for i in session.query(City).order_by(City.id).all():
+        state = session.query(State).filter(State.id == i.state_id).first()
+        print("{}: ({}) {}".format(state.name, i.id, i.name))
     session.close()
