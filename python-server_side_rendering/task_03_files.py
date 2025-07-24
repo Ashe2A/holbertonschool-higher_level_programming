@@ -35,10 +35,10 @@ def items():
     return render_template("items.html", items=items)
 
 
-@app.route("/product_display")
+@app.route("/products")
 def product_display():
     source = request.args["source"]
-    id = request.args["id"]
+    id = request.args.get("id", None)
 
     try:
         if source == "json":
@@ -49,7 +49,7 @@ def product_display():
                 products = list(csv.DictReader(f))
         else:
             return render_template("product_display.html",
-                                   error="Wrong source")
+                                   error="Wrong source"), 400
 
         if not id:
             product_display = products
@@ -61,14 +61,14 @@ def product_display():
 
             if product_display == []:
                 return render_template("product_display.html",
-                                       error="Product not found.")
+                                       error="Product not found."), 404
 
         return render_template("product_display.html",
-                               products=product_display)
+                               products=product_display), 200
 
     except Exception as e:
         return render_template("product_display.html",
-                               error=e)
+                               error=str(e)), 500
 
 
 if __name__ == '__main__':
