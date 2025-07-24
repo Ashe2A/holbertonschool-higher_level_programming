@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Update a state"""
+"""Delete states"""
 
 from sys import argv
 from model_state import Base, State
@@ -18,8 +18,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    i = session.query(State).filter(State.id == 2).first()
-    if i:
-        i.name = "New Mexico"
+    for i in session.query(State).filter(State.name.like("%a%")).all():
+        session.delete(i)
     session.commit()
     session.close()

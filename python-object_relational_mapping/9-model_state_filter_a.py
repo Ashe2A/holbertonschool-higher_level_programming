@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""All states via SQLAlchemy"""
+"""Contains 'a'"""
 
 from sys import argv
 from model_state import Base, State
@@ -18,6 +18,8 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    i = session.query(State).where(State.name == argv[4])
-    print(i.id)
+    for i in session.query(State).order_by(State.id).filter(
+        State.name.like("%a%")
+         ):
+        print("{}: {}".format(i.id, i.name))
     session.close()
