@@ -51,21 +51,24 @@ def product_display():
             return render_template("product_display.html",
                                    error="Wrong source")
 
-        if id:
-            if not id:
-                product_display = products
-            else:
-                product_display = []
-                for i in products:
-                    if id and str(i["id"]) == id:
-                        product_display.append(i)
-                    else:
-                        return render_template("product_display.html",
-                                               message="Product not found.")
-            return render_template("product_display.html",
-                                   products=product_display)
+        if not id:
+            product_display = products
+        else:
+            product_display = []
+            for i in products:
+                if "id" in i and str(i["id"]) == id:
+                    product_display.append(i)
+
+            if product_display == []:
+                return render_template("product_display.html",
+                                       error="Product not found.")
+
+        return render_template("product_display.html",
+                               products=product_display)
+
     except Exception as e:
-        return render_template("product_display.html", error=e)
+        return render_template("product_display.html",
+                               error=e)
 
 
 if __name__ == '__main__':
