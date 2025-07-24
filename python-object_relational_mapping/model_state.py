@@ -21,4 +21,5 @@ class State(Base):
                 nullable=False,
                 primary_key=True)
     name = Column(String(128),
+                  unique=True,
                   nullable=False)
