@@ -46,3 +46,6 @@ Note: use `export PYTHONDONTWRITEBYTECODE=1` in each folder to avoid `__pycache_
 
 ### Week 11
 * [Python - Everything is object](python-everything_is_object/README.md)
+
+### Week 12
+* [Python - Variable Annotations](python_variable_annotations/README.md)
